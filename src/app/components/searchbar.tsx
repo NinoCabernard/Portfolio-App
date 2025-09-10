@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Searchbar() {
+function Searchbar({ className }: { className?: string }) {
   const [query, setQuery] = useState("");
 
   const handleSubmit = (e: any) => {
@@ -13,7 +13,7 @@ function Searchbar() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex items-center bg-white rounded-lg shadow overflow-hidden"
+      className={`flex items-center bg-white rounded-lg shadow overflow-hidden`}
     >
       <input
         type="text"

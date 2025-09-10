@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import ProjectCard from "~/components/projectCard";
 import type { Project } from "~/model/project";
 import ServiceContext from "~/serviceContext";
 import { ExperienceService } from "~/services/experienceService";
@@ -29,7 +30,7 @@ export default function Projects() {
     <div>
       <h1>Checkout the projects I have been working on!</h1>
       {projects && (
-        <ul>
+        <ul className="project-list">
           {projects.map((project) => (
             <li>
               <ProjectCard {...project} />
@@ -37,17 +38,6 @@ export default function Projects() {
           ))}
         </ul>
       )}
-    </div>
-  );
-}
-
-export function ProjectCard(project: Project) {
-  return (
-    <div>
-      <h2>
-        <b>{project.name}</b>
-      </h2>
-      <p>{project.description}</p>
     </div>
   );
 }

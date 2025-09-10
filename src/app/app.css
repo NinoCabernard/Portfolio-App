@@ -7,9 +7,62 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white dark:bg-gray-700;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+
+nav {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+nav a {
+  padding: 10px;
+  font-size: 21px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+
+nav a:hover{
+  color: white;
+  background-color: blue;
+}
+
+main {
+  flex:1;
+  padding: calc(var(--spacing) * 6);
+  justify-content: center; /* horizontal center */
+  text-align: center; /* centers text inside */
+}
+
+main * {
+  margin:auto;
+}
+
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px; /* optional */
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-list li {
+  width: 100%;
 }

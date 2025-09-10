@@ -35,26 +35,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <ServiceProvider>
-          <div className="flex flex-col min-h-screen bg-red-700">
-            <nav className="flex justify-between items-center  bg-green-700 shadow h-10">
-              <ul className="flex space-x-6">
-                <li>
-                  <a href="/#" className="hover:text-blue-500">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/Projects" className="hover:text-blue-500">
-                    Projects
-                  </a>
-                </li>
-              </ul>
-              <div className="w-150">
+          <div className="flex flex-col min-h-screen">
+            <nav>
+              <a href="/#">Home</a>
+              <a href="/Projects">Projects</a>
+              <div className="w-150 ml-auto">
                 <Searchbar />
               </div>
             </nav>
 
-            <main className="flex-1 p-6"> {children}</main>
+            <main> {children}</main>
           </div>
         </ServiceProvider>
         <ScrollRestoration />
