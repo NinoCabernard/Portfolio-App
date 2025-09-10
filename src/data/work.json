@@ -1,0 +1,24 @@
+[
+  {
+    "company": "Tech Corp",
+    "role": "Frontend Developer",
+    "description": "Built responsive React applications and collaborated with design teams.",
+    "startDate": "2022-07-01",
+    "endDate": "2023-07-01",
+    "occupation": 100,
+    "technologies": ["React", "TypeScript", "CSS"],
+    "skills": ["Frontend Development", "UI/UX Design"],
+    "projects": ["Portfolio Website"]
+  },
+  {
+    "company": "Web Solutions",
+    "role": "Backend Developer Intern",
+    "description": "Assisted in building APIs and backend services using Node.js.",
+    "startDate": "2021-06-01",
+    "endDate": "2021-12-01",
+    "occupation": 50,
+    "technologies": ["Node.js", "TypeScript"],
+    "skills": ["Backend Development"],
+    "projects": ["Task Manager API"]
+  }
+]

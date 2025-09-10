@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Frontend Development",
+    "description": "Building responsive and interactive UIs",
+    "expertiseLevel": "Advanced"
+  },
+  {
+    "name": "Backend Development",
+    "description": "Creating APIs and server-side logic",
+    "expertiseLevel": "Intermediate"
+  },
+  {
+    "name": "UI/UX Design",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "institution": "University of Tech",
+    "description": "Bachelor's degree in Computer Science",
+    "startDate": "2018-09-01",
+    "endDate": "2022-06-01",
+    "technologies": ["React", "Node.js", "TypeScript"],
+    "skills": ["Frontend Development", "Backend Development"],
+    "projects": ["Portfolio Website", "Task Manager API"]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "React",
+    "description": "A JavaScript library for building UIs",
+    "experience": 3,
+    "epxertiseLevel": "Advanced"
+  },
+  {
+    "name": "TypeScript",
+    "description": "Typed superset of JavaScript",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Node.js",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "CSS",
+    "description": "Styling web applications",
+    "experience": 4,
+    "epxertiseLevel": "Expert"
+  }
+]

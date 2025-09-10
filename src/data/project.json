@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Portfolio Website",
+    "description": "A personal portfolio built using React and TypeScript",
+    "startDate": "2023-01-01",
+    "endDate": "2023-03-01",
+    "technologies": ["React", "TypeScript", "CSS"],
+    "skills": ["Frontend Development", "UI/UX Design"]
+  },
+  {
+    "name": "Task Manager API",
+    "description": "Backend API for task management using Node.js",
+    "startDate": "2022-06-01",
+    "endDate": "2022-08-01",
+    "technologies": ["Node.js", "TypeScript"],
+    "skills": ["Backend Development"]
+  }
+]
