@@ -1,11 +1,13 @@
+import type { Experience } from "./experience";
 import type { Project } from "./project";
 import type { Skill } from "./skill";
 import type { Technology } from "./technology";
 
-export class Education {
+export class Education implements Experience {
+  name!: string;
   institution!: string;
   description: string | undefined;
-  startDate: Date | string | undefined;
+  startDate!: Date | string | undefined;
   endDate: Date | string | undefined;
   technologies: Technology[] | undefined; //how to resolve
   skills: Skill[] | undefined; //how to resolve

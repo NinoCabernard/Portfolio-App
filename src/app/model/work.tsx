@@ -1,13 +1,15 @@
+import type { Experience } from "./experience";
 import type { Project } from "./project";
 import type { Skill } from "./skill";
 import type { Technology } from "./technology";
 
-export class Work {
+export class Work implements Experience {
+  name!: string;
   company!: string;
   role!: string;
   description: string | undefined;
-  startDate: string | undefined;
-  endDate: Date | null | undefined;
+  startDate!: Date | string | undefined;
+  endDate: Date | string | undefined;
   occupation: number | string | undefined; //percentage
   technologies: Technology[] | undefined;
   skills: Skill[] | undefined;

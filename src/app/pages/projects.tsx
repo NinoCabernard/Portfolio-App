@@ -27,9 +27,9 @@ export default function Projects() {
   }, [experienceService]);
 
   return (
-    <div>
-      <h1>Checkout the projects I have been working on!</h1>
-      {projects && (
+    <section>
+      <h1>Look at all the cool stuff I've been working on!</h1>
+      {projects != null && (
         <ul className="project-list">
           {projects.map((project) => (
             <li>
@@ -38,6 +38,6 @@ export default function Projects() {
           ))}
         </ul>
       )}
-    </div>
+    </section>
   );
 }

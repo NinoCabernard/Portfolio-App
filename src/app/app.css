@@ -37,9 +37,14 @@ nav a:hover{
 
 main {
   flex:1;
-  padding: calc(var(--spacing) * 6);
-  justify-content: center; /* horizontal center */
-  text-align: center; /* centers text inside */
+  max-width: 1600px; 
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
 }
 
 main * {
@@ -50,10 +55,8 @@ main * {
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 30px;
   padding: 0;
-  margin: 0 auto;
-  max-width: 1200px; /* optional */
   list-style: none;
 }
 

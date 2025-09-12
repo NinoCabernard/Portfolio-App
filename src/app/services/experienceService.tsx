@@ -6,10 +6,18 @@ import type { Work } from "~/model/work";
 import type { Skill } from "~/model/skill";
 import type { Technology } from "~/model/technology";
 import { Project } from "~/model/project";
+import type { promises } from "dns";
+import type { Experience } from "~/model/experience";
 
 export class ExperienceService {
   async getWorkExperience(): Promise<Work[]> {
     return new Promise(async (resolve) => {});
+  }
+
+  async getExperiences(): Promise<Experience[]> {
+    const education = await this.getEducations();
+    const work = await this.getWorkExperience();
+    return [...education, ...work];
   }
 
   async getProjects(): Promise<Project[]> {
@@ -31,7 +39,7 @@ export class ExperienceService {
     return new Promise(async (resolve) => {});
   }
 
-  async getEducation(): Promise<Education[]> {
+  async getEducations(): Promise<Education[]> {
     return new Promise(async (resolve) => {
       const allTechnologies = await this.getTechnologies();
 
