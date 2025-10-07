@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import Timeline, { TimelineItem } from "~/components/timeline";
+import Timeline, { TimelineEvent } from "~/components/timeline/timeline";
 import type { Experience } from "~/model/experience";
 import ServiceContext from "~/serviceContext";
 import type { ExperienceService } from "~/services/experienceService";
@@ -29,17 +29,24 @@ export default function Home() {
   return (
     <section>
       <h2>Work experience</h2>
-      <Timeline start={new Date()} end={new Date()}>
-        {experiences?.map((experience, index) => (
-          <TimelineItem
-            startDate={experience.startDate}
-            end={experience.endDate}
-          >
-            <strong>{experience.name}</strong>
-            {experience && <p>{experience.startDate?.toLocaleString()}</p>}
-          </TimelineItem>
-        )) ?? <p></p>}
-      </Timeline>
+      <Timeline
+        startDate={new Date()}
+        endDate={new Date()}
+        events={
+          experiences?.map((experience) => {
+            const evt = new TimelineEvent();
+            evt.startDate = experience.startDate;
+            evt.endDate = experience.endDate;
+            evt.children = (
+              <div>
+                <h4>{experience.name}</h4>
+                <p>{experience.startDate?.toLocaleString()}</p>
+              </div>
+            );
+            return evt;
+          }) ?? undefined
+        }
+      ></Timeline>
     </section>
   );
 }
