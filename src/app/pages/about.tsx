@@ -5,7 +5,7 @@ export default function Home() {
   const name = "Nino Cabernard";
   const wrongSubtitle = "Software Develo";
   const correctSubtitle = "Software Engineer";
-  const writeTempoInterval = 175;
+  const writeTempoInterval = 150;
   const [displayedName, setDisplayedName] = useState("");
   const [displayedSubtitle, setDisplayedSubtitle] = useState("");
 
@@ -21,7 +21,7 @@ export default function Home() {
       characterIndex++;
       if (characterIndex === name.length) {
         clearInterval(interval);
-        setNameDone(true);
+        setTimeout(() => setNameDone(true), 500);
       }
     }, writeTempoInterval);
     return () => clearInterval(interval);
@@ -44,13 +44,14 @@ export default function Home() {
           setDisplayedSubtitle(displayedSubtitle.slice(0, charIndex - 1));
           charIndex--;
         } else if (correctSubtitle == displayedSubtitle) {
-          setSubtitleDone(true);
+          setTimeout(() => setSubtitleDone(true), 500);
         }
       } else {
         if (subtitleToWrite == displayedSubtitle) {
-          setSubtitleToWrite(correctSubtitle);
-          setIsCorrectingSubtitle(true);
-          // timeout = setTimeout(writeSubtitle, 50);
+          setTimeout(() => {
+            setSubtitleToWrite(correctSubtitle);
+            setIsCorrectingSubtitle(true);
+          }, 500);
         } else {
           setDisplayedSubtitle(subtitleToWrite.slice(0, charIndex + 1));
           charIndex++;
@@ -62,24 +63,13 @@ export default function Home() {
   }, [nameDone, displayedSubtitle, subtitleToWrite]);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        textAlign: "center",
-        background: "#1a1a1a",
-        color: "#fff",
-      }}
-    >
-      <h1 style={{ fontSize: "5rem", margin: 0 }}>
+    <div>
+      <h1>
         {displayedName}
         {!nameDone && <span className="cursor">|</span>}
       </h1>
       {nameDone && (
-        <h2 style={{ fontSize: "2rem", marginTop: "1rem", height: "2.5rem" }}>
+        <h2>
           {displayedSubtitle}
           {!subtitleDone && <span className="cursor">|</span>}
         </h2>
