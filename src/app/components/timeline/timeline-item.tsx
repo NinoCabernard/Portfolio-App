@@ -1,13 +1,16 @@
+import "./timeline-item.css";
 import type { ReactElement, ReactNode } from "react";
 
 export interface TimelineItemProps {
   startDate: Date | string | undefined;
   endDate: Date | string | undefined;
-  position: TimelineItemPosition;
+  startPercent: number;
+  endPercent: number;
+  position: TimelineItemPosition | undefined;
 
   children?: ReactNode;
 }
-enum TimelineItemPosition {
+export enum TimelineItemPosition {
   Left,
   Right,
 }
@@ -15,7 +18,29 @@ enum TimelineItemPosition {
 export default function TimelineItem({
   startDate,
   endDate,
+  startPercent,
+  endPercent,
   children,
+  position = TimelineItemPosition.Left,
 }: TimelineItemProps): ReactElement {
-  return <div className="bg-gray-500 flex-1">{children} </div>;
+  const height = endPercent - startPercent;
+
+  const isLeft = position === TimelineItemPosition.Left;
+  const containerClass = `absolute ${isLeft ? "left-0" : "right-0"} w-1/2`;
+  const justifyClass = isLeft ? "justify-start" : "justify-end";
+
+  console.log(startPercent);
+  return (
+    <div
+      className={containerClass}
+      style={{
+        top: `${startPercent}%`,
+        height: `${height}%`,
+      }}
+    >
+      <div className={`flex ${justifyClass}`}>
+        <div className="relative border rounded-lg shadow p-4">{children}</div>
+      </div>
+    </div>
+  );
 }

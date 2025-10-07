@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import Timeline, { TimelineEvent } from "~/components/timeline/timeline";
+import { TimelineItemPosition } from "~/components/timeline/timeline-item";
 import type { Experience } from "~/model/experience";
+import { Work } from "~/model/work";
 import ServiceContext from "~/serviceContext";
 import type { ExperienceService } from "~/services/experienceService";
 
@@ -37,6 +39,10 @@ export default function Home() {
             const evt = new TimelineEvent();
             evt.startDate = experience.startDate;
             evt.endDate = experience.endDate;
+            evt.position =
+              experience instanceof Work
+                ? TimelineItemPosition.Left
+                : TimelineItemPosition.Right;
             evt.children = (
               <div>
                 <h4>{experience.name}</h4>

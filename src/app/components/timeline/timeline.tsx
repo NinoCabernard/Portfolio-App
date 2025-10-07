@@ -1,55 +1,72 @@
 import { motion } from "framer-motion";
 import "./timeline.css";
-import type { ReactElement, ReactNode } from "react";
-import React from "react";
-import TimelineItem from "./timeline-item";
+import type { ReactElement } from "react";
+import TimelineItem, { TimelineItemPosition } from "./timeline-item";
 
 const toTimestamp = (date: string | Date): Date => new Date(date);
 
 interface TimelineProps {
-  startDate: string | Date;
-  endDate: string | Date;
+  startDate: string | Date | undefined;
+  endDate: string | Date | undefined;
   events: TimelineEvent[] | undefined;
 }
 
 export class TimelineEvent {
   startDate: Date | string | undefined;
   endDate: Date | string | undefined;
+  position: TimelineItemPosition | undefined;
   children: ReactElement | undefined;
 }
 
 export default function Timeline(timelineProps: TimelineProps) {
-  const startTime = toTimestamp(timelineProps.startDate);
-  const endTime = toTimestamp(timelineProps.endDate);
-  const totalDuration = endTime.getTime() - startTime.getTime();
+  const events = timelineProps.events ?? [];
+  if (events.length === 0) return <div>No events</div>;
 
-  const positionedChildren =
-    timelineProps.events !== undefined
-      ? timelineProps.events!.map((timelineEvent, index) => {
-          if (!timelineEvent.startDate || !timelineEvent.endDate) return null;
+  // --- AUTO-DETERMINE start & end ---
+  const allStartTimes = events
+    .map((e) => (e.startDate ? toTimestamp(e.startDate).getTime() : undefined))
+    .filter((t): t is number => !!t);
+  const allEndTimes = events
+    .map((e) => (e.endDate ? toTimestamp(e.endDate).getTime() : undefined))
+    .filter((t): t is number => !!t);
 
-          const childStart = toTimestamp(timelineEvent.startDate);
-          const childEnd = toTimestamp(timelineEvent.endDate);
-          // const left = ((childStart - startTime) / totalDuration) * 100;
-          // const width = ((childEnd - childStart) / totalDuration) * 100;
+  const timelineStartTime = Math.min(...allStartTimes);
 
-          return (
-            <TimelineItem
-              startDate={childStart}
-              position={0}
-              endDate={childEnd}
-            >
-              <div>
-                <p className="text-gray-600">
-                  {timelineEvent.startDate.toLocaleString()}
-                </p>
+  const timelineEndTime = Math.max(...allEndTimes);
 
-                <div>{timelineEvent.children}</div>
-              </div>
-            </TimelineItem>
-          );
-        })
-      : undefined;
+  const totalDuration = timelineEndTime - timelineStartTime;
+
+  // --- position events ---
+  const positionedChildren = events.map((timelineEvent, index) => {
+    if (!timelineEvent.startDate || !timelineEvent.endDate) return null;
+
+    const childStartDate = toTimestamp(timelineEvent.startDate);
+    const childStart = childStartDate.getTime();
+    const childEndDate = toTimestamp(timelineEvent.endDate);
+    const childEnd = childStartDate.getTime();
+
+    const startPercent =
+      ((childStart - timelineStartTime) / totalDuration) * 100;
+    const endPercent = ((childEnd - timelineStartTime) / totalDuration) * 100;
+
+    return (
+      <TimelineItem
+        startDate={childStartDate}
+        position={timelineEvent.position}
+        startPercent={startPercent}
+        endPercent={endPercent}
+        endDate={childEndDate}
+      >
+        <div>
+          <p>
+            {childStartDate.toLocaleDateString()} -{" "}
+            {childEndDate.toLocaleDateString()}
+          </p>
+          <div>{timelineEvent.children}</div>
+        </div>
+      </TimelineItem>
+    );
+  });
 
   return (
     <div className="relative w-full flex flex-col items-center">
