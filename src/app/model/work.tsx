@@ -4,7 +4,6 @@ import type { Skill } from "./skill";
 import type { Technology } from "./technology";
 
 export class Work implements Experience {
-  name!: string;
   company!: string;
   role!: string;
   description: string | undefined;
@@ -14,4 +13,8 @@ export class Work implements Experience {
   technologies: Technology[] | undefined;
   skills: Skill[] | undefined;
   projects: Project[] | undefined;
+
+  get name(): string {
+    return `${this.role} at ${this.company}`;
+  }
 }

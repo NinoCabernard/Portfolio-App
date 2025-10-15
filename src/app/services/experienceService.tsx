@@ -18,7 +18,6 @@ export class ExperienceService {
 
     return (workJson as any[]).map((workExperience) => {
       const work = new Work();
-      work.name = `${workExperience.role} at ${workExperience.company}`;
       work.company = workExperience.company;
       work.role = workExperience.role;
       work.description = workExperience.description;
@@ -51,9 +50,9 @@ export class ExperienceService {
   }
 
   async getExperiences(): Promise<Experience[]> {
-    const education = await this.getEducations();
-    const work = await this.getWorkExperience();
-    return [...education, ...work];
+    const educations = await this.getEducations();
+    const workExperience = await this.getWorkExperience();
+    return [...educations, ...workExperience];
   }
 
   async getProjects(): Promise<Project[]> {
@@ -79,6 +78,8 @@ export class ExperienceService {
     return (educationsJson as any[]).map((item) => {
       const edu = new Education();
       edu.institution = item.institution;
+      edu.degree = item.degree;
+      edu.major = item.major;
       edu.description = item.description;
       edu.startDate = item.startDate ? new Date(item.startDate) : undefined;
       edu.endDate = item.endDate ? new Date(item.endDate) : undefined;

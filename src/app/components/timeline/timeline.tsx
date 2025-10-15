@@ -53,7 +53,7 @@ export default function Timeline(timelineProps: TimelineProps) {
           <TimelineItem
             startDate={childStartDate}
             endDate={childEndDate}
-            name={timelineEvent.name}
+            title={timelineEvent.name}
             description={timelineEvent.description}
           >
             {timelineEvent.children}

@@ -5,7 +5,7 @@ import { format } from "date-fns";
 export interface TimelineItemProps {
   startDate: Date | string | undefined;
   endDate: Date | string | undefined;
-  name: string | undefined;
+  title: string | undefined;
   description: string | undefined;
 
   children?: ReactNode;
@@ -19,7 +19,7 @@ export enum TimelineItemPosition {
 export default function TimelineItem({
   startDate,
   endDate,
-  name,
+  title,
   description,
   children,
 }: TimelineItemProps): ReactElement {
@@ -38,16 +38,16 @@ export default function TimelineItem({
   }
 
   return (
-    <div className={`timeline-item`} onClick={toggleExpand}>
+    <div className="timeline-item" onClick={toggleExpand}>
       <div className="timeline-item-title-container">
         <h2 className="timeline-item-title">
-          <b>{name ?? "no title provided"}</b>
+          <b>{title ?? "no title provided"}</b>
         </h2>
         <b className="timeline-item-date">
           {startDateString + " - " + endDateString}
         </b>
-        <p>{description}</p>
       </div>
+      <p>{description}</p>
       {expanded && children}
     </div>
   );

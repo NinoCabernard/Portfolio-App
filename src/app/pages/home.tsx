@@ -36,20 +36,22 @@ export default function Home() {
         endDate={undefined}
         events={
           experiences?.map((experience) => {
-            const evt = new TimelineEvent();
-            evt.startDate = experience.startDate;
-            evt.endDate = experience.endDate;
-            evt.position =
+            const event = new TimelineEvent();
+            event.name = experience.name;
+            event.startDate = experience.startDate;
+            event.endDate = experience.endDate;
+            event.description = experience.description;
+            event.position =
               experience instanceof Work
                 ? TimelineItemPosition.Left
                 : TimelineItemPosition.Right;
-            evt.children = (
+            event.children = (
               <div>
                 <h4>{experience.name}</h4>
                 <p>{experience.startDate?.toLocaleString()}</p>
               </div>
             );
-            return evt;
+            return event;
           }) ?? undefined
         }
       ></Timeline>

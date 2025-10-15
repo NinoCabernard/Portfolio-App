@@ -4,7 +4,8 @@ import type { Skill } from "./skill";
 import type { Technology } from "./technology";
 
 export class Education implements Experience {
-  name!: string;
+  major!: string;
+  degree!: string;
   institution!: string;
   description: string | undefined;
   startDate!: Date | string | undefined;
@@ -12,4 +13,8 @@ export class Education implements Experience {
   technologies: Technology[] | undefined; //how to resolve
   skills: Skill[] | undefined; //how to resolve
   projects: Project[] | undefined; //how to resolve
+
+  get name(): string {
+    return `${this.degree} ${this.major} at ${this.institution}`;
+  }
 }
