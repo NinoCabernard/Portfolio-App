@@ -35,34 +35,37 @@ export default function Timeline(timelineProps: TimelineProps) {
   const timelineEndTime = Math.max(...allEndTimes);
   const totalDuration = timelineEndTime - timelineStartTime;
 
-  const positionedChildren = events.map((timelineEvent, index) => {
-    if (!timelineEvent.startDate || !timelineEvent.endDate) return null;
+  const timelineItems = events
+    .sort(
+      (x, y) =>
+        new Date(y.startDate!).getTime() - new Date(x.startDate!).getTime()
+    )
+    .map((timelineEvent, index) => {
+      if (!timelineEvent.startDate || !timelineEvent.endDate) return null;
 
-    const childStartDate = toTimestamp(timelineEvent.startDate);
-    const childStart = childStartDate.getTime();
-    const childEndDate = toTimestamp(timelineEvent.endDate);
-    const childEnd = childStartDate.getTime();
+      const childStartDate = toTimestamp(timelineEvent.startDate);
+      const childEndDate = toTimestamp(timelineEvent.endDate);
 
-    const startPercent =
-      ((childStart - timelineStartTime) / totalDuration) * 100;
-    const endPercent = ((childEnd - timelineStartTime) / totalDuration) * 100;
-
-    return (
-      <TimelineItem
-        startDate={childStartDate}
-        endDate={childEndDate}
-        name={timelineEvent.name}
-        description={timelineEvent.description}
-      >
-        {timelineEvent.children}
-      </TimelineItem>
-    );
-  });
+      return (
+        <div
+          className={`timeline-item-container ${timelineEvent.position == TimelineItemPosition.Right ? "left" : "right"} `}
+        >
+          <TimelineItem
+            startDate={childStartDate}
+            endDate={childEndDate}
+            name={timelineEvent.name}
+            description={timelineEvent.description}
+          >
+            {timelineEvent.children}
+          </TimelineItem>
+        </div>
+      );
+    });
 
   return (
-    <div className="timeline-container">
+    <div className="timeline">
       <div className="timeline-line" />
-      <div className="timeline">{positionedChildren}</div>
+      <div className="timeline-items-container">{timelineItems}</div>
     </div>
   );
 }

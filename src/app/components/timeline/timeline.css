@@ -1,11 +1,8 @@
 .timeline {
-    height: 1000px;
-    width: 1000px;
-}
-
-.timeline-container {
   position: relative;
-  width: 100%;
+  background-color: orange;
+  height: 1000px;
+  width: 1000px;
 }
 
 .timeline-line {
@@ -19,7 +16,25 @@
   z-index: 1;
 }
 
+.timeline-items-container {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+}
 
-.timeline-items {
-  position: relative;
+.timeline-item-container {
+  box-sizing: border-box;
+  background-color: aqua;
+  width: 50%;
+  margin: 10px;
+}
+
+.left {
+  align-self: flex-start;
+  margin-left: 0;  /* default */
+}
+
+.right {
+  align-self: flex-end;
+  margin-right: 0;
 }

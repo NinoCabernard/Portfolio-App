@@ -1,8 +1,4 @@
 .timeline-item {
-    width: 50%;
-}
-
-.timeline-item-box {
   position: relative;
   border: 1px solid #ccc;
   border-radius: 0.5rem;

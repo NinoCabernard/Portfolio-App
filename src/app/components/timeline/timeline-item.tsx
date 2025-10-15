@@ -32,19 +32,17 @@ export default function TimelineItem({
     : "present";
 
   return (
-    <div className={`timeline-item `}>
-      <div className="timeline-item-box">
-        <div className="timeline-item-title-container">
-          <h2 className="timeline-item-title">
-            <b>{name ?? "no title provided"}</b>
-          </h2>
-          <b className="timeline-item-date">
-            {startDateString + " - " + endDateString}
-          </b>
-          <p>{description}</p>
-        </div>
-        {children}
+    <div className={`timeline-item`}>
+      <div className="timeline-item-title-container">
+        <h2 className="timeline-item-title">
+          <b>{name ?? "no title provided"}</b>
+        </h2>
+        <b className="timeline-item-date">
+          {startDateString + " - " + endDateString}
+        </b>
+        <p>{description}</p>
       </div>
+      {children}
     </div>
   );
 }
