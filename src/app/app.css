@@ -34,13 +34,24 @@ nav a:hover{
 
 main {
   flex:1;
-  max-width: 1600px; 
+  max-width: 1800px; 
   margin: 0 auto;
 }
 
 h1 {
   font-size: 30px;
   text-align: center;
+}
+
+
+h2 {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+p {
+  letter-spacing: 1px;
+
 }
 
 main * {
