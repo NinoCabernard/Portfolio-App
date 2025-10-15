@@ -7,16 +7,14 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-700;
+  @apply bg-white dark:bg-gray-900;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+    color: #eaeaea;
   }
 }
-
-
 nav {
-  background-color: lightblue;
   display: flex;
   align-items: center;
   height: auto;
@@ -31,7 +29,6 @@ nav a {
 
 
 nav a:hover{
-  color: white;
   background-color: blue;
 }
 

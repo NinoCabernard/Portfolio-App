@@ -1,6 +1,5 @@
 .timeline {
   position: relative;
-  background-color: orange;
   height: 1000px;
   width: 1000px;
 }
@@ -19,12 +18,10 @@
 .timeline-items-container {
   display: flex;
   flex-direction: column;
-  background-color: green;
 }
 
 .timeline-item-container {
   box-sizing: border-box;
-  background-color: aqua;
   width: 50%;
   margin: 5px;
 }
