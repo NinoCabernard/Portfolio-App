@@ -14,23 +14,7 @@ body {
     color: #eaeaea;
   }
 }
-nav {
-  display: flex;
-  align-items: center;
-  height: auto;
-}
 
-nav a {
-  padding: 10px;
-  font-size: 21px;
-  border-radius: 10px;
-  margin: 5px;
-}
-
-
-nav a:hover{
-  background-color: blue;
-}
 
 main {
   flex:1;

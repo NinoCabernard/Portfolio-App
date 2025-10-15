@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import Searchbar from "./components/searchbar";
 import { ServiceProvider } from "./serviceContext";
+import NavigationBar from "./components/nav/navigation-bar";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -36,14 +37,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <ServiceProvider>
           <div className="flex flex-col min-h-screen">
-            <nav>
-              <a href="/#">Home</a>
-              <a href="/Projects">Projects</a>
-              <div className="w-150 ml-auto">
-                <Searchbar />
-              </div>
-            </nav>
-
+            <NavigationBar></NavigationBar>
             <main> {children}</main>
           </div>
         </ServiceProvider>
