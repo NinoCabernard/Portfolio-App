@@ -1,6 +1,7 @@
 import "./timeline-item.css";
 import { useEffect, useState, type ReactElement, type ReactNode } from "react";
 import { format } from "date-fns";
+import { AnimatePresence, motion } from "motion/react";
 
 export interface TimelineItemProps {
   startDate: Date | string | undefined;
@@ -48,7 +49,19 @@ export default function TimelineItem({
         </b>
       </div>
       <p>{description}</p>
-      {expanded && children}
+      <AnimatePresence>
+        {expanded && (
+          <motion.div
+            className="timeline-item-content"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            {children}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

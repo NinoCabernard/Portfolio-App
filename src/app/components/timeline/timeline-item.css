@@ -25,3 +25,7 @@
 .timeline-item-date{
   justify-content: right;
 }
+
+.timeline-item-content{
+  overflow: hidden;
+}
