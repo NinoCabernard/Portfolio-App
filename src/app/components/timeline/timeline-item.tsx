@@ -1,5 +1,5 @@
 import "./timeline-item.css";
-import { type ReactElement, type ReactNode } from "react";
+import { useEffect, useState, type ReactElement, type ReactNode } from "react";
 import { format } from "date-fns";
 
 export interface TimelineItemProps {
@@ -31,8 +31,14 @@ export default function TimelineItem({
     ? format(new Date(endDate), dateFormat)
     : "present";
 
+  const [expanded, setExpanded] = useState(false);
+
+  function toggleExpand() {
+    setExpanded(!expanded);
+  }
+
   return (
-    <div className={`timeline-item`}>
+    <div className={`timeline-item`} onClick={toggleExpand}>
       <div className="timeline-item-title-container">
         <h2 className="timeline-item-title">
           <b>{name ?? "no title provided"}</b>
@@ -42,7 +48,7 @@ export default function TimelineItem({
         </b>
         <p>{description}</p>
       </div>
-      {children}
+      {expanded && children}
     </div>
   );
 }
