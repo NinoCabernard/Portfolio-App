@@ -8,3 +8,22 @@
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
+
+.content-container{
+  height: calc(var(--vh, 1vh) * 100 - 62px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  overflow: auto; 
+}
+
+.inner-content-container{
+  transform: translateY(-62px);
+}
+
+h1 {
+  font-size: xxx-large;
+}
+h2 {
+  font-size: xx-large;
+}

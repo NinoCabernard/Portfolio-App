@@ -64,16 +64,20 @@ export default function Home() {
 
   return (
     <div>
-      <h1>
-        {displayedName}
-        {!nameDone && <span className="cursor">|</span>}
-      </h1>
-      {nameDone && (
-        <h2>
-          {displayedSubtitle}
-          {!subtitleDone && <span className="cursor">|</span>}
-        </h2>
-      )}
+      <div className="content-container">
+        <div className="inner-content-container">
+          <h1>
+            {displayedName}
+            {!nameDone && <span className="cursor">|</span>}
+          </h1>
+          {nameDone && (
+            <h2>
+              {displayedSubtitle}
+              {!subtitleDone && <span className="cursor">|</span>}
+            </h2>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
