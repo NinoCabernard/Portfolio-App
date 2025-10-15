@@ -1,15 +1,16 @@
 import "./timeline-item.css";
-import type { ReactElement, ReactNode } from "react";
+import { type ReactElement, type ReactNode } from "react";
+import { format } from "date-fns";
 
 export interface TimelineItemProps {
   startDate: Date | string | undefined;
   endDate: Date | string | undefined;
-  startPercent: number;
-  endPercent: number;
-  position: TimelineItemPosition | undefined;
+  name: string | undefined;
+  description: string | undefined;
 
   children?: ReactNode;
 }
+
 export enum TimelineItemPosition {
   Left,
   Right,
@@ -18,28 +19,31 @@ export enum TimelineItemPosition {
 export default function TimelineItem({
   startDate,
   endDate,
-  startPercent,
-  endPercent,
+  name,
+  description,
   children,
-  position = TimelineItemPosition.Left,
 }: TimelineItemProps): ReactElement {
-  const height = endPercent - startPercent;
+  const dateFormat = "MMM. yyyy";
+  const startDateString = startDate
+    ? format(new Date(startDate), dateFormat)
+    : "unknown";
+  const endDateString = endDate
+    ? format(new Date(endDate), dateFormat)
+    : "present";
 
-  const isLeft = position === TimelineItemPosition.Left;
-  const containerClass = `absolute ${isLeft ? "left-0" : "right-0"} w-1/2`;
-  const justifyClass = isLeft ? "justify-start" : "justify-end";
-
-  console.log(startPercent);
   return (
-    <div
-      className={containerClass}
-      style={{
-        top: `${startPercent}%`,
-        height: `${height}%`,
-      }}
-    >
-      <div className={`flex ${justifyClass}`}>
-        <div className="relative border rounded-lg shadow p-4">{children}</div>
+    <div className={`timeline-item `}>
+      <div className="timeline-item-box">
+        <div className="timeline-item-title-container">
+          <h2 className="timeline-item-title">
+            <b>{name ?? "no title provided"}</b>
+          </h2>
+          <b className="timeline-item-date">
+            {startDateString + " - " + endDateString}
+          </b>
+          <p>{description}</p>
+        </div>
+        {children}
       </div>
     </div>
   );

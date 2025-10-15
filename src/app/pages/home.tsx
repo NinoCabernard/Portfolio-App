@@ -32,8 +32,8 @@ export default function Home() {
     <section>
       <h2>Work experience</h2>
       <Timeline
-        startDate={new Date()}
-        endDate={new Date()}
+        startDate={undefined}
+        endDate={undefined}
         events={
           experiences?.map((experience) => {
             const evt = new TimelineEvent();

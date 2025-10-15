@@ -1,5 +1,25 @@
 .timeline {
-    background-color: green;
     height: 1000px;
     width: 1000px;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #999;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+
+.timeline-items {
+  position: relative;
 }

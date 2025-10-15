@@ -1,4 +1,25 @@
 .timeline-item {
-    background-color: orange;
-    height: 200px;
+    width: 50%;
+}
+
+.timeline-item-box {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  z-index: 2;
+}
+
+.timeline-item-title-container{
+  display: flex;
+}
+
+.timeline-item-title{
+  flex: 1;
+}
+
+.timeline-item-date{
+  justify-content: right;
 }
