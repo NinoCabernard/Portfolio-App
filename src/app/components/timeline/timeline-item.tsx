@@ -33,7 +33,7 @@ export default function TimelineItem({
     : "present";
 
   const [expanded, setExpanded] = useState(false);
-
+  const [overflow, setOverflow] = useState(false);
   function toggleExpand() {
     setExpanded(!expanded);
   }
@@ -52,11 +52,13 @@ export default function TimelineItem({
       <AnimatePresence>
         {expanded && (
           <motion.div
-            className="timeline-item-content"
+            className={`timeline-item-content ${overflow ? "expanded" : ""}`}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
+            onAnimationStart={() => {if (overflow) {setOverflow(false)}}} 
+            onAnimationComplete={() => {if (!overflow) {setOverflow(true)}}} 
           >
             {children}
           </motion.div>

@@ -24,11 +24,10 @@
 
   padding: 20px;
   margin-top: 20px;
-  z-index: 0;
-
 }
 
 .skill-item {
+  position: relative;
   margin: 0;
   border: 2px solid rgba(234, 234, 234);
   border-radius: 0.5rem;
@@ -40,4 +39,13 @@
 .skill-item img {
   height: 100%;
   width: 100%;
+}
+
+.skill-popup {
+  left: 0.3rem;
+  background-color: orange;
+  border: 2px solid rgba(234, 234, 234);
+  padding: 0.3rem;
+  border-radius: 8px;
+   position: absolute; z-index: 9999; 
 }

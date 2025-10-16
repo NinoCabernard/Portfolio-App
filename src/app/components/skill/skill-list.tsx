@@ -9,31 +9,30 @@ interface SkillsListProps {
 export default function SkillsList(props: SkillsListProps) {
 
   
-  const [hovered, setHovered] = useState<string | null>(null);
+  const [showPopup, setShowPopup] = useState<boolean>(false);
   const [skills, setSkills] = useState<Skill[]>(props.skills ?? [])
   
   return (
     <div className="skill-container">
-    <div className="skill-list-container">
-    <span className="skill-title">Used Skills</span>
+      <div className="skill-list-container">
+        <span className="skill-title">Used Skills</span>
+        {skills.map((skill) => (
 
-      {skills.map((skill) => (
+          <div className='skill-item'
+            onMouseEnter={() => setShowPopup(true)}
+            onMouseLeave={() => setShowPopup(false)}
+          >
+            <img src={skill.iconPath} alt={skill.name} className="skill-icon" />
 
-        <div
-          className='skill-item'
-        >
-          <img src={skill.iconPath} alt={skill.name} className="skill-icon" />
-          {/* {hovered === skill.name && (
-            <div className="skill-info">
-              <h3>{skill.name}</h3>
-              <p>
-                {skill.expertiseLevel} • 100 yrs
-              </p>
-            </div>
-          )} */}
-        </div>
-      ))}
-    </div>
+            {showPopup && (
+              <div className="skill-popup">
+                <h4>{skill.name}</h4>
+                <p>{skill.description}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
