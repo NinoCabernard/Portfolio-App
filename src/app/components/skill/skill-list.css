@@ -1,0 +1,42 @@
+.skill-container {
+  margin-top: 1rem;
+
+}
+
+.skill-title {
+  position: absolute;
+  left: 20px;
+  padding: 0 8px;
+  top: -0.8em;
+  font-weight: bold;
+  background: var(--background);
+  z-index: 1;
+}
+
+.skill-list-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid rgba(234, 234, 234);
+
+  padding: 20px;
+  margin-top: 20px;
+  z-index: 0;
+
+}
+
+.skill-item {
+  margin: 0;
+  height: 3rem;
+  border: 2px solid rgba(234, 234, 234);
+  border-radius: 0.5rem;
+  align-self: flex-start;
+}
+
+.skill-item img {
+  height: 100%;
+  width: 100%;
+}

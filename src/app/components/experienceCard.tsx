@@ -22,8 +22,3 @@ export default function ExperienceCard(props: ExperienceCardProps) {
     </div>
   );
 }
-
-// Example usage (tsx):
-//
-// <Timeline start="2023-01-01" end="2023-12-31">
-//   <div start="

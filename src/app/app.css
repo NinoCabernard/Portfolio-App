@@ -11,9 +11,13 @@ body {
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
-    color: #eaeaea;
+    --color: #eaeaea;
+    --background: #111827;
+    color: var(--color);
   }
+
 }
+
 
 
 main {

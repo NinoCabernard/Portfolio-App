@@ -5,7 +5,7 @@ export default function Home() {
   const name = "Nino Cabernard";
   const wrongSubtitle = "Software Develo";
   const correctSubtitle = "Software Engineer";
-  const writeTempoInterval = 150;
+  const writeTempoInterval = 130;
   const [displayedName, setDisplayedName] = useState("");
   const [displayedSubtitle, setDisplayedSubtitle] = useState("");
 

@@ -24,7 +24,7 @@ nav a:hover{
 .navigation.about-page {
   opacity: 0;
   animation: fadeIn 1s forwards;
-  animation-delay: 9s; 
+  animation-delay: 8s; 
 }
 
 @keyframes fadeIn {

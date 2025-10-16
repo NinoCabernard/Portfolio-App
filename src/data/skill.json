@@ -2,16 +2,19 @@
   {
     "name": "Frontend Development",
     "description": "Building responsive and interactive UIs",
-    "expertiseLevel": "Advanced"
+    "expertiseLevel": "Advanced",
+    "iconPath" : "../images/skills/code-solid-full.svg"
   },
   {
     "name": "Backend Development",
     "description": "Creating APIs and server-side logic",
-    "expertiseLevel": "Intermediate"
+    "expertiseLevel": "Intermediate",
+    "iconPath" : "../images/skills/code-solid-full.svg"
   },
   {
     "name": "UI/UX Design",
     "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate"
+    "expertiseLevel": "Intermediate",
+    "iconPath" : "../images/skills/code-solid-full.svg"
   }
 ]
