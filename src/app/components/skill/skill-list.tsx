@@ -23,7 +23,6 @@ export default function SkillsList(props: SkillsListProps) {
           className='skill-item'
         >
           <img src={skill.iconPath} alt={skill.name} className="skill-icon" />
-
           {/* {hovered === skill.name && (
             <div className="skill-info">
               <h3>{skill.name}</h3>

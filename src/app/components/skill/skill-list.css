@@ -30,10 +30,11 @@
 
 .skill-item {
   margin: 0;
-  height: 3rem;
   border: 2px solid rgba(234, 234, 234);
   border-radius: 0.5rem;
   align-self: flex-start;
+  height: 3rem;
+  padding: 0.3rem;
 }
 
 .skill-item img {
