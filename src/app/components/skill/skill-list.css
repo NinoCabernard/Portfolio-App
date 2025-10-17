@@ -1,6 +1,5 @@
 .skill-container {
   margin-top: 1rem;
-
 }
 
 .skill-title {
@@ -29,18 +28,24 @@
 
 .skill-item {
   position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 0;
   border: 2px solid rgba(234, 234, 234);
   border-radius: 0.5rem;
-  align-self: flex-start;
   height: 3rem;
-  width: 3rem;
   padding: 0.3rem;
+}
+
+.skill-item p {
+  font-size: 1rem;
 }
 
 .skill-item img {
   height: 100%;
-  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .skill-popup {
@@ -48,7 +53,7 @@
   border: 2px solid rgba(234, 234, 234);
   border-radius: 8px;
   position: absolute;
-  z-index: 9999; 
+  z-index: 9999;
   padding: 1rem;
   width: 400px;
 }

@@ -25,6 +25,7 @@ export default function SkillsList(props: SkillsListProps) {
               src={skill.iconPath ?? defaultIconPath}
               className="skill-icon"
             />
+            <p>{skill.name}</p>
 
             {showPopup == index && (
               <div className="skill-popup">
