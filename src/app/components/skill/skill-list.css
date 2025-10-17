@@ -17,12 +17,13 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 0.5rem;
   border-radius: 8px;
   border: 2px solid rgba(234, 234, 234);
 
-  padding: 20px;
+  padding: 1rem;
   margin-top: 20px;
 }
 
@@ -33,6 +34,7 @@
   border-radius: 0.5rem;
   align-self: flex-start;
   height: 3rem;
+  width: 3rem;
   padding: 0.3rem;
 }
 
@@ -42,10 +44,15 @@
 }
 
 .skill-popup {
-  left: 0.3rem;
-  background-color: orange;
+  background-color: var(--background);
   border: 2px solid rgba(234, 234, 234);
-  padding: 0.3rem;
   border-radius: 8px;
-   position: absolute; z-index: 9999; 
+  position: absolute;
+  z-index: 9999; 
+  padding: 1rem;
+  width: 400px;
+}
+
+.skill-expertise {
+  color: lightcoral;
 }

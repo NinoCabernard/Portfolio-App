@@ -18,7 +18,19 @@
     "endDate": "2021-12-01",
     "occupation": 50,
     "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"],
+    "skills": [
+      "Backend Development",
+      "Backend Development",
+      "Backend Development",
+      "Backend Development",
+      "Backend Development",
+      "Backend Development",
+      "Backend Development",
+      "Backend Development",
+      "Backend Development",
+      "Frontend Development",
+      "Backend Development"
+    ],
     "projects": ["Task Manager API"]
   }
 ]

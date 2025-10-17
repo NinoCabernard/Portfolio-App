@@ -7,26 +7,29 @@ interface SkillsListProps {
 }
 
 export default function SkillsList(props: SkillsListProps) {
+  const [showPopup, setShowPopup] = useState<number | undefined>(undefined);
+  const [skills, setSkills] = useState<Skill[]>(props.skills ?? []);
+  const defaultIconPath = "../images/skills/code-solid-full.svg";
 
-  
-  const [showPopup, setShowPopup] = useState<boolean>(false);
-  const [skills, setSkills] = useState<Skill[]>(props.skills ?? [])
-  
   return (
     <div className="skill-container">
       <div className="skill-list-container">
         <span className="skill-title">Used Skills</span>
-        {skills.map((skill) => (
-
-          <div className='skill-item'
-            onMouseEnter={() => setShowPopup(true)}
-            onMouseLeave={() => setShowPopup(false)}
+        {skills.map((skill, index) => (
+          <div
+            className="skill-item"
+            onMouseEnter={() => setShowPopup(index)}
+            onMouseLeave={() => setShowPopup(undefined)}
           >
-            <img src={skill.iconPath} alt={skill.name} className="skill-icon" />
+            <img
+              src={skill.iconPath ?? defaultIconPath}
+              className="skill-icon"
+            />
 
-            {showPopup && (
+            {showPopup == index && (
               <div className="skill-popup">
                 <h4>{skill.name}</h4>
+                <p className="skill-expertise">{skill.expertiseLevel} level</p>
                 <p>{skill.description}</p>
               </div>
             )}
