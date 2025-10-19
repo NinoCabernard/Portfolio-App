@@ -41,7 +41,7 @@ export class ExperienceService {
         );
       }
       if (allProjects) {
-        work.projects = workExperience.allProjects?.map((name: string) =>
+        work.projects = workExperience.projects?.map((name: string) =>
           allProjects.find((project) => project.name === name)
         );
       }
@@ -60,6 +60,7 @@ export class ExperienceService {
       const project = new Project();
       project.name = item.name;
       project.description = item.description;
+      project.shortDescription = item.shortDescription;
       return project;
     });
   }

@@ -4,6 +4,7 @@ import type { Technology } from "./technology";
 export class Project {
   name!: string;
   description: string = "";
+  shortDescription: string = "";
   startDate: string | undefined;
   endDate: string | undefined | null;
 
