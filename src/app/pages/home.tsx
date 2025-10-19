@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import ProjectList from "~/components/project/project-list";
 import SkillsList from "~/components/skill/skill-list";
 import Timeline, { TimelineEvent } from "~/components/timeline/timeline";
 import { TimelineItemPosition } from "~/components/timeline/timeline-item";
@@ -29,8 +30,6 @@ export default function Home() {
       .finally(() => console.log("Finally finished"));
   }, [experienceService]);
 
-
-
   return (
     <section>
       <h2>Work experience</h2>
@@ -49,14 +48,12 @@ export default function Home() {
                 ? TimelineItemPosition.Left
                 : TimelineItemPosition.Right;
             event.children = (
-
-              
               <div>
                 <h4>{experience.name}</h4>
                 <p>{experience.startDate?.toLocaleString()}</p>
+                <ProjectList projects={experience.projects} />
                 <SkillsList skills={experience.skills} />
               </div>
-
             );
             return event;
           }) ?? undefined

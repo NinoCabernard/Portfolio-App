@@ -8,27 +8,25 @@
   transition: background-color 0.5s ease;
 }
 
-
 .timeline-item:hover {
   cursor: pointer;
   background-color: #1f2937;
 }
 
-
-.timeline-item-title-container{
+.timeline-item-title-container {
   display: flex;
 }
 
-.timeline-item-title{
+.timeline-item-title {
   flex: 1;
 }
 
-.timeline-item-date{
+.timeline-item-date {
   justify-content: right;
 }
 
-
 .timeline-item-content {
+  background-color: inherit;
   overflow: hidden;
 }
 

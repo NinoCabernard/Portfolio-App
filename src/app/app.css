@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,
@@ -15,14 +16,11 @@ body {
     --background: #111827;
     color: var(--color);
   }
-
 }
 
-
-
 main {
-  flex:1;
-  max-width: 1800px; 
+  flex: 1;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -30,7 +28,6 @@ h1 {
   font-size: 30px;
   text-align: center;
 }
-
 
 h2 {
   font-size: 0.9rem;
@@ -45,13 +42,12 @@ h4 {
 
 p {
   letter-spacing: 1px;
-
+  font-size: 0.9rem;
 }
 
 main * {
-  margin:auto;
+  margin: auto;
 }
-
 
 .project-list {
   display: grid;
