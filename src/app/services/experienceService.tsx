@@ -65,6 +65,12 @@ export class ExperienceService {
     });
   }
 
+  async getProject(projectName: string): Promise<Project | undefined> {
+    return (await this.getProjects()).find(
+      (x) => x.name.toLowerCase() === projectName.toLowerCase()
+    );
+  }
+
   async getSkills(): Promise<Skill[]> {
     return skillsJson as Skill[];
   }
