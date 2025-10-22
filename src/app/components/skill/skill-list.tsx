@@ -15,27 +15,30 @@ export default function SkillsList(props: SkillsListProps) {
     <div className="skill-container">
       <div className="skill-list-container">
         <span className="skill-title">Used Skills</span>
-        {skills.map((skill, index) => (
-          <div
-            className="skill-item"
-            onMouseEnter={() => setShowPopup(index)}
-            onMouseLeave={() => setShowPopup(undefined)}
-          >
-            <img
-              src={skill.iconPath ?? defaultIconPath}
-              className="skill-icon"
-            />
-            <p>{skill.name}</p>
+        {skills.map((skill, index) => {
+          if (skill !== undefined) {
+            return (
+              <div
+                className="skill-item"
+                onMouseEnter={() => setShowPopup(index)}
+                onMouseLeave={() => setShowPopup(undefined)}
+              >
+                <img src={skill.iconPath} className="skill-icon" />
+                <p>{skill.name}</p>
 
-            {showPopup == index && (
-              <div className="skill-popup">
-                <h4>{skill.name}</h4>
-                <p className="skill-expertise">{skill.expertiseLevel} level</p>
-                <p>{skill.description}</p>
+                {showPopup == index && (
+                  <div className="skill-popup">
+                    <h4>{skill.name}</h4>
+                    <p className="skill-expertise">
+                      {skill.expertiseLevel} level
+                    </p>
+                    <p>{skill.description}</p>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-        ))}
+            );
+          }
+        })}
       </div>
     </div>
   );
