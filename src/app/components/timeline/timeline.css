@@ -5,33 +5,18 @@
 }
 
 .timeline-line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
   width: 2px;
+  height: 100%;
   background-color: #999;
-  transform: translateX(-50%);
-  z-index: 1;
+  grid-column: 2;
 }
 
 .timeline-items-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1rem 1fr;
 }
 
 .timeline-item-container {
   box-sizing: border-box;
-  width: 50%;
   margin: 5px;
-}
-
-.left {
-  align-self: flex-start;
-  margin-left: 0;
-}
-
-.right {
-  align-self: flex-end;
-  margin-right: 0;
 }

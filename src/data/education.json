@@ -1,35 +1,35 @@
 [
   {
-    "institution": "University of Tech",
     "major": "Computer Science",
-    "degree": "Bachelor",
-    "description": "Bachelor's degree in Computer Science",
-    "startDate": "2018-09-01",
-    "endDate": "2022-06-01",
-    "technologies": ["React", "Node.js", "TypeScript"],
-    "skills": ["Frontend Development", "Backend Development"],
-    "projects": ["Portfolio Website", "Task Manager API"]
+    "degree": "BSc, Exchange Semester",
+    "institution": "TAMK Tampere University of Applied Sciences, Tampere, Finland",
+    "description": null,
+    "startDate": "2022-08-01",
+    "endDate": "2022-12-31",
+    "technologies": null,
+    "skills": null,
+    "projects": null
   },
   {
-    "institution": "University of Tech",
     "major": "Computer Science",
-    "degree": "Bachelor",
-    "description": "Bachelor's degree in Computer Science",
-    "startDate": "2018-09-01",
-    "endDate": "2022-06-01",
-    "technologies": ["React", "Node.js", "TypeScript"],
-    "skills": ["Frontend Development", "Backend Development"],
-    "projects": ["Portfolio Website", "Task Manager API"]
+    "degree": "BSc",
+    "institution": "ZHAW Zurich University of Applied Sciences, Winterthur",
+    "description": null,
+    "startDate": "2020-09-01",
+    "endDate": "2023-07-31",
+    "technologies": null,
+    "skills": null,
+    "projects": null
   },
   {
-    "institution": "University of Tech",
-    "major": "Computer Science",
-    "degree": "Bachelor",
-    "description": "Bachelor's degree in Computer Science",
-    "startDate": "2018-09-01",
-    "endDate": "2022-06-01",
-    "technologies": ["React", "Node.js", "TypeScript"],
-    "skills": ["Frontend Development", "Backend Development"],
-    "projects": ["Portfolio Website", "Task Manager API"]
+    "major": "Vocational Education",
+    "degree": "Vocational School (incl. vocational baccalaureate)",
+    "institution": "GBS St. Gallen, St. Gallen",
+    "description": null,
+    "startDate": "2015-08-01",
+    "endDate": "2019-07-31",
+    "technologies": null,
+    "skills": null,
+    "projects": null
   }
 ]

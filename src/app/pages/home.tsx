@@ -40,8 +40,8 @@ export default function Home() {
           experiences?.map((experience) => {
             const event = new TimelineEvent();
             event.name = experience.name;
-            event.startDate = experience.startDate;
-            event.endDate = experience.endDate;
+            event.startDate = new Date(experience.startDate ?? 0);
+            event.endDate = new Date(experience.endDate ?? Date.now());
             event.description = experience.description;
             event.position =
               experience instanceof Work
