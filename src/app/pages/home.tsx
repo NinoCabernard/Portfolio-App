@@ -7,12 +7,15 @@ import type { Experience } from "~/model/experience";
 import { Work } from "~/model/work";
 import ServiceContext from "~/serviceContext";
 import type { ExperienceService } from "~/services/experienceService";
+import "./home.css";
+import Typewriter from "~/components/typewriter/typewriter";
 
 export default function Home() {
   const experienceService: ExperienceService =
     useContext<ExperienceService>(ServiceContext);
 
   const [experiences, setExperiences] = useState<Experience[] | null>(null);
+  const [titleCompleted, setTitleCompleted] = useState(false);
 
   useEffect(() => {
     console.log("Runs after every render");
@@ -30,9 +33,22 @@ export default function Home() {
       .finally(() => console.log("Finally finished"));
   }, [experienceService]);
 
+  function onTitleCompleted(): void {
+    setTitleCompleted(true);
+  }
+
   return (
     <section>
-      <h2>Work experience</h2>
+      <Typewriter onWritingCompleted={onTitleCompleted}></Typewriter>
+      <div>
+        <div>
+          <img
+            className="timeline-header-image"
+            src="..\images\home\work_icon.svg"
+          />
+          <h2>Work experience</h2>
+        </div>
+      </div>
       <Timeline
         startDate={undefined}
         endDate={undefined}

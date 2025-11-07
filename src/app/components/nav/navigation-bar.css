@@ -1,11 +1,12 @@
-
-
 nav {
   display: flex;
   align-items: center;
   height: auto;
   opacity: 1;
   transition: opacity 0.5s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 4s;
 }
 
 nav a {
@@ -15,16 +16,8 @@ nav a {
   margin: 5px;
 }
 
-
-nav a:hover{
+nav a:hover {
   background-color: #1f2937;
-}
-
-
-.navigation.about-page {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-  animation-delay: 8s; 
 }
 
 @keyframes fadeIn {
