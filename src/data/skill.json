@@ -58,5 +58,17 @@
     "description": "Designing user-friendly interfaces",
     "expertiseLevel": "Intermediate",
     "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Microservices",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Fullstack",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
   }
 ]
