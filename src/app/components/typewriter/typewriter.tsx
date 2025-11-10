@@ -49,7 +49,10 @@ export default function Typewriter({ onWritingCompleted }: TypewriterProps) {
           setDisplayedSubtitle(displayedSubtitle.slice(0, charIndex - 1));
           charIndex--;
         } else if (correctSubtitle == displayedSubtitle) {
-          setTimeout(() => setSubtitleDone(true), 500);
+          setTimeout(() => {
+            setSubtitleDone(true);
+            onWritingCompleted?.();
+          }, 500);
         }
       } else {
         if (subtitleToWrite == displayedSubtitle) {
