@@ -7,6 +7,7 @@ export class Education implements Experience {
   major!: string;
   degree!: string;
   institution!: string;
+  location: string | undefined;
   description: string | undefined;
   startDate!: Date | string | undefined;
   endDate: Date | string | undefined;

@@ -56,7 +56,7 @@ export default function Home() {
           experiences?.map((experience) => {
             const event = new TimelineEvent();
             event.name = experience.name;
-            event.institution = experience.institution;
+            event.institution = `${experience.institution}, ${experience.location}`;
             event.startDate = new Date(experience.startDate ?? 0);
             event.endDate = experience.endDate
               ? new Date(experience.endDate)

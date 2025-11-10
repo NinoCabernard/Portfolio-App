@@ -6,6 +6,7 @@ import type { Technology } from "./technology";
 export class Work implements Experience {
   company!: string;
   role!: string;
+  location: string | undefined;
   description: string | undefined;
   startDate!: Date | string | undefined;
   endDate: Date | string | undefined;

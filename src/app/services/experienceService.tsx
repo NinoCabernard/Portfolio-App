@@ -20,6 +20,7 @@ export class ExperienceService {
       const work = new Work();
       work.company = workExperience.company;
       work.role = workExperience.role;
+      work.location = workExperience.location;
       work.description = workExperience.description;
       work.occupation = workExperience.occupation;
       work.description = workExperience.description;
@@ -85,6 +86,7 @@ export class ExperienceService {
     return (educationsJson as any[]).map((item) => {
       const edu = new Education();
       edu.institution = item.institution;
+      edu.location = item.location;
       edu.degree = item.degree;
       edu.major = item.major;
       edu.description = item.description;

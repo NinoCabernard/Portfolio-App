@@ -2,6 +2,7 @@
   {
     "company": "Sabbatical",
     "role": "Cultural Exploration & Independent Development",
+    "location": "Southeast Asia, Eastern Europe",
     "description": "Engaged in cross-cultural exploration to broaden global perspective and adaptability through extended travel across Asia and Eastern Europe.\nUndertook self-directed software projects using ASP.NET Core and React, focusing on modern web application design and backend integration.\nCurrently developing a personal document management and finance tracking system using a self-built modular library.",
     "startDate": "2025-05-01",
     "endDate": null,
@@ -16,6 +17,7 @@
   {
     "company": "ACS Solution AG",
     "role": "Software Engineer MES",
+    "location": "Münchwilen, Switzerland",
     "description": "Designed and implemented software architecture for microservices using Angular, WPF, and ASP.NET Core.\nMaintained and extended the in-house library to improve development efficiency and consistency.\nLed implementation and deployment of microservices to production environments with direct customer contact.\nAutomated deployments using Docker and Kubernetes for multi-environment orchestration.",
     "startDate": "2023-08-01",
     "endDate": "2025-04-01",
@@ -31,6 +33,7 @@
   {
     "company": "Freelancer",
     "role": "Software Developer",
+    "location": "Wil SG, Switzerland",
     "description": "Independently designed and developed a resource planning system for a Swiss SME using .NET technologies.\nImplemented core features with a custom-built library.\nDefined and standardized interfaces between existing components and the new system.",
     "startDate": "2022-01-01",
     "endDate": "2022-05-01",
@@ -42,6 +45,7 @@
   {
     "company": "Automation + Controlsystem ACS AG",
     "role": "Software Developer (part-time)",
+    "location": "Münchwilen, Switzerland",
     "description": "Designed and implemented scalable distributed systems and modern software architectures.\nAutomated deployments using Docker and Kubernetes.\nMaintained direct customer contact in a project-based environment.",
     "startDate": "2020-09-01",
     "endDate": "2023-07-01",
@@ -57,6 +61,7 @@
   {
     "company": "Automation + Controlsystem ACS AG",
     "role": "Software Developer",
+    "location": "Wil SG, Switzerland",
     "description": "Developed MES software for major food industry clients in Switzerland.\nMaintained close collaboration with customer processes to ensure tailored solutions.",
     "startDate": "2019-09-01",
     "endDate": "2020-08-01",
@@ -68,6 +73,7 @@
   {
     "company": "Automation + Controlsystem ACS AG",
     "role": "Apprentice Computer Scientist EFZ, software development",
+    "location": "Wil SG, Switzerland",
     "description": "Contributed to real customer projects, gaining hands-on experience in software development using primarily .NET technologies, including WPF and .NET Framework.\nLearned and applied a wide range of technologies in real-world settings.\nWorked on-site directly with customers of food-processing companies.",
     "startDate": "2015-08-01",
     "endDate": "2019-07-01",
