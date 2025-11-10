@@ -71,7 +71,7 @@ export default function Typewriter({ onWritingCompleted }: TypewriterProps) {
   }, [nameDone, displayedSubtitle, subtitleToWrite]);
 
   return (
-    <div>
+    <div className="type-writer">
       <div className="content-container">
         <div className="inner-content-container">
           <h1 className="typewriter-title">

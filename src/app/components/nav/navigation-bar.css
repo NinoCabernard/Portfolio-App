@@ -2,9 +2,13 @@ nav {
   display: flex;
   align-items: center;
   height: auto;
-  transition: opacity 0.5s ease;
+  visibility: hidden;
   opacity: 0;
-  animation: fadeIn 1s forwards;
+}
+
+nav.visible {
+  visibility: visible;
+  animation: fadeIn 2s forwards;
 }
 
 nav a {
@@ -15,10 +19,13 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #1f2937;
+  background-color: var(--backgroundSecondary);
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
   }

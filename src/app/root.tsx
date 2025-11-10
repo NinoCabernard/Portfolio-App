@@ -10,9 +10,11 @@ import {
 } from "react-router-dom";
 import type { Route } from "./+types/root";
 import { ServiceProvider } from "./serviceContext";
-import NavigationBar from "./components/nav/navigation-bar";
+import NavigationBar, {
+  type NavigationBarHandle,
+} from "./components/nav/navigation-bar";
 import Footer from "./components/footer/footer";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Typewriter from "./components/typewriter/typewriter";
 
 export const links: Route.LinksFunction = () => [
@@ -29,6 +31,7 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const navBarRef = useRef<NavigationBarHandle>(null);
   const location = useLocation();
   const isIntroPage = location.pathname === "/";
   const [introCompleted, setIntroCompleted] = isIntroPage
@@ -37,7 +40,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   function handleIntroComplete() {
     setIntroCompleted(true);
+    navBarRef.current?.onHandleVisible(true);
   }
+
   return (
     <html lang="en">
       <head>
@@ -49,7 +54,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <ServiceProvider>
           <div className="flex flex-col min-h-screen">
-            {introCompleted && <NavigationBar></NavigationBar>}
+            <NavigationBar
+              ref={navBarRef}
+              visible={!isIntroPage}
+            ></NavigationBar>
             <main>
               {isIntroPage && (
                 <Typewriter
