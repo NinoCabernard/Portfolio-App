@@ -70,42 +70,47 @@ export default function Home() {
                 : TimelineItemPosition.Right;
             event.children = (
               <div>
-                <Tags<Project>
-                  tags={experience.projects}
-                  title="Projects"
-                  popupElement={(project) => (
-                    <div>
-                      <h4>{project.name}</h4>
-                      <p>{project.description}</p>
-                    </div>
+                {experience.projects && experience.projects.length > 0 && (
+                  <Tags<Project>
+                    tags={experience.projects}
+                    title="Projects"
+                    popupElement={(project) => (
+                      <div>
+                        <h4>{project.name}</h4>
+                        <p>{project.description}</p>
+                      </div>
+                    )}
+                  />
+                )}
+                {experience.skills && experience.skills.length > 0 && (
+                  <Tags<Skill>
+                    tags={experience.skills}
+                    title="Skills"
+                    popupElement={(skill) => (
+                      <div>
+                        <h4>{skill.name}</h4>
+                        <p className="skill-expertise">
+                          {skill.expertiseLevel} level
+                        </p>
+                        <p>{skill.description}</p>
+                      </div>
+                    )}
+                  />
+                )}
+                {experience.technologies &&
+                  experience.technologies.length > 0 && (
+                    <Tags<Technology>
+                      tags={experience.technologies}
+                      title="Technologies"
+                      popupElement={(technology) => (
+                        <div>
+                          <h4>{technology.name}</h4>
+                          <p>{technology.experience} years of experience</p>
+                          <p>{technology.description}</p>
+                        </div>
+                      )}
+                    />
                   )}
-                />
-                <Tags<Skill>
-                  tags={experience.skills}
-                  title="Skills"
-                  popupElement={(skill) => (
-                    <div>
-                      <h4>{skill.name}</h4>
-                      <p className="skill-expertise">
-                        {skill.expertiseLevel} level
-                      </p>
-                      <p>{skill.description}</p>
-                    </div>
-                  )}
-                />
-                <Tags<Technology>
-                  tags={experience.technologies}
-                  title="Technologies"
-                  popupElement={(technology) => (
-                    <div>
-                      <h4>{technology.name}</h4>
-                      <p className="skill-expertise">
-                        {technology.experience} years of experience
-                      </p>
-                      <p>{technology.description}</p>
-                    </div>
-                  )}
-                />
               </div>
             );
             return event;
