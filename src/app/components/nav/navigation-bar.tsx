@@ -9,9 +9,9 @@ export default function NavigationBar() {
     <nav className={`navigation`}>
       <a href="/#">Home</a>
       <a href="/Projects">Projects</a>
-      <div className="w-150 ml-auto">
+      {/* <div className="w-150 ml-auto">
         <Searchbar />
-      </div>
+      </div> */}
     </nav>
   );
 }
