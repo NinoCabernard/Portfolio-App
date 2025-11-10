@@ -16,14 +16,29 @@
 
 .timeline-item-title-container {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.timeline-item-header-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .timeline-item-title {
   flex: 1;
 }
+.timeline-item-subtitle {
+  width: 100%;
+  color: var(--colorSecondary);
+  text-align: left;
+}
 
 .timeline-item-date {
   justify-content: right;
+  color: var(--colorSecondary);
+  margin: 0;
 }
 
 .timeline-item-content {

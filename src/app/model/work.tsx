@@ -15,6 +15,9 @@ export class Work implements Experience {
   projects: Project[] | undefined;
 
   get name(): string {
-    return `${this.role} at ${this.company}`;
+    return this.role;
+  }
+  get institution(): string {
+    return this.company;
   }
 }

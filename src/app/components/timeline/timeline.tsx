@@ -13,6 +13,7 @@ export class TimelineEvent {
   startDate!: Date;
   endDate: Date | undefined;
   name: string | undefined;
+  institution: string | undefined;
   description: string | undefined;
   position!: TimelineItemPosition;
   children: ReactElement | undefined;
@@ -57,6 +58,7 @@ function createDomFromEvent(
         startDate={event.startDate}
         endDate={event.endDate}
         title={event.name}
+        subTitle={event.institution}
         description={event.description}
       >
         {event.children}

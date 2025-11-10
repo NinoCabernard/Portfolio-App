@@ -7,7 +7,7 @@
     "startDate": "2022-08-01",
     "endDate": "2022-12-31",
     "technologies": null,
-    "skills": null,
+    "skills": ["Frontend Development"],
     "projects": null
   },
   {

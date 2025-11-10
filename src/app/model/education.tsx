@@ -15,6 +15,6 @@ export class Education implements Experience {
   projects: Project[] | undefined; //how to resolve
 
   get name(): string {
-    return `${this.degree} ${this.major} at ${this.institution}`;
+    return `${this.degree} ${this.major}`;
   }
 }

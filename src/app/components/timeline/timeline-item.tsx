@@ -7,6 +7,7 @@ export interface TimelineItemProps {
   startDate: Date | string | undefined;
   endDate: Date | string | undefined;
   title: string | undefined;
+  subTitle: string | undefined;
   description: string | undefined;
 
   children?: ReactNode;
@@ -21,6 +22,7 @@ export default function TimelineItem({
   startDate,
   endDate,
   title,
+  subTitle,
   description,
   children,
 }: TimelineItemProps): ReactElement {
@@ -40,15 +42,20 @@ export default function TimelineItem({
 
   return (
     <div className="timeline-item" onClick={toggleExpand}>
-      <div className="timeline-item-title-container">
-        <h2 className="timeline-item-title">
-          <b>{title ?? "no title provided"}</b>
+      <div className="timeline-item-header-container">
+        <div className="timeline-item-title-container">
+          <h2 className="timeline-item-title">
+            <b>{title ?? "no title provided"}</b>
+          </h2>
+
+          <b className="timeline-item-date">
+            {startDateString + " - " + endDateString}
+          </b>
+        </div>
+        <h2 className="timeline-item-subtitle">
+          {subTitle ?? "no title provided"}
         </h2>
-        <b className="timeline-item-date">
-          {startDateString + " - " + endDateString}
-        </b>
       </div>
-      <p>{description}</p>
       <AnimatePresence>
         {expanded && (
           <motion.div
@@ -57,10 +64,21 @@ export default function TimelineItem({
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            onAnimationStart={() => {if (overflow) {setOverflow(false)}}} 
-            onAnimationComplete={() => {if (!overflow) {setOverflow(true)}}} 
+            onAnimationStart={() => {
+              if (overflow) {
+                setOverflow(false);
+              }
+            }}
+            onAnimationComplete={() => {
+              if (!overflow) {
+                setOverflow(true);
+              }
+            }}
           >
-            {children}
+            <div>
+              <p>{description}</p>
+              {children}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

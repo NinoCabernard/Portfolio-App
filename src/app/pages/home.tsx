@@ -40,41 +40,50 @@ export default function Home() {
   return (
     <section>
       <Typewriter onWritingCompleted={onTitleCompleted}></Typewriter>
-      <div>
-        <div>
-          <img
-            className="timeline-header-image"
-            src="..\images\home\work_icon.svg"
-          />
-          <h2>Work experience</h2>
+
+      <section>
+        <div className="timeline-header">
+          <div className="timeline-header-item ">
+            <img
+              className="timeline-header-image"
+              src="..\images\home\work_icon.svg"
+            />
+            <h2 className="timeline-header-title">WORK EXPERIENCE</h2>
+          </div>
+          <div className="timeline-header-item ">
+            <img
+              className="timeline-header-image"
+              src="..\images\home\education_icon.svg"
+            />
+            <h2 className="timeline-header-title">EDUCATION</h2>
+          </div>
         </div>
-      </div>
-      <Timeline
-        startDate={undefined}
-        endDate={undefined}
-        events={
-          experiences?.map((experience) => {
-            const event = new TimelineEvent();
-            event.name = experience.name;
-            event.startDate = new Date(experience.startDate ?? 0);
-            event.endDate = new Date(experience.endDate ?? Date.now());
-            event.description = experience.description;
-            event.position =
-              experience instanceof Work
-                ? TimelineItemPosition.Left
-                : TimelineItemPosition.Right;
-            event.children = (
-              <div>
-                <h4>{experience.name}</h4>
-                <p>{experience.startDate?.toLocaleString()}</p>
-                <ProjectList projects={experience.projects} />
-                <SkillsList skills={experience.skills} />
-              </div>
-            );
-            return event;
-          }) ?? undefined
-        }
-      ></Timeline>
+        <Timeline
+          startDate={undefined}
+          endDate={undefined}
+          events={
+            experiences?.map((experience) => {
+              const event = new TimelineEvent();
+              event.name = experience.name;
+              event.institution = experience.institution;
+              event.startDate = new Date(experience.startDate ?? 0);
+              event.endDate = new Date(experience.endDate ?? Date.now());
+              event.description = experience.description;
+              event.position =
+                experience instanceof Work
+                  ? TimelineItemPosition.Left
+                  : TimelineItemPosition.Right;
+              event.children = (
+                <div>
+                  <ProjectList projects={experience.projects} />
+                  <SkillsList skills={experience.skills} />
+                </div>
+              );
+              return event;
+            }) ?? undefined
+          }
+        ></Timeline>
+      </section>
     </section>
   );
 }

@@ -1,4 +1,27 @@
+.timeline-header {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  border-bottom: 1px solid var(--color);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.timeline-header-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
 .timeline-header-image {
-  height: 2rem;
-  fill: var(--color);
+  flex: 0;
+  height: 4rem;
+}
+
+.timeline-header-item h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.6rem;
+  flex: 1;
 }
