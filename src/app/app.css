@@ -8,6 +8,8 @@
 
 html,
 body {
+  /* overflow-x: scroll;
+  scrollbar-width: none; */
   @apply bg-white dark:bg-gray-900;
 
   @media (prefers-color-scheme: dark) {
@@ -22,6 +24,10 @@ body {
     color: var(--color);
   }
 }
+/* 
+body::-webkit-scrollbar {
+  display: none;
+} */
 
 main {
   flex: 1;
