@@ -47,8 +47,8 @@
 .timeline-item-content {
   background-color: inherit;
   overflow: hidden;
-  margin: 1rem;
-  padding: 1.5rem 0;
+  margin: 0.3rem 1rem;
+  padding: 0;
 }
 
 .timeline-item-description {

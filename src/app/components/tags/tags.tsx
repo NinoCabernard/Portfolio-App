@@ -16,7 +16,7 @@ export default function Tags<T extends Tagable>(props: TagsProps<T>) {
   const [expanded, setExpanded] = useState(false);
   const tags = props.tags ?? [];
 
-  const visibleTags = expanded ? tags : tags.slice(0, 4);
+  const visibleTags = expanded ? tags : tags.slice(0, 3);
   const hiddenCount = tags.length - visibleTags.length;
 
   return (
