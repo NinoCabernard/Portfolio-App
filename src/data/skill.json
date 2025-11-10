@@ -3,18 +3,36 @@
     "name": "Frontend Development",
     "description": "Building responsive and interactive UIs",
     "expertiseLevel": "Advanced",
-    "iconPath" : "../images/skills/code-solid-full.svg"
+    "iconPath": "../images/skills/code-solid-full.svg"
   },
   {
     "name": "Backend Development",
     "description": "Creating APIs and server-side logic",
     "expertiseLevel": "Intermediate",
-    "iconPath" : "../images/skills/code-solid-full.svg"
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Software Architecture",
+    "description": "Creating APIs and server-side logic",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
   },
   {
     "name": "UI/UX Design",
     "description": "Designing user-friendly interfaces",
     "expertiseLevel": "Intermediate",
-    "iconPath" : "../images/skills/code-solid-full.svg"
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Data Structures",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Algorithms",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
   }
 ]

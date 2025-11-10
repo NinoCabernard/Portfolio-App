@@ -6,6 +6,36 @@
     "epxertiseLevel": "Advanced"
   },
   {
+    "name": "ASP.NET Core",
+    "description": "A JavaScript library for building UIs",
+    "experience": 3,
+    "epxertiseLevel": "Advanced"
+  },
+  {
+    "name": "C#",
+    "description": "A JavaScript library for building UIs",
+    "experience": 3,
+    "epxertiseLevel": "Advanced"
+  },
+  {
+    "name": "Java",
+    "description": "A JavaScript library for building UIs",
+    "experience": 3,
+    "epxertiseLevel": "Advanced"
+  },
+  {
+    "name": "React",
+    "description": "A JavaScript library for building UIs",
+    "experience": 3,
+    "epxertiseLevel": "Advanced"
+  },
+  {
+    "name": "JavaScript",
+    "description": "Typed superset of JavaScript",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
     "name": "TypeScript",
     "description": "Typed superset of JavaScript",
     "experience": 2,
@@ -22,5 +52,35 @@
     "description": "Styling web applications",
     "experience": 4,
     "epxertiseLevel": "Expert"
+  },
+  {
+    "name": "Apache Kafka",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "WCF",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "WPF",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "WinForms",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "gRPC",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
   }
 ]

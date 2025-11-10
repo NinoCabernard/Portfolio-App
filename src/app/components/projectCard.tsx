@@ -1,14 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import type { Project } from "~/model/project";
-import SkillsList from "./skill/skill-list";
 import { ExperienceService } from "~/services/experienceService";
 import ServiceContext from "~/serviceContext";
 import type { Skill } from "~/model/skill";
 
 export default function ProjectCard(project: Project) {
-
-
-  const experienceService: ExperienceService = useContext<ExperienceService>(ServiceContext);
+  const experienceService: ExperienceService =
+    useContext<ExperienceService>(ServiceContext);
 
   const [skills, setSkills] = useState<Skill[] | undefined>();
 
@@ -45,8 +43,6 @@ export default function ProjectCard(project: Project) {
             .join(", ")}
         </p>
       )}
-
-      <SkillsList skills={skills} />
     </div>
   );
 }

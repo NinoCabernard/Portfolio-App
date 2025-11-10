@@ -1,6 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import ProjectList from "~/components/project/project-list";
-import SkillsList from "~/components/skill/skill-list";
 import Timeline, { TimelineEvent } from "~/components/timeline/timeline";
 import { TimelineItemPosition } from "~/components/timeline/timeline-item";
 import type { Experience } from "~/model/experience";
@@ -8,6 +6,10 @@ import { Work } from "~/model/work";
 import ServiceContext from "~/serviceContext";
 import type { ExperienceService } from "~/services/experienceService";
 import "./home.css";
+import Tags from "~/components/tags/tags";
+import type { Technology } from "~/model/technology";
+import type { Skill } from "~/model/skill";
+import type { Project } from "~/model/project";
 
 export default function Home() {
   const experienceService: ExperienceService =
@@ -68,8 +70,42 @@ export default function Home() {
                 : TimelineItemPosition.Right;
             event.children = (
               <div>
-                <ProjectList projects={experience.projects} />
-                <SkillsList skills={experience.skills} />
+                <Tags<Project>
+                  tags={experience.projects}
+                  title="Projects"
+                  popupElement={(project) => (
+                    <div>
+                      <h4>{project.name}</h4>
+                      <p>{project.description}</p>
+                    </div>
+                  )}
+                />
+                <Tags<Skill>
+                  tags={experience.skills}
+                  title="Skills"
+                  popupElement={(skill) => (
+                    <div>
+                      <h4>{skill.name}</h4>
+                      <p className="skill-expertise">
+                        {skill.expertiseLevel} level
+                      </p>
+                      <p>{skill.description}</p>
+                    </div>
+                  )}
+                />
+                <Tags<Technology>
+                  tags={experience.technologies}
+                  title="Technologies"
+                  popupElement={(technology) => (
+                    <div>
+                      <h4>{technology.name}</h4>
+                      <p className="skill-expertise">
+                        {technology.experience} years of experience
+                      </p>
+                      <p>{technology.description}</p>
+                    </div>
+                  )}
+                />
               </div>
             );
             return event;

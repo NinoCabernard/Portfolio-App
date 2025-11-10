@@ -4,7 +4,7 @@ import { useState, type ReactElement } from "react";
 interface TagsProps<T extends Tagable> {
   tags: T[] | undefined;
   title: string;
-  children: ReactElement;
+  popupElement: (tag: T) => ReactElement;
 }
 
 export interface Tagable {
@@ -29,7 +29,7 @@ export default function Tags<T extends Tagable>(props: TagsProps<T>) {
               >
                 <p>{tag.name}</p>
                 {showPopup == index && (
-                  <div className="tag-popup">{props.children}</div>
+                  <div className="tag-popup">{props.popupElement(tag)}</div>
                 )}
               </div>
             );

@@ -1,7 +1,7 @@
 [
   {
     "major": "Computer Science, Exchange Semester",
-    "degree": "BSc",
+    "degree": "Bachelor",
     "institution": "TAMK Tampere University of Applied Sciences, Tampere, Finland",
     "location": "Tampere, Finland",
     "description": null,
@@ -13,7 +13,7 @@
   },
   {
     "major": "Computer Science",
-    "degree": "BSc",
+    "degree": "Bachelor",
     "institution": "ZHAW Zurich University of Applied Sciences, Winterthur",
     "location": "Winterthur, Switzerland",
     "description": null,
@@ -24,8 +24,8 @@
     "projects": null
   },
   {
-    "major": "Vocational Education",
-    "degree": "Vocational School (incl. vocational baccalaureate)",
+    "major": "Engineering, Architecture, and Life Sciences",
+    "degree": "Vocational baccalaureate",
     "institution": "GBS St. Gallen",
     "location": "St. Gallen, Switzerland",
     "description": null,

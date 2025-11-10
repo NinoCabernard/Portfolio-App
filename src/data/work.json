@@ -7,12 +7,9 @@
     "startDate": "2025-05-01",
     "endDate": null,
     "occupation": null,
-    "technologies": ["ASP.NET Core", "React"],
-    "skills": [
-      "Cross-cultural adaptability",
-      "Independent software development"
-    ],
-    "projects": null
+    "technologies": ["ASP.NET Core", "React", "Java", "C#"],
+    "skills": ["Data Structures", "Algorithms", "Software Architecture"],
+    "projects": ["Portfolio Website", "Independent software development"]
   },
   {
     "company": "ACS Solution AG",
