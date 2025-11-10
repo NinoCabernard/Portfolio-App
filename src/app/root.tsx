@@ -6,12 +6,14 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLocation,
 } from "react-router-dom";
 import type { Route } from "./+types/root";
-import Searchbar from "./components/searchbar";
 import { ServiceProvider } from "./serviceContext";
 import NavigationBar from "./components/nav/navigation-bar";
 import Footer from "./components/footer/footer";
+import { useState } from "react";
+import Typewriter from "./components/typewriter/typewriter";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -27,6 +29,15 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const location = useLocation();
+  const isIntroPage = location.pathname === "/";
+  const [introCompleted, setIntroCompleted] = isIntroPage
+    ? useState(false)
+    : useState(true);
+
+  function handleIntroComplete() {
+    setIntroCompleted(true);
+  }
   return (
     <html lang="en">
       <head>
@@ -38,9 +49,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <ServiceProvider>
           <div className="flex flex-col min-h-screen">
-            <NavigationBar></NavigationBar>
-            <main> {children}</main>
-            <Footer></Footer>
+            {introCompleted && <NavigationBar></NavigationBar>}
+            <main>
+              {isIntroPage && (
+                <Typewriter
+                  onWritingCompleted={handleIntroComplete}
+                ></Typewriter>
+              )}
+              {introCompleted && children}
+            </main>
+            {introCompleted && <Footer></Footer>}
           </div>
         </ServiceProvider>
         <ScrollRestoration />
