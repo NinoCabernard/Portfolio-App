@@ -89,9 +89,7 @@ export default function Home() {
                     popupElement={(skill) => (
                       <div>
                         <h4>{skill.name}</h4>
-                        <p className="skill-expertise">
-                          {skill.expertiseLevel} level
-                        </p>
+                        <p>{skill.expertiseLevel} level</p>
                         <p>{skill.description}</p>
                       </div>
                     )}

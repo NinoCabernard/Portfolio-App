@@ -9,7 +9,52 @@
     "skills": ["Frontend Development", "UI/UX Design"]
   },
   {
-    "name": "Task Manager API",
+    "name": "Saunah",
+    "description": "Collaborated in a team to develop a full-stack booking platform for renting mobile saunas, enabling users to browse availability, make reservations, and process payments online.",
+    "startDate": "2022-06-01",
+    "endDate": "2022-08-01",
+    "url": "",
+    "technologies": ["Node.js", "TypeScript"],
+    "skills": ["Backend Development"]
+  },
+  {
+    "name": "Tag It!",
+    "description": "Collaborated in a team to develop a full-stack booking platform for renting mobile saunas, enabling users to browse availability, make reservations, and process payments online.",
+    "startDate": "2022-06-01",
+    "endDate": "2022-08-01",
+    "url": "",
+    "technologies": ["Node.js", "TypeScript"],
+    "skills": ["Backend Development"]
+  },
+  {
+    "name": "Freitagsmaler",
+    "description": "Collaborated in a team to develop a full-stack booking platform for renting mobile saunas, enabling users to browse availability, make reservations, and process payments online.",
+    "startDate": "2022-06-01",
+    "endDate": "2022-08-01",
+    "url": "",
+    "technologies": ["Node.js", "TypeScript"],
+    "skills": ["Backend Development"]
+  },
+  {
+    "name": "Lapp",
+    "description": "Collaborated in a team to develop a full-stack booking platform for renting mobile saunas, enabling users to browse availability, make reservations, and process payments online.",
+    "startDate": "2022-06-01",
+    "endDate": "2022-08-01",
+    "url": "",
+    "technologies": ["Node.js", "TypeScript"],
+    "skills": ["Backend Development"]
+  },
+  {
+    "name": "Personal finance and document management app",
+    "description": "Collaborated in a team to develop a full-stack booking platform for renting mobile saunas, enabling users to browse availability, make reservations, and process payments online.",
+    "startDate": "2022-06-01",
+    "endDate": "2022-08-01",
+    "url": "",
+    "technologies": ["Node.js", "TypeScript"],
+    "skills": ["Backend Development"]
+  },
+  {
+    "name": "Standardization of MES Microservices",
     "description": "Backend API for task management using Node.js",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",
@@ -17,7 +62,7 @@
     "skills": ["Backend Development"]
   },
   {
-    "name": "Task Manager API",
+    "name": "MES for HUG",
     "description": "Backend API for task management using Node.js",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",
@@ -25,15 +70,7 @@
     "skills": ["Backend Development"]
   },
   {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
+    "name": "InTimer",
     "description": "Backend API for task management using Node.js",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",

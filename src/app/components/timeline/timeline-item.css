@@ -44,6 +44,11 @@
 .timeline-item-content {
   background-color: inherit;
   overflow: hidden;
+  padding: 1.5rem 0;
+}
+
+.timeline-item-description {
+  margin-bottom: 3rem;
 }
 
 .timeline-item-content.expanded {

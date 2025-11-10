@@ -1,10 +1,18 @@
 .tag-container {
+  position: relative;
   margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  border-top: 1px solid var(--color);
+  padding: 0.8rem;
+  margin-top: 20px;
 }
 
 .tag-title {
   position: absolute;
-  left: 20px;
   padding: 0 8px;
   top: -0.8em;
   font-weight: bold;
@@ -12,46 +20,22 @@
   z-index: 1;
 }
 
-.tag-list-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 0.5rem;
-  border-radius: 8px;
-  border: 2px solid rgba(234, 234, 234);
-
-  padding: 1rem;
-  margin-top: 20px;
-}
-
 .tag-item {
-  position: relative;
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-  align-items: flex-start;
   margin: 0;
-  border: 2px solid rgba(234, 234, 234);
-  border-radius: 0.5rem;
-  height: 3rem;
-  padding: 0.3rem;
-}
-
-.tag-item img {
-  height: 100%;
-  aspect-ratio: 1 / 1;
+  margin-top: 0.5rem;
+  border: 2px solid var(--color);
+  border-radius: 1rem;
+  padding: 0.3rem 0.7rem;
 }
 
 .tag-popup {
   background-color: var(--background);
-  border: 2px solid rgba(234, 234, 234);
+  border: 2px solid var(--color);
   border-radius: 8px;
   position: absolute;
-  top: 100%;
-  left: -0.1rem;
-  z-index: 9999;
+  top: calc(100% - 1rem);
+  left: 1rem;
+  z-index: 2;
   padding: 1rem;
   width: 400px;
 }

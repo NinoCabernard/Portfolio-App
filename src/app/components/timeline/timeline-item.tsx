@@ -76,7 +76,7 @@ export default function TimelineItem({
             }}
           >
             <div>
-              <p>{description}</p>
+              <p className="timeline-item-description">{description}</p>
               {children}
             </div>
           </motion.div>
