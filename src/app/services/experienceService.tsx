@@ -82,6 +82,8 @@ export class ExperienceService {
 
   async getEducations(): Promise<Education[]> {
     const allTechnologies = await this.getTechnologies();
+    const allSkills = await this.getSkills();
+    const allProjects = await this.getProjects();
 
     return (educationsJson as any[]).map((item) => {
       const edu = new Education();
@@ -96,6 +98,16 @@ export class ExperienceService {
       if (allTechnologies) {
         edu.technologies = item.technologies?.map((name: string) =>
           allTechnologies.find((tech) => tech.name === name)
+        );
+      }
+      if (allSkills) {
+        edu.skills = item.skills?.map((name: string) =>
+          allSkills.find((skill) => skill.name === name)
+        );
+      }
+      if (allProjects) {
+        edu.projects = item.projects?.map((name: string) =>
+          allProjects.find((project) => project.name === name)
         );
       }
       return edu;

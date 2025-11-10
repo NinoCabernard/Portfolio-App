@@ -53,7 +53,11 @@ function createDomFromEvent(
     gridColumn: gridColumn,
   };
   return (
-    <div className={`timeline-item-container`} style={timeLineItemStyle}>
+    <div
+      key={`${event.name}_${event.institution}`}
+      className={`timeline-item-container`}
+      style={timeLineItemStyle}
+    >
       <TimelineItem
         startDate={event.startDate}
         endDate={event.endDate}

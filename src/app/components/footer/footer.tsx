@@ -34,7 +34,7 @@ export default function Footer() {
             title="Visit my LinkedIn"
           />
           <span className="icon-text">
-            You can also view my professional career on LinkedIn.
+            You can also connect with me on LinkedIn.
           </span>
         </a>
         <a
