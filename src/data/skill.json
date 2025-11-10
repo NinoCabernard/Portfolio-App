@@ -6,7 +6,7 @@
     "iconPath": "../images/skills/code-solid-full.svg"
   },
   {
-    "name": "Backend Development",
+    "name": "API Development",
     "description": "Creating APIs and server-side logic",
     "expertiseLevel": "Intermediate",
     "iconPath": "../images/skills/code-solid-full.svg"
@@ -18,7 +18,13 @@
     "iconPath": "../images/skills/code-solid-full.svg"
   },
   {
-    "name": "UI/UX Design",
+    "name": "DevOps",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "CI/CD",
     "description": "Designing user-friendly interfaces",
     "expertiseLevel": "Intermediate",
     "iconPath": "../images/skills/code-solid-full.svg"
@@ -31,6 +37,24 @@
   },
   {
     "name": "Algorithms",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Customer service",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Kanban",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Scrum",
     "description": "Designing user-friendly interfaces",
     "expertiseLevel": "Intermediate",
     "iconPath": "../images/skills/code-solid-full.svg"

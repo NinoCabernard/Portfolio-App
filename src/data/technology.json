@@ -148,5 +148,29 @@
     "description": "Server-side JavaScript runtime",
     "experience": 2,
     "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Razor Pages",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Prometheus",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Razor Pages",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Razor Pages",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
   }
 ]

@@ -43,3 +43,12 @@
 .tag-expertise {
   color: lightcoral;
 }
+
+.tag-expandable {
+  color: lightcoral;
+}
+
+.tag-expandable:hover {
+  background-color: var(--backgroundSecondary);
+  cursor: pointer;
+}

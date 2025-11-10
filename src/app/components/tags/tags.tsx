@@ -26,6 +26,7 @@ export default function Tags<T extends Tagable>(props: TagsProps<T>) {
         if (tag !== undefined) {
           return (
             <div
+              key={tag.name}
               className="tag-item"
               onMouseEnter={() => setShowPopup(index)}
               onMouseLeave={() => setShowPopup(undefined)}
@@ -40,7 +41,20 @@ export default function Tags<T extends Tagable>(props: TagsProps<T>) {
       })}
 
       {hiddenCount > 0 && !expanded && (
-        <div onClick={() => setExpanded(true)}>+{hiddenCount} more</div>
+        <div
+          className="tag-expandable tag-item"
+          onClick={() => setExpanded(true)}
+        >
+          +{hiddenCount} more
+        </div>
+      )}
+      {hiddenCount == 0 && expanded && (
+        <div
+          className="tag-expandable tag-item"
+          onClick={() => setExpanded(false)}
+        >
+          show less
+        </div>
       )}
     </div>
   );

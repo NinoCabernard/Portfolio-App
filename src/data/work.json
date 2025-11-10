@@ -14,7 +14,8 @@
       "C#",
       "Docker",
       "MongoDB",
-      ".NET 8"
+      ".NET 8",
+      "TypeScript"
     ],
     "skills": ["Data Structures", "Algorithms", "Software Architecture"],
     "projects": [
@@ -32,20 +33,27 @@
     "occupation": null,
     "technologies": [
       "Angular",
+      "TypeScript",
       "WPF",
       "ASP.NET Core",
       "Docker",
       "Kubernetes",
       "MongoDB",
-      "MS SQl Server"
+      "MS SQl Server",
+      "Grafana",
+      "Apache Kafka",
+      "Prometheus",
+      "Razor Pages"
     ],
     "skills": [
       "Software Architecture",
+      "CI/CD",
       "DevOps",
-      "Fullstack",
       "Microservices",
       "API Development",
-      "Customer service"
+      "Customer service",
+      "Scrum",
+      "Kanban"
     ],
     "projects": ["MES for HUG", "Standardization of MES Microservices"]
   },
