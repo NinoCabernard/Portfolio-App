@@ -67,7 +67,9 @@ export default function Home() {
               event.name = experience.name;
               event.institution = experience.institution;
               event.startDate = new Date(experience.startDate ?? 0);
-              event.endDate = new Date(experience.endDate ?? Date.now());
+              event.endDate = experience.endDate
+                ? new Date(experience.endDate)
+                : undefined;
               event.description = experience.description;
               event.position =
                 experience instanceof Work

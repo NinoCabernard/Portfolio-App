@@ -72,8 +72,8 @@ export default function Timeline(timelineProps: TimelineProps) {
   if (events.length === 0) return <div>No events</div>;
 
   const orderedEvents = [...events].sort((a, b) => {
-    const startA = a.endDate ? new Date(a.endDate).getTime() : 0;
-    const startB = b.endDate ? new Date(b.endDate).getTime() : 0;
+    const startA = a.endDate ? new Date(a.endDate).getTime() : Date.now();
+    const startB = b.endDate ? new Date(b.endDate).getTime() : Date.now();
     return startB - startA;
   });
 
