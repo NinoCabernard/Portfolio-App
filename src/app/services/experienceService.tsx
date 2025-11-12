@@ -56,12 +56,37 @@ export class ExperienceService {
     return [...educations, ...workExperience];
   }
 
+  async getExperienceFromProject(
+    projectName: string
+  ): Promise<Experience | undefined> {
+    return (await this.getExperiences()).find(
+      (x) =>
+        x.projects != null &&
+        x.projects.some((project) => project.name == projectName)
+    );
+  }
+
   async getProjects(): Promise<Project[]> {
+    const allTechnologies = await this.getTechnologies();
+    const allSkills = await this.getSkills();
     return (projectsJson as any[]).map((item) => {
       const project = new Project();
       project.name = item.name;
       project.description = item.description;
       project.shortDescription = item.shortDescription;
+      project.html = item.html;
+      project.url = item.url;
+
+      if (allTechnologies) {
+        project.technologies = item.technologies?.map((name: string) =>
+          allTechnologies.find((tech) => tech.name === name)
+        );
+      }
+      if (allSkills) {
+        project.skills = item.skills?.map((name: string) =>
+          allSkills.find((skill) => skill.name === name)
+        );
+      }
       return project;
     });
   }

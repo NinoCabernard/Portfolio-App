@@ -18,14 +18,14 @@ body {
     --colorSecondary: #b9b9b9;
     --background: #111827;
     --backgroundSecondary: #1f2937;
-    --linkColor: #3b82f6;
+    --link-color: #3b82f6;
 
     --ratingColor1: #6ea6ff;
     --ratingColor2: #4ed160;
     --ratingColor3: #ecb64c;
     --ratingColor4: #f15d91;
 
-    --contentWidth: 1200px;
+    --content-width: 1200px;
     --mainWidth: 1800px; /* TODO: is that even necesary?*/
 
     --border-box: 1px solid var(--color);
@@ -45,7 +45,6 @@ main {
 
 h1 {
   font-size: 30px;
-  text-align: center;
 }
 
 h2 {
@@ -68,20 +67,7 @@ main * {
   margin: auto;
 }
 
-.project-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  padding: 0;
-  list-style: none;
-}
-
-@media (min-width: 768px) {
-  .project-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.project-list li {
-  width: 100%;
+.link {
+  text-decoration: underline;
+  color: var(--link-color);
 }

@@ -1,0 +1,13 @@
+.project-container {
+  width: var(--content-width);
+  max-width: var(--content-width);
+}
+
+.project-title {
+  border-bottom: var(--border-box);
+}
+
+.project-short-description {
+  font-weight: 350;
+  color: var(--colorSecondary);
+}

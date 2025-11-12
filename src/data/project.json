@@ -3,6 +3,7 @@
     "name": "Portfolio Website",
     "shortDescription": "A personal portfolio built using React and TypeScript",
     "description": "A personal portfolio built using React and TypeScript",
+    "html": "<p>This is a <strong>rich text</strong> description with <em>HTML</em> inside.</p>",
     "startDate": "2023-01-01",
     "endDate": "2023-03-01",
     "technologies": ["React", "TypeScript", "CSS"],
@@ -13,7 +14,8 @@
     "description": "Collaborated in a team to develop a full-stack booking platform for renting mobile saunas, enabling users to browse availability, make reservations, and process payments online.",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",
-    "url": "",
+    "url": "https://github.com/saunah/saunah-backend",
+    "html": "<p>This is a <strong>rich text</strong> description with <em>HTML</em> inside.</p>",
     "technologies": ["Node.js", "TypeScript"],
     "skills": ["Backend Development"]
   },

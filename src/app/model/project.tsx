@@ -5,9 +5,11 @@ export class Project {
   name!: string;
   description: string = "";
   shortDescription: string = "";
+  html: string | undefined;
+  url: string | undefined;
   startDate: string | undefined;
   endDate: string | undefined | null;
 
-  technologies: Technology[] | string[] | undefined;
-  skills: Skill[] | string[] | undefined;
+  technologies: Technology[] = [];
+  skills: Skill[] = [];
 }

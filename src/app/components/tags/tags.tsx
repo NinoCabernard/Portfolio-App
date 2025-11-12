@@ -5,7 +5,7 @@ import { useState, type ReactElement } from "react";
 interface TagsProps<T extends Tagable> {
   tags: T[] | undefined;
   title: string;
-  popupElement: (tag: T) => ReactElement;
+  popupElement?: (tag: T) => ReactElement;
 }
 
 export interface Tagable {

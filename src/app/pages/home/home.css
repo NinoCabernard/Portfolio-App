@@ -25,8 +25,3 @@
   letter-spacing: 0.6rem;
   flex: 1;
 }
-
-.link {
-  text-decoration: underline;
-  color: var(--linkColor);
-}

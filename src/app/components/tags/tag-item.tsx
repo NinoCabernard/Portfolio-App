@@ -4,7 +4,7 @@ import { useState, type ReactElement } from "react";
 
 interface TagProps<T extends Tagable> {
   tag: T;
-  popupElement: (tag: T) => ReactElement;
+  popupElement?: (tag: T) => ReactElement;
 }
 
 export default function TagItem<T extends Tagable>(props: TagProps<T>) {
@@ -17,7 +17,9 @@ export default function TagItem<T extends Tagable>(props: TagProps<T>) {
       onMouseLeave={() => setShowPopup(false)}
     >
       <p>{tag.name}</p>
-      {showPopup && <div className="tag-popup">{props.popupElement(tag)}</div>}
+      {showPopup && props.popupElement && (
+        <div className="tag-popup">{props.popupElement(tag)}</div>
+      )}
     </div>
   );
 }

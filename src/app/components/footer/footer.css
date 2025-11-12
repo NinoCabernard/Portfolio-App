@@ -5,7 +5,7 @@ footer {
 }
 
 .footer-content {
-  max-width: var(--contentWidth);
+  max-width: var(--content-width);
   height: 100%;
   margin: 2rem auto;
 }
@@ -32,7 +32,7 @@ footer {
 
 .icon-container:hover {
   text-decoration: underline;
-  color: var(--linkColor);
+  color: var(--link-color);
   transition: color 0.3s ease-in-out;
 }
 
