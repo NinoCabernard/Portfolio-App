@@ -1,0 +1,21 @@
+.tag-item {
+  margin: 0;
+  margin-top: 0.5rem;
+  border: var(--border-box);
+  border-radius: 1rem;
+  padding: 0.3rem 0.7rem;
+}
+
+.tag-popup {
+  background-color: var(--background);
+  border: var(--border-box);
+  border-radius: 8px;
+  position: absolute;
+  z-index: 2;
+  padding: 1rem;
+  width: 400px;
+}
+
+.tag-expertise {
+  color: lightcoral;
+}

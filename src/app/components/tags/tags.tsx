@@ -1,3 +1,4 @@
+import TagItem from "./tag-item";
 import "./tags.css";
 import { useState, type ReactElement } from "react";
 
@@ -25,17 +26,11 @@ export default function Tags<T extends Tagable>(props: TagsProps<T>) {
       {visibleTags.map((tag, index) => {
         if (tag !== undefined) {
           return (
-            <div
+            <TagItem
               key={tag.name}
-              className="tag-item"
-              onMouseEnter={() => setShowPopup(index)}
-              onMouseLeave={() => setShowPopup(undefined)}
-            >
-              <p>{tag.name}</p>
-              {showPopup == index && (
-                <div className="tag-popup">{props.popupElement(tag)}</div>
-              )}
-            </div>
+              tag={tag}
+              popupElement={props.popupElement}
+            ></TagItem>
           );
         }
       })}
