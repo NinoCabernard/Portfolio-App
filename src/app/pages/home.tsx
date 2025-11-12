@@ -33,6 +33,18 @@ export default function Home() {
       .finally(() => console.log("Finally finished"));
   }, [experienceService]);
 
+  function getColorFromYearsOfExperience(yearsOfExperience: number) {
+    if (yearsOfExperience > 0 && yearsOfExperience < 3) {
+      return "--ratingColor1";
+    } else if (yearsOfExperience >= 3 && yearsOfExperience < 5) {
+      return "--ratingColor2";
+    } else if (yearsOfExperience >= 5 && yearsOfExperience < 7) {
+      return "--ratingColor3";
+    } else {
+      return "--ratingColor4";
+    }
+  }
+
   return (
     <section>
       <div className="timeline-header">
@@ -78,6 +90,9 @@ export default function Home() {
                       <div>
                         <h4>{project.name}</h4>
                         <p>{project.description}</p>
+                        <a className="link" href={`/project/${project.name}`}>
+                          read more
+                        </a>
                       </div>
                     )}
                   />
@@ -103,7 +118,13 @@ export default function Home() {
                       popupElement={(technology) => (
                         <div>
                           <h4>{technology.name}</h4>
-                          <p>{technology.experience} years of experience</p>
+                          <p
+                            style={{
+                              color: `var(${getColorFromYearsOfExperience(technology.experience ?? 0)})`,
+                            }}
+                          >
+                            {technology.experience} years of experience
+                          </p>
                           <p>{technology.description}</p>
                         </div>
                       )}

@@ -43,7 +43,9 @@
       "Grafana",
       "Apache Kafka",
       "Prometheus",
-      "Razor Pages"
+      "C#",
+      "Razor Pages",
+      "ArgoCD"
     ],
     "skills": [
       "Software Architecture",

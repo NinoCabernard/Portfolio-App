@@ -70,5 +70,17 @@
     "description": "Designing user-friendly interfaces",
     "expertiseLevel": "Intermediate",
     "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Scale Integration",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Scanner Integration",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
   }
 ]

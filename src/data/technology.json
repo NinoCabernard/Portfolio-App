@@ -2,7 +2,7 @@
   {
     "name": "React",
     "description": "A JavaScript library for building UIs",
-    "experience": 3,
+    "experience": 2,
     "epxertiseLevel": "Advanced"
   },
   {
@@ -14,7 +14,7 @@
   {
     "name": "C#",
     "description": "A JavaScript library for building UIs",
-    "experience": 3,
+    "experience": 7,
     "epxertiseLevel": "Advanced"
   },
   {
@@ -24,21 +24,15 @@
     "epxertiseLevel": "Advanced"
   },
   {
-    "name": "React",
-    "description": "A JavaScript library for building UIs",
-    "experience": 3,
-    "epxertiseLevel": "Advanced"
-  },
-  {
     "name": "JavaScript",
     "description": "Typed superset of JavaScript",
-    "experience": 2,
+    "experience": 3,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "TypeScript",
     "description": "Typed superset of JavaScript",
-    "experience": 2,
+    "experience": 3,
     "epxertiseLevel": "Intermediate"
   },
   {
@@ -50,31 +44,31 @@
   {
     "name": "CSS",
     "description": "Styling web applications",
-    "experience": 4,
+    "experience": 7,
     "epxertiseLevel": "Expert"
   },
   {
     "name": "Apache Kafka",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 4,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "WCF",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 5,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "WPF",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 7,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "WinForms",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 3,
     "epxertiseLevel": "Intermediate"
   },
   {
@@ -86,37 +80,37 @@
   {
     "name": "MongoDB",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 3,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "MS SQL Server",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 7,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "Angular",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 3,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "Docker",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 4,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": ".net Framework",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 7,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": ".NET 8",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 3,
     "epxertiseLevel": "Intermediate"
   },
   {
@@ -140,37 +134,67 @@
   {
     "name": "Swagger",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 4,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "Python",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 1,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "Razor Pages",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 1,
     "epxertiseLevel": "Intermediate"
   },
   {
     "name": "Prometheus",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 1,
     "epxertiseLevel": "Intermediate"
   },
   {
-    "name": "Razor Pages",
+    "name": "BitBucket",
+    "description": "Server-side JavaScript runtime",
+    "experience": 4,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "AzureDevOps",
     "description": "Server-side JavaScript runtime",
     "experience": 2,
     "epxertiseLevel": "Intermediate"
   },
   {
-    "name": "Razor Pages",
+    "name": "OPC UA",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
+    "experience": 3,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Xamarin",
+    "description": "Server-side JavaScript runtime",
+    "experience": 3,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "NFC",
+    "description": "Server-side JavaScript runtime",
+    "experience": 3,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Scanner Integration",
+    "description": "Server-side JavaScript runtime",
+    "experience": 3,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Scale Integration",
+    "description": "Server-side JavaScript runtime",
+    "experience": 3,
     "epxertiseLevel": "Intermediate"
   }
 ]

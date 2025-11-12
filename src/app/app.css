@@ -18,6 +18,12 @@ body {
     --colorSecondary: #b9b9b9;
     --background: #111827;
     --backgroundSecondary: #1f2937;
+    --linkColor: #3b82f6;
+
+    --ratingColor1: #6ea6ff;
+    --ratingColor2: #4ed160;
+    --ratingColor3: #ecb64c;
+    --ratingColor4: #f15d91;
 
     --contentWidth: 1200px;
     --mainWidth: 1800px; /* TODO: is that even necesary?*/

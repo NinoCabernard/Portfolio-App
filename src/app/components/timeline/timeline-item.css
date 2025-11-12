@@ -32,6 +32,7 @@
   flex: 1;
 }
 .timeline-item-subtitle {
+  font-weight: 350;
   width: 100%;
   color: var(--colorSecondary);
   text-align: left;
@@ -39,8 +40,8 @@
 }
 
 .timeline-item-date {
+  font-weight: 350;
   justify-content: right;
-  color: var(--colorSecondary);
   margin: 0;
 }
 

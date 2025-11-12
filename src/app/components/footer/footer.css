@@ -32,7 +32,7 @@ footer {
 
 .icon-container:hover {
   text-decoration: underline;
-  color: #3b82f6;
+  color: var(--linkColor);
   transition: color 0.3s ease-in-out;
 }
 

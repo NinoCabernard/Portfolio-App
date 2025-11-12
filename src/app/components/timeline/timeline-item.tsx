@@ -45,7 +45,7 @@ export default function TimelineItem({
       <div className="timeline-item-header-container" onClick={toggleExpand}>
         <div className="timeline-item-title-container">
           <h2 className="timeline-item-title">
-            <b>{title ?? "no title provided"}</b>
+            {title ?? "no title provided"}
           </h2>
 
           <b className="timeline-item-date">
