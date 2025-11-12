@@ -46,15 +46,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <title>My Portfolio - Nino Cabernard</title>
+        <title>Portfolio - Nino Cabernard</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="icon"
-          type="image/svg+xml"
-          sizes="32x32"
-          href="./images/icon/icon.svg"
-        />
+
         <link
           rel="icon"
           type="image/svg+xml"

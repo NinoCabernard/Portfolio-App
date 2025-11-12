@@ -32,19 +32,35 @@ export class ExperienceService {
         : undefined;
 
       if (allTechnologies) {
-        work.technologies = workExperience.technologies?.map((name: string) =>
-          allTechnologies.find((technology) => technology.name === name)
-        );
+        const matchedTechs = workExperience.technologies
+          ?.map((name: string) =>
+            allTechnologies.find((tech) => tech.name === name)
+          )
+          .filter(Boolean);
+
+        if (matchedTechs?.length) {
+          work.technologies = matchedTechs;
+        }
       }
       if (allSkills) {
-        work.skills = workExperience.skills?.map((name: string) =>
-          allSkills.find((skill) => skill.name === name)
-        );
+        const matchedSkills = workExperience.skills
+          ?.map((name: string) =>
+            allSkills.find((skill) => skill.name === name)
+          )
+          .filter(Boolean);
+        if (matchedSkills?.length) {
+          work.skills = matchedSkills;
+        }
       }
       if (allProjects) {
-        work.projects = workExperience.projects?.map((name: string) =>
-          allProjects.find((project) => project.name === name)
-        );
+        const matchedProjects = workExperience.projects
+          ?.map((name: string) =>
+            allProjects.find((project) => project.name === name)
+          )
+          .filter(Boolean);
+        if (matchedProjects?.length) {
+          work.projects = matchedProjects;
+        }
       }
       return work;
     });
@@ -78,14 +94,24 @@ export class ExperienceService {
       project.url = item.url;
 
       if (allTechnologies) {
-        project.technologies = item.technologies?.map((name: string) =>
-          allTechnologies.find((tech) => tech.name === name)
-        );
+        const matchedTechs = item.technologies
+          ?.map((name: string) =>
+            allTechnologies.find((tech) => tech.name === name)
+          )
+          .filter(Boolean);
+        if (matchedTechs?.length) {
+          project.technologies = matchedTechs;
+        }
       }
       if (allSkills) {
-        project.skills = item.skills?.map((name: string) =>
-          allSkills.find((skill) => skill.name === name)
-        );
+        const matchedSkills = item.skills
+          ?.map((name: string) =>
+            allSkills.find((skill) => skill.name === name)
+          )
+          .filter(Boolean);
+        if (matchedSkills?.length) {
+          project.skills = matchedSkills;
+        }
       }
       return project;
     });
@@ -121,19 +147,35 @@ export class ExperienceService {
       edu.endDate = item.endDate ? new Date(item.endDate) : undefined;
 
       if (allTechnologies) {
-        edu.technologies = item.technologies?.map((name: string) =>
-          allTechnologies.find((tech) => tech.name === name)
-        );
+        const matchedTechs = item.technologies
+          ?.map((name: string) =>
+            allTechnologies.find((tech) => tech.name === name)
+          )
+          .filter(Boolean);
+
+        if (matchedTechs?.length) {
+          edu.technologies = matchedTechs;
+        }
       }
       if (allSkills) {
-        edu.skills = item.skills?.map((name: string) =>
-          allSkills.find((skill) => skill.name === name)
-        );
+        const matchedSkills = item.skills
+          ?.map((name: string) =>
+            allSkills.find((skill) => skill.name === name)
+          )
+          .filter(Boolean);
+        if (matchedSkills?.length) {
+          edu.skills = matchedSkills;
+        }
       }
       if (allProjects) {
-        edu.projects = item.projects?.map((name: string) =>
-          allProjects.find((project) => project.name === name)
-        );
+        const matchedProjects = item.projects
+          ?.map((name: string) =>
+            allProjects.find((project) => project.name === name)
+          )
+          .filter(Boolean);
+        if (matchedProjects?.length) {
+          edu.projects = matchedProjects;
+        }
       }
       return edu;
     });

@@ -101,6 +101,7 @@ export default function Home() {
                   <Tags<Skill>
                     tags={experience.skills}
                     title="Skills"
+                    initialShown={3}
                     popupElement={(skill) => (
                       <div>
                         <h4>{skill.name}</h4>
@@ -115,6 +116,7 @@ export default function Home() {
                     <Tags<Technology>
                       tags={experience.technologies}
                       title="Technologies"
+                      initialShown={3}
                       popupElement={(technology) => (
                         <div>
                           <h4>{technology.name}</h4>
