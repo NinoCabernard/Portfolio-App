@@ -82,5 +82,23 @@
     "description": "Designing user-friendly interfaces",
     "expertiseLevel": "Intermediate",
     "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Backend Development",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Teamwork",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Communication",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
   }
 ]

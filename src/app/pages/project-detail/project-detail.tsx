@@ -7,6 +7,7 @@ import "./project-detail.css";
 import type { Experience } from "~/model/experience";
 import Tags from "~/components/tags/tags";
 import type { Technology } from "~/model/technology";
+import type { Skill } from "~/model/skill";
 
 export default function ProjectDetail() {
   const experienceService: ExperienceService =
@@ -50,7 +51,7 @@ export default function ProjectDetail() {
       {project != null && (
         <div>
           <h1 className="project-title">{project.name}</h1>
-          <div>
+          <div className="project-subtitle">
             <p>{experience?.name}</p>
             <p>{`${experience?.institution}, ${experience?.location}`} </p>
           </div>
@@ -64,19 +65,20 @@ export default function ProjectDetail() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Check it out!
+              Check it out on Github!
             </a>
           )}
-          <p className="project-description">{project.description}</p>
           {project.html && (
-            <div dangerouslySetInnerHTML={{ __html: project.html }} />
-          )}
-          {
-            <Tags<Technology>
-              tags={project.technologies}
-              title="Used technologies"
+            <div
+              className="project-inner-html"
+              dangerouslySetInnerHTML={{ __html: project.html }}
             />
-          }
+          )}
+          <Tags<Technology>
+            tags={project.technologies}
+            title="Used technologies"
+          />
+          <Tags<Skill> tags={project.skills} title="Refined Skills" />
         </div>
       )}
     </section>

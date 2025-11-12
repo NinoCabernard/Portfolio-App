@@ -196,5 +196,35 @@
     "description": "Server-side JavaScript runtime",
     "experience": 3,
     "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Java Spring Boot",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "PostgreSQL",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Flyway",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "JWT Token",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Swagger",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
   }
 ]

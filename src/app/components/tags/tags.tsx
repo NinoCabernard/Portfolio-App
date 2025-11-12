@@ -5,6 +5,7 @@ import { useState, type ReactElement } from "react";
 interface TagsProps<T extends Tagable> {
   tags: T[] | undefined;
   title: string;
+  initialShown?: number;
   popupElement?: (tag: T) => ReactElement;
 }
 
@@ -16,8 +17,8 @@ export default function Tags<T extends Tagable>(props: TagsProps<T>) {
   const [showPopup, setShowPopup] = useState<number | undefined>(undefined);
   const [expanded, setExpanded] = useState(false);
   const tags = props.tags ?? [];
-
-  const visibleTags = expanded ? tags : tags.slice(0, 3);
+  const initialShown = props.initialShown ?? tags.length;
+  const visibleTags = expanded ? tags : tags.slice(0, initialShown);
   const hiddenCount = tags.length - visibleTags.length;
 
   return (
@@ -27,7 +28,7 @@ export default function Tags<T extends Tagable>(props: TagsProps<T>) {
         if (tag !== undefined) {
           return (
             <TagItem
-              key={tag.name}
+              key={index}
               tag={tag}
               popupElement={props.popupElement}
             ></TagItem>

@@ -4,10 +4,52 @@
 }
 
 .project-title {
+  margin-bottom: 1rem;
   border-bottom: var(--border-box);
+}
+.project-subtitle {
+  margin-bottom: 1rem;
 }
 
 .project-short-description {
+  margin-bottom: 1rem;
   font-weight: 350;
   color: var(--colorSecondary);
+}
+
+.project-inner-html {
+  font-weight: 350;
+  margin: 1rem 0 3rem 0;
+}
+
+.project-inner-html ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.project-inner-html li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.project-inner-html li strong {
+  font-weight: 600;
+}
+
+.project-inner-html ul ul {
+  margin-top: 0.25rem;
+  list-style-type: circle;
+}
+
+.project-inner-html p {
+  margin: 1rem 0;
+  line-height: 1.7;
+}
+
+.project-inner-html h4 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  border-bottom: var(--border-box);
+  padding-bottom: 0.3rem;
 }
