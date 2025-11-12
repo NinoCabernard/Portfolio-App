@@ -222,7 +222,31 @@
     "epxertiseLevel": "Intermediate"
   },
   {
+    "name": "JUnit",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
     "name": "Swagger",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "HTML",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "JavaFX",
+    "description": "Server-side JavaScript runtime",
+    "experience": 2,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "TCP/IP",
     "description": "Server-side JavaScript runtime",
     "experience": 2,
     "epxertiseLevel": "Intermediate"

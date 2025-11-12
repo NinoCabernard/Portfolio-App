@@ -73,7 +73,7 @@ export class ExperienceService {
       const project = new Project();
       project.name = item.name;
       project.description = item.description;
-      project.shortDescription = item.shortDescription;
+      project.description = item.shortDescription;
       project.html = item.html;
       project.url = item.url;
 

@@ -55,9 +55,7 @@ export default function ProjectDetail() {
             <p>{experience?.name}</p>
             <p>{`${experience?.institution}, ${experience?.location}`} </p>
           </div>
-          <p className="project-short-description">
-            {project.shortDescription}
-          </p>
+          <p className="project-short-description">{project.description}</p>
           {project.url && (
             <a
               className="link"

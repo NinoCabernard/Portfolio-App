@@ -18,10 +18,7 @@
       "TypeScript"
     ],
     "skills": ["Data Structures", "Algorithms", "Software Architecture"],
-    "projects": [
-      "Portfolio Website",
-      "Personal finance and document management app"
-    ]
+    "projects": ["Portfolio", "Personal finance and document management app"]
   },
   {
     "company": "ACS Solution AG",

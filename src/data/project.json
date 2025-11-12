@@ -1,12 +1,13 @@
 [
   {
-    "name": "Portfolio Website",
-    "shortDescription": "A personal portfolio built using React and TypeScript",
+    "name": "Portfolio",
+    "shortDescription": "Created this personal portfolio website to showcase my projects and skills. Built with React and TypeScript to ensure a clean, maintainable, and scalable structure. The main goal was to intensify my React skills and experiment with different approaches to component design, state management, and UI architecture.",
     "description": "A personal portfolio built using React and TypeScript",
-    "html": "<p>This is a <strong>rich text</strong> description with <em>HTML</em> inside.</p>",
-    "startDate": "2023-01-01",
-    "endDate": "2023-03-01",
-    "technologies": ["React", "TypeScript", "CSS"],
+    "html": "<p>I implemented dynamic components, smooth animations, and reusable sections to create a flexible and performant user experience. Additionally, I experimented with different layout and styling approaches, incorporated responsive design techniques, and ensured accessibility best practices throughout the site.</p>",
+    "startDate": "2025-01-01",
+    "endDate": "2025-03-01",
+    "url": "https://github.com/NinoCabernard/Portfolio-App",
+    "technologies": ["React", "TypeScript", "CSS", "HTML"],
     "skills": ["Frontend Development", "UI/UX Design"]
   },
   {
@@ -24,7 +25,8 @@
       "Docker",
       "Flyway",
       "JWT Token",
-      "Swagger"
+      "Swagger",
+      "JUnit"
     ],
     "skills": [
       "Scrum",
@@ -50,8 +52,8 @@
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",
     "url": "",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
+    "technologies": ["Java", "JavaFX", "TCP/IP"],
+    "skills": ["Fullstack", "Clean Code"]
   },
   {
     "name": "Lapp",
@@ -89,238 +91,6 @@
   },
   {
     "name": "InTimer",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
-    "description": "Backend API for task management using Node.js",
-    "startDate": "2022-06-01",
-    "endDate": "2022-08-01",
-    "technologies": ["Node.js", "TypeScript"],
-    "skills": ["Backend Development"]
-  },
-  {
-    "name": "Task Manager API",
     "description": "Backend API for task management using Node.js",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",

@@ -24,9 +24,7 @@ export default function ProjectList(props: SkillsListProps) {
           <span className="project-title">
             <a href={"project/" + project.name}>{project.name}</a>
           </span>
-          <span className="project-description">
-            {project.shortDescription}
-          </span>
+          <span className="project-description">{project.description}</span>
         </div>
       ))}
     </div>
