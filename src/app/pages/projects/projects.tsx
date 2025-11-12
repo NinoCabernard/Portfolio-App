@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import ProjectCard from "~/components/projectCard";
+import ProjectCard from "~/components/project-card/project-card";
 import type { Project } from "~/model/project";
 import ServiceContext from "~/serviceContext";
 import { ExperienceService } from "~/services/experienceService";
+import "./projects.css";
 
 export default function Projects() {
   const experienceService: ExperienceService =
@@ -27,17 +28,13 @@ export default function Projects() {
   }, [experienceService]);
 
   return (
-    <section>
-      <h1>Look at all the cool stuff I've been working on!</h1>
-      {projects != null && (
-        <ul className="project-list">
-          {projects.map((project) => (
-            <li>
-              <ProjectCard {...project} />
-            </li>
-          ))}
-        </ul>
-      )}
+    <section className="projects-container">
+      {projects != null &&
+        projects.map((project) => (
+          <div key={project.name} className="project-item">
+            <ProjectCard {...project} />
+          </div>
+        ))}
     </section>
   );
 }

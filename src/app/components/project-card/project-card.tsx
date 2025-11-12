@@ -3,6 +3,7 @@ import type { Project } from "~/model/project";
 import { ExperienceService } from "~/services/experienceService";
 import ServiceContext from "~/serviceContext";
 import type { Skill } from "~/model/skill";
+import "./project-card.css";
 
 export default function ProjectCard(project: Project) {
   const experienceService: ExperienceService =
@@ -25,9 +26,9 @@ export default function ProjectCard(project: Project) {
   }, [experienceService]);
 
   return (
-    <div className="border rounded-md p-4 shadow-md  mb-4">
-      <h2 className="text-xl font-bold mb-2">{project.name}</h2>
-      <p className="mb-2">{project.description}</p>
+    <div className="project-card">
+      <h2 className="project-card-title">{project.name}</h2>
+      <p className="project-card-description">{project.description}</p>
 
       <a className="link" href={`/project/${project.name}`}>
         read more
@@ -37,15 +38,6 @@ export default function ProjectCard(project: Project) {
           {project.startDate || "?"} - {project.endDate || "Present"}
         </p>
       ) : null}
-
-      {project.technologies && project.technologies.length > 0 && (
-        <p className="text-sm mb-1">
-          <b>Technologies:</b>{" "}
-          {project.technologies
-            .map((tech) => (typeof tech === "string" ? tech : tech.name))
-            .join(", ")}
-        </p>
-      )}
     </div>
   );
 }

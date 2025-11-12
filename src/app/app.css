@@ -12,6 +12,10 @@ body {
   scrollbar-width: none; */
   @apply bg-white dark:bg-gray-900;
 
+  --default-padding: 1rem;
+  --default-margin: 1rem;
+  --border-box-radius: 0.5rem;
+
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
     --color: #eaeaea;

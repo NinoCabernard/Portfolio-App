@@ -1,0 +1,16 @@
+.project-card {
+  height: 100%;
+  border: var(--border-box);
+  padding: var(--default-margin);
+  border-radius: var(--border-box-radius);
+}
+
+.project-card-title {
+  font-size: 1rem;
+}
+
+.project-card-description {
+  font-weight: 350;
+  color: var(--colorSecondary);
+  margin: 1rem 0;
+}

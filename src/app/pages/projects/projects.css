@@ -1,0 +1,19 @@
+.projects-container {
+  max-width: var(--content-width);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-item {
+  margin: 0;
+  padding: 0;
+  flex: 0 1 calc(50% - 2rem);
+  min-height: 100%;
+}
+
+@media (max-width: 600px) {
+  .project-item {
+    flex: 1 1 100%;
+  }
+}
