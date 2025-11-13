@@ -250,5 +250,23 @@
     "description": "Server-side JavaScript runtime",
     "experience": 2,
     "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Caliburn.Micro",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Entity Framework",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": ".NET Framework",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
   }
 ]

@@ -1,5 +1,28 @@
 .projects-container {
   max-width: var(--content-width);
+}
+
+.projects-header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: var(--border-box);
+}
+
+.projects-header-image {
+  flex: 0;
+  height: 4rem;
+}
+
+.projects-header-title {
+  font-size: 1.5rem;
+  flex: 1;
+  letter-spacing: 0.3rem;
+}
+
+.projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;

@@ -29,12 +29,21 @@ export default function Projects() {
 
   return (
     <section className="projects-container">
-      {projects != null &&
-        projects.map((project) => (
-          <div key={project.name} className="project-item">
-            <ProjectCard {...project} />
-          </div>
-        ))}
+      <div className="projects-header-container ">
+        <img
+          className="projects-header-image"
+          src="..\images\home\work_icon.svg"
+        />
+        <h2 className="projects-header-title">Software Projects</h2>
+      </div>
+      <div className="projects-list">
+        {projects != null &&
+          projects.map((project) => (
+            <div key={project.name} className="project-item">
+              <ProjectCard {...project} />
+            </div>
+          ))}
+      </div>
     </section>
   );
 }

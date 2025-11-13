@@ -100,5 +100,23 @@
     "description": "Designing user-friendly interfaces",
     "expertiseLevel": "Intermediate",
     "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Requirements Engineering",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Customer contact",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
+  },
+  {
+    "name": "Library Development",
+    "description": "Designing user-friendly interfaces",
+    "expertiseLevel": "Intermediate",
+    "iconPath": "../images/skills/code-solid-full.svg"
   }
 ]
