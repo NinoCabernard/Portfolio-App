@@ -1,12 +1,55 @@
+* {
+  --icon-container-height: 14rem;
+}
+
 .project-card {
-  height: 100%;
+  min-height: 25rem;
   border: var(--border-box);
-  padding: var(--default-margin);
   border-radius: var(--border-box-radius);
+  position: relative;
+  min-width: 20rem;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+}
+.project-card:hover {
+  transform: rotateY(180deg);
+}
+
+.project-card-icon-container {
+  flex: 1;
+  width: 100%;
+  border-radius: var(--border-box-radius);
+  background-color: var(--background-secondary);
+}
+
+.project-card-front,
+.project-card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.project-card-back {
+  transform: rotateY(180deg);
+  padding: 1rem;
+}
+
+.project-card-icon-container img {
+  padding: 1rem;
+  height: var(--icon-container-height);
 }
 
 .project-card-title {
   font-size: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.project-card-subtitle {
+  color: var(--colorSecondary);
+  text-align: center;
 }
 
 .project-card-description {

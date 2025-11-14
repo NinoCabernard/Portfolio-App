@@ -25,6 +25,6 @@
 }
 
 .tag-expandable:hover {
-  background-color: var(--backgroundSecondary);
+  background-color: var(--background-secondary);
   cursor: pointer;
 }

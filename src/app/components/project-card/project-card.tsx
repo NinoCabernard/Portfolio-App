@@ -27,17 +27,19 @@ export default function ProjectCard(project: Project) {
 
   return (
     <div className="project-card">
-      <h2 className="project-card-title">{project.name}</h2>
-      <p className="project-card-description">{project.description}</p>
-
-      <a className="link" href={`/project/${project.name}`}>
-        read more
-      </a>
-      {project.startDate || project.endDate ? (
-        <p className="text-sm text-gray-600 mb-2">
-          {project.startDate || "?"} - {project.endDate || "Present"}
-        </p>
-      ) : null}
+      <div className="project-card-front">
+        <div className="project-card-icon-container">
+          <img src={project.thumbnailPath}></img>
+        </div>
+        <h2 className="project-card-title">{project.name}</h2>
+        <p className="project-card-subtitle">{project.subtitle}</p>
+      </div>
+      <div className="project-card-back">
+        <p className="project-card-description">{project.description}</p>
+        <a className="link" href={`/project/${project.name}`}>
+          read more
+        </a>
+      </div>
     </div>
   );
 }

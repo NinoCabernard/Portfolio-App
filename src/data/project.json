@@ -1,18 +1,22 @@
 [
   {
     "name": "Portfolio",
+    "subtitle": "Personal Portfolio Website Built with React & TypeScript",
     "description": "Created this personal portfolio website to showcase my projects and skills. Built with React and TypeScript to ensure a clean, maintainable, and scalable structure. The main goal was to intensify my React skills and experiment with different approaches to component design, state management, and UI architecture.",
     "html": "<p>I implemented dynamic components, smooth animations, and reusable sections to create a flexible and performant user experience. Additionally, I experimented with different layout and styling approaches, incorporated responsive design techniques, and ensured accessibility best practices throughout the site.</p>",
     "startDate": "2025-01-01",
     "endDate": "2025-03-01",
     "url": "https://github.com/NinoCabernard/Portfolio-App",
+    "thumbnailPath": "..\\images\\icon\\icon.svg",
     "technologies": ["React", "TypeScript", "CSS", "HTML"],
     "skills": ["Frontend Development", "UI/UX Design"]
   },
   {
     "name": "InTimer",
+    "subtitle": "Staff Scheduling & Calendar Management Tool",
     "description": "InTimer is a staff scheduling and calendar management tool developed for a mid-sized bakery. It streamlines workforce planning by organizing working hours, shifts, and holidays in a clear, centralized system. The tool helps management optimize staffing levels, reduce scheduling conflicts, and improve overall operational efficiency.",
     "html": "<p>The system was built with a <strong>WPF</strong> frontend and a <strong>.NET service</strong> backend. It used <strong>WCF</strong> for communication between clients and <strong>Microsoft SQL Server</strong> for data storage and management. InTimer included several features aimed at improving planning efficiency for the bakery’s staff, such as default configurations for predefined values, templates for recurring weekly schedules to speed up planning, and scalable data ranges to support larger workloads and extended scheduling periods.</p><img src=\"../images/projects/intimer-example.png\" alt=\"InTimer Application\" ><h4>My Responsibilities</h4><p>I covered the full development lifecycle of the InTimer application, including requirements analysis, architecture design, implementation, and deployment. My main responsibilities included:</p><ul><li><strong>Requirements Engineering:</strong><ul><li>Gathered functional and non-functional requirements directly with the customer.</li><li>Worked closely with an external company to define the interface in receiving meta data from the existing system.</li><li>Defined workflows for scheduling, shift planning, and holiday management.</li></ul></li><li><strong>System Architecture:</strong><ul><li>Designed the application structure using a WPF frontend, .NET backend service, and WCF communication layer.</li><li>Defined the domain model for the scheduling system, including staff, shifts, holidays, and configuration entities.</li></ul></li><li><strong>Frontend Development (WPF):</strong><ul><li>Developed the complete WPF UI with focus on usability and clarity.</li><li>Built a custom WPF component library to streamline interface creation.</li></ul></li><li><strong>Backend Development (.NET Service, WCF):</strong><ul><li>Integrated WCF to synchronize data across multiple clients in real time.</li><li>Configured contracts, bindings, and error handling for stable communication.</li></ul></li><li><strong>Database Management:</strong><ul><li>Implemented SQL Server tables, relations, and queries.</li><li>Optimized data access and ensured reliable persistence.</li></ul></li><li><strong>Testing & Optimization:</strong><ul><li>Debugged system behavior and improved overall performance.</li><li>Ensured stable multi-user interaction and conflict-free scheduling logic.</li></ul></li></ul>",
+    "thumbnailPath": "..\\images\\projects\\intimer_logo.svg",
     "startDate": "2022-01-01",
     "endDate": "2022-05-01",
     "technologies": [
@@ -33,19 +37,23 @@
   },
   {
     "name": "Lapp",
+    "subtitle": "Kotlin and Wear OS Athlete Training App with Sensor Integration",
     "description": "Collaborated in a team to develop a full-stack booking platform for renting mobile saunas, enabling users to browse availability, make reservations, and process payments online.",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",
+    "thumbnailPath": "..\\images\\icon\\icon.svg",
     "url": "",
     "technologies": ["Wear OS", "Kotlin"],
     "skills": ["Backend Development"]
   },
   {
     "name": "SauNah",
+    "subtitle": "Booking system for renting mobile saunas",
     "description": "Developed a booking website for sauna rentals as part of our bachelor’s degree project. Worked in a team divided into frontend and backend, where I was responsible for backend development. My work focused on implementing core features like user registration, authentication, booking management, image handling, and overall system stability.",
     "html": "<p>The backend was built with <strong>Java Spring Boot</strong>, using <strong>PostgreSQL</strong> as the main database and <strong>Flyway</strong> for version-controlled database migrations. The backend exposed RESTful APIs consumed by the frontend, ensuring secure user authentication, data integrity, and smooth integration of business logic.</p><h4>My Responsibilities</h4><p>I focused on the backend development, including implementing core business logic, authentication, data persistence, and error handling. My main contributions included:</p><ul><li><strong>User Management:</strong><ul><li>Implemented customer registration and login (including admin support).</li><li>Handled special character compatibility in passwords to improve security and user experience.</li><li>Added error handling and validation for authentication flows.</li></ul></li><li><strong>Sauna Management:</strong><ul><li>Developed and adjusted sauna endpoints and properties to match the evolving frontend needs.</li><li>Refactored sauna entity fields (e.g., converting <code>price</code> to float type).</li><li>Integrated image storage and object storage handling for sauna listings.</li></ul></li><li><strong>Booking System:</strong><ul><li>Implemented the booking feature, including logic for reservation creation and validation.</li><li>Integrated Google Calendar synchronization and fixed duplication issues during booking confirmation.</li></ul></li><li><strong>Error Handling and API Stability:</strong><ul><li>Introduced consistent error messages across all API endpoints.</li><li>Resolved server errors related to invalid tokens on unprotected routes.</li><li>Improved exception handling and standardized API responses.</li></ul></li><li><strong>Database and Infrastructure:</strong><ul><li>Created and maintained database migration scripts using Flyway.</li><li>Ensured data consistency and proper schema evolution during development.</li></ul></li><li><strong>Project Finalization:</strong><ul><li>Cleaned up backend warnings, improved stability, and refined code quality during the final project phase.</li></ul></li></ul>",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",
+    "thumbnailPath": "..\\images\\icon\\icon.svg",
     "url": "https://github.com/saunah/saunah-backend",
     "technologies": [
       "Java",

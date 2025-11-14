@@ -88,9 +88,11 @@ export class ExperienceService {
     return (projectsJson as any[]).map((item) => {
       const project = new Project();
       project.name = item.name;
+      project.subtitle = item.subtitle;
       project.description = item.description;
       project.html = item.html;
       project.url = item.url;
+      project.thumbnailPath = item.thumbnailPath;
 
       if (allTechnologies) {
         const matchedTechs = item.technologies
