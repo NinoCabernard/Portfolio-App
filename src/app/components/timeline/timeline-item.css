@@ -34,7 +34,7 @@
 .timeline-item-subtitle {
   font-weight: 350;
   width: 100%;
-  color: var(--colorSecondary);
+  color: var(--color-secondary);
   text-align: left;
   flex: 1;
 }

@@ -14,7 +14,7 @@
 .project-short-description {
   margin-bottom: 1rem;
   font-weight: 350;
-  color: var(--colorSecondary);
+  color: var(--color-secondary);
 }
 
 .project-inner-html {

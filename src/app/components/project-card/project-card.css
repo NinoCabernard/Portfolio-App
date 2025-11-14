@@ -48,12 +48,12 @@
 }
 
 .project-card-subtitle {
-  color: var(--colorSecondary);
+  color: var(--color-secondary);
   text-align: center;
 }
 
 .project-card-description {
   font-weight: 350;
-  color: var(--colorSecondary);
+  color: var(--color-secondary);
   margin: 1rem 0;
 }

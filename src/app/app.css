@@ -19,7 +19,7 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
     --color: #eaeaea;
-    --colorSecondary: #b9b9b9;
+    --color-secondary: #b9b9b9;
     --background: #111827;
     --background-secondary: #1f2937;
     --link-color: #3b82f6;

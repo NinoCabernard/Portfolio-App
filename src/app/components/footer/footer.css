@@ -11,7 +11,7 @@ footer {
 }
 
 .footer-name {
-  color: var(--colorSecondary);
+  color: var(--color-secondary);
   margin: 0.8rem 0;
   font-size: 1.2rem;
   font-weight: 600;
