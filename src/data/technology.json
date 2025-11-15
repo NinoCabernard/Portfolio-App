@@ -268,5 +268,41 @@
     "description": "Server-side JavaScript runtime",
     "experience": 7,
     "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Wear OS",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Kotlin",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Dagger",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Hilt",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Room",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
+  },
+  {
+    "name": "Wearable Data Layer API",
+    "description": "Server-side JavaScript runtime",
+    "experience": 7,
+    "epxertiseLevel": "Intermediate"
   }
 ]

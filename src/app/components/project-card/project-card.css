@@ -36,7 +36,7 @@
 }
 
 .project-card-icon-container img {
-  padding: 1rem;
+  padding: 2rem;
   height: var(--icon-container-height);
 }
 

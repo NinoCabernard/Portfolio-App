@@ -38,13 +38,29 @@
   {
     "name": "Lapp",
     "subtitle": "Kotlin and Wear OS Athlete Training App with Sensor Integration",
-    "description": "Collaborated in a team to develop a full-stack booking platform for renting mobile saunas, enabling users to browse availability, make reservations, and process payments online.",
+    "description": "As part of our bachelor thesis, our team of three developed a smartphone and smartwatch application to support track and field training. It allows athletes and coaches to plan, run, document, and analyze sessions. The system uses mobile sensors for automatic time and distance measurement and includes a speech-to-text feature for quick data entry. User testing confirmed its practicality and ease of use, showing its potential as a solid tool for athletics training.",
+    "html": "<p>A central part of the project was researching how smartphone and smartwatch sensors can be used to automatically capture training data. We designed and implemented a system for time and distance measurement using an acoustic signal. The distance detection was based on acoustic time-of-flight, while signal recognition was handled using the <strong>Goertzel algorithm</strong> to reliably detect an <strong>18 kHz</strong> tone. During experiments, I also created visualizations such as decibel–frequency graphs that clearly showed the signal peak at transmission.</p><figure><img src='../images/projects/experiment_signal_18kHz.png' alt='Decibel–frequency graph showing 18 kHz spike'><figcaption>Fig.1 - Visualization of the detected 18 kHz signal peak during an acoustic time-of-flight measurement.</figcaption></figure><p>The following image shows an example from the Kotlin application demonstrating how the speech-to-text input was used to enter training data efficiently.</p><figure><img src='../images/projects/lapp_app_data_entry_via_voice.png' alt='Kotlin speech-to-text input example'><figcaption>Fig.2 - Example of the Kotlin app showing the speech-to-text feature for training data entry.</figcaption></figure><p>The application ecosystem was developed using <strong>Wear OS</strong> and <strong>Kotlin</strong>. We used <strong>Dagger</strong> and <strong>Hilt</strong> for dependency injection, <strong>Room</strong> for data persistence, and the <strong>Wearable Data Layer API</strong> to synchronize data between phone and watch. User testing confirmed the practicality and usability of the system for real training environments.</p><h4>My Responsibilities</h4><p>I was responsible for analyzing hardware sensor capabilities, planning and conducting experiments, and designing and implementing the sound-based data capture system for distance and time measurement. My core tasks included:</p><ul><li><strong>Hardware Sensor Analysis</strong><ul><li>Investigated sensor capabilities of smartphones and smartwatches to determine feasibility for time and distance measurements.</li></ul></li><li><strong>Experimental Design</strong><ul><li>Planned and conducted experiments to validate acoustic distance-measurement accuracy and system reliability.</li></ul></li><li><strong>Acoustic Measurement System</strong><ul><li>Designed and implemented the sound-based data capture pipeline for distance and time measurement using acoustic time-of-flight.</li></ul></li><li><strong>Signal Processing</strong><ul><li>Implemented 18 kHz tone detection with the Goertzel algorithm to reliably detect transmitted signals.</li></ul></li><li><strong>Data Visualization</strong><ul><li>Produced visual documentation, including decibel–frequency graphs showing signal peaks during measurements.</li></ul></li><li><strong>App Development Support</strong><ul><li>Collaborated on integrating the measurement workflow into the mobile and wearable applications.</li></ul></li></ul>",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",
-    "thumbnailPath": "..\\images\\icon\\icon.svg",
+    "thumbnailPath": "..\\images\\projects\\lapp_icon.png",
     "url": "",
-    "technologies": ["Wear OS", "Kotlin"],
-    "skills": ["Backend Development"]
+    "technologies": [
+      "Wear OS",
+      "Kotlin",
+      "Dagger",
+      "Hilt",
+      "Room",
+      "Wearable Data Layer API"
+    ],
+    "skills": [
+      "Research",
+      "Kanban",
+      "Agile Development",
+      "Experimentation",
+      "Teamwork",
+      "Communication",
+      "Documentation"
+    ]
   },
   {
     "name": "SauNah",
@@ -53,7 +69,7 @@
     "html": "<p>The backend was built with <strong>Java Spring Boot</strong>, using <strong>PostgreSQL</strong> as the main database and <strong>Flyway</strong> for version-controlled database migrations. The backend exposed RESTful APIs consumed by the frontend, ensuring secure user authentication, data integrity, and smooth integration of business logic.</p><h4>My Responsibilities</h4><p>I focused on the backend development, including implementing core business logic, authentication, data persistence, and error handling. My main contributions included:</p><ul><li><strong>User Management:</strong><ul><li>Implemented customer registration and login (including admin support).</li><li>Handled special character compatibility in passwords to improve security and user experience.</li><li>Added error handling and validation for authentication flows.</li></ul></li><li><strong>Sauna Management:</strong><ul><li>Developed and adjusted sauna endpoints and properties to match the evolving frontend needs.</li><li>Refactored sauna entity fields (e.g., converting <code>price</code> to float type).</li><li>Integrated image storage and object storage handling for sauna listings.</li></ul></li><li><strong>Booking System:</strong><ul><li>Implemented the booking feature, including logic for reservation creation and validation.</li><li>Integrated Google Calendar synchronization and fixed duplication issues during booking confirmation.</li></ul></li><li><strong>Error Handling and API Stability:</strong><ul><li>Introduced consistent error messages across all API endpoints.</li><li>Resolved server errors related to invalid tokens on unprotected routes.</li><li>Improved exception handling and standardized API responses.</li></ul></li><li><strong>Database and Infrastructure:</strong><ul><li>Created and maintained database migration scripts using Flyway.</li><li>Ensured data consistency and proper schema evolution during development.</li></ul></li><li><strong>Project Finalization:</strong><ul><li>Cleaned up backend warnings, improved stability, and refined code quality during the final project phase.</li></ul></li></ul>",
     "startDate": "2022-06-01",
     "endDate": "2022-08-01",
-    "thumbnailPath": "..\\images\\icon\\icon.svg",
+    "thumbnailPath": "..\\images\\projects\\saunah_logo.svg",
     "url": "https://github.com/saunah/saunah-backend",
     "technologies": [
       "Java",
