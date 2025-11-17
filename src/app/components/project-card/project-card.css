@@ -3,7 +3,7 @@
 }
 
 .project-card {
-  min-height: 25rem;
+  min-height: 22rem;
   border: var(--border-box);
   border-radius: var(--border-box-radius);
   position: relative;
@@ -42,7 +42,7 @@
 
 .project-card-title {
   font-size: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   font-size: 2rem;
   text-align: center;
 }
@@ -56,4 +56,6 @@
   font-weight: 350;
   color: var(--color-secondary);
   margin: 1rem 0;
+  hyphens: auto;
+  text-align: justify;
 }

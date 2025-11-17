@@ -10,6 +10,9 @@ import Tags from "~/components/tags/tags";
 import type { Technology } from "~/model/technology";
 import type { Skill } from "~/model/skill";
 import type { Project } from "~/model/project";
+import TechnologyTagPopup from "~/components/technology-tag-popup";
+import SkillTagPopup from "~/components/skill-tag-popup";
+import ProjectTagPopup from "~/components/project-tag-popup";
 
 export default function Home() {
   const experienceService: ExperienceService =
@@ -32,18 +35,6 @@ export default function Home() {
       })
       .finally(() => console.log("Finally finished"));
   }, [experienceService]);
-
-  function getColorFromYearsOfExperience(yearsOfExperience: number) {
-    if (yearsOfExperience > 0 && yearsOfExperience < 3) {
-      return "--ratingColor1";
-    } else if (yearsOfExperience >= 3 && yearsOfExperience < 5) {
-      return "--ratingColor2";
-    } else if (yearsOfExperience >= 5 && yearsOfExperience < 7) {
-      return "--ratingColor3";
-    } else {
-      return "--ratingColor4";
-    }
-  }
 
   return (
     <section>
@@ -86,15 +77,7 @@ export default function Home() {
                   <Tags<Project>
                     tags={experience.projects}
                     title="Projects"
-                    popupElement={(project) => (
-                      <div>
-                        <h4>{project.name}</h4>
-                        <p>{project.description}</p>
-                        <a className="link" href={`/project/${project.name}`}>
-                          read more
-                        </a>
-                      </div>
-                    )}
+                    popupElement={ProjectTagPopup}
                   />
                 )}
                 {experience.skills && experience.skills.length > 0 && (
@@ -102,13 +85,7 @@ export default function Home() {
                     tags={experience.skills}
                     title="Skills"
                     initialShown={3}
-                    popupElement={(skill) => (
-                      <div>
-                        <h4>{skill.name}</h4>
-                        <p>{skill.expertiseLevel} level</p>
-                        <p>{skill.description}</p>
-                      </div>
-                    )}
+                    popupElement={SkillTagPopup}
                   />
                 )}
                 {experience.technologies &&
@@ -117,19 +94,7 @@ export default function Home() {
                       tags={experience.technologies}
                       title="Technologies"
                       initialShown={3}
-                      popupElement={(technology) => (
-                        <div>
-                          <h4>{technology.name}</h4>
-                          <p
-                            style={{
-                              color: `var(${getColorFromYearsOfExperience(technology.experience ?? 0)})`,
-                            }}
-                          >
-                            {technology.experience} years of experience
-                          </p>
-                          <p>{technology.description}</p>
-                        </div>
-                      )}
+                      popupElement={TechnologyTagPopup}
                     />
                   )}
               </div>

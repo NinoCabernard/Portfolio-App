@@ -8,6 +8,8 @@ import type { Experience } from "~/model/experience";
 import Tags from "~/components/tags/tags";
 import type { Technology } from "~/model/technology";
 import type { Skill } from "~/model/skill";
+import SkillTagPopup from "~/components/skill-tag-popup";
+import TechnologyTagPopup from "~/components/technology-tag-popup";
 
 export default function ProjectDetail() {
   const experienceService: ExperienceService =
@@ -75,8 +77,14 @@ export default function ProjectDetail() {
           <Tags<Technology>
             tags={project.technologies}
             title="Used technologies"
+            popupElement={TechnologyTagPopup}
           />
-          <Tags<Skill> tags={project.skills} title="Refined Skills" />
+
+          <Tags<Skill>
+            tags={project.skills}
+            title="Refined Skills"
+            popupElement={SkillTagPopup}
+          />
         </div>
       )}
     </section>
