@@ -6,7 +6,7 @@
   },
   {
     "name": "ASP.NET Core",
-    "description": "Built backend",
+    "description": "Built backend services and APIs using ASP.NET Core in professional projects, designing software architecture and implementing scalable, maintainable web applications.",
     "experience": 3
   },
   {
@@ -56,206 +56,227 @@
   },
   {
     "name": "gRPC",
-    "description": "Server-side JavaScript runtime",
+    "description": "Implemented backend communication in microservice architectures and developed a validation concept to ensure reliable data exchange.",
     "experience": 2
   },
   {
     "name": "MongoDB",
-    "description": "Server-side JavaScript runtime",
+    "description": "Worked with MongoDB in both professional and private projects, designing schemas and integrating the database into various applications.",
     "experience": 3
   },
   {
     "name": "MS SQL Server",
-    "description": "Server-side JavaScript runtime",
+    "description": "Used MS SQL Server as a database in professional and freelance projects, designing databases and integrating them into various applications.",
     "experience": 7
   },
   {
     "name": "Angular",
-    "description": "Server-side JavaScript runtime",
+    "description": "Developed web applications in professional and private projects, building components, services, and integrations.",
     "experience": 3
   },
   {
     "name": "Docker",
-    "description": "Server-side JavaScript runtime",
+    "description": "Containerized applications and services in professional projects, enabling consistent deployments and local development environments.",
     "experience": 4
   },
   {
     "name": ".net Framework",
-    "description": "Server-side JavaScript runtime",
+    "description": "Built desktop and server applications across various professional and freelance projects using .net Framework, including WPF, WinForms, and service backends.",
     "experience": 7
   },
   {
     "name": ".NET 8",
-    "description": "Server-side JavaScript runtime",
+    "description": "Developed modern backend services and APIs in professional projects using .NET 8.",
     "experience": 3
   },
   {
     "name": "Kubernetes",
-    "description": "Server-side JavaScript runtime",
+    "description": "Deployed and managed containerized applications in professional environments, working with clusters and basic operations.",
     "experience": 2
   },
   {
     "name": "Grafana",
-    "description": "Server-side JavaScript runtime",
+    "description": "Set up dashboards and visual monitoring for system and application metrics in professional projects.",
     "experience": 2
   },
   {
     "name": "ArgoCD",
-    "description": "Server-side JavaScript runtime",
+    "description": "Worked with GitOps-based deployment workflows in professional projects to automate application releases.",
     "experience": 2
   },
   {
     "name": "Swagger",
-    "description": "Server-side JavaScript runtime",
+    "description": "Documented and tested REST APIs in multiple professional projects using OpenAPI specifications.",
     "experience": 4
   },
   {
     "name": "Python",
-    "description": "Server-side JavaScript runtime",
+    "description": "Applied during bachelor's studies for higher mathematical computations, data processing, and machine learning tasks.",
     "experience": 1
   },
   {
     "name": "Razor Pages",
-    "description": "Server-side JavaScript runtime",
+    "description": "Developed lightweight web interfaces and server-side logic in professional projects.",
     "experience": 1
   },
   {
     "name": "Prometheus",
-    "description": "Server-side JavaScript runtime",
+    "description": "Integrated service metrics and monitoring for backend systems in professional environments.",
     "experience": 1
   },
   {
     "name": "BitBucket",
-    "description": "Server-side JavaScript runtime",
+    "description": "Used for version control, pull requests, and CI/CD pipelines in professional projects.",
     "experience": 4
   },
   {
-    "name": "AzureDevOps",
-    "description": "Server-side JavaScript runtime",
-    "experience": 2
-  },
-  {
     "name": "OPC UA",
-    "description": "Server-side JavaScript runtime",
+    "description": "Implemented industrial communication interfaces using OPC UA in professional projects for machine and device connectivity.",
     "experience": 3
   },
   {
     "name": "Xamarin",
-    "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "description": "Developed cross-platform mobile applications using Xamarin in professional projects.",
+    "experience": 3
   },
   {
     "name": "NFC",
-    "description": "Server-side JavaScript runtime",
+    "description": "Implemented NFC interactions and proof-of-concept features using NFC technology in professional projects.",
     "experience": 3
   },
   {
     "name": "Scanner Integration",
-    "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "description": "Integrated barcode and hardware scanners using Scanner Integration technology in professional projects.",
+    "experience": 3
   },
   {
     "name": "Scale Integration",
-    "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "description": "Connected and integrated industrial scales using Scale Integration technology into business applications in professional projects.",
+    "experience": 3
   },
   {
     "name": "Java Spring Boot",
-    "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "description": "Developed backend services and APIs using Java Spring Boot in bachelor projects.",
+    "experience": 2
   },
   {
     "name": "PostgreSQL",
-    "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "description": "Designed and managed relational schemas using PostgreSQL in bachelor projects.",
+    "experience": 2
   },
   {
     "name": "Flyway",
-    "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "description": "Handled schema migrations and versioning using Flyway for backend systems in bachelor projects.",
+    "experience": 2
   },
   {
     "name": "JWT Token",
-    "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "description": "Implemented authentication and authorization mechanisms using JWT Token in bachelor backend projects.",
+    "experience": 2
   },
   {
     "name": "JUnit",
-    "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
-  },
-  {
-    "name": "Swagger",
-    "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "description": "Created automated tests for Java applications using JUnit in bachelor projects.",
+    "experience": 2
   },
   {
     "name": "HTML",
-    "description": "Server-side JavaScript runtime",
+    "description": "Built and adjusted user interfaces using HTML across various projects.",
     "experience": 2
   },
   {
     "name": "JavaFX",
-    "description": "Server-side JavaScript runtime",
+    "description": "Developed desktop applications using JavaFX during bachelor studies.",
     "experience": 2
   },
   {
     "name": "TCP/IP",
-    "description": "Server-side JavaScript runtime",
+    "description": "Implemented network communication features using TCP/IP in professional and freelance projects.",
     "experience": 2
   },
   {
     "name": "Caliburn.Micro",
-    "description": "Server-side JavaScript runtime",
+    "description": "Developed MVVM-based WPF applications using Caliburn.Micro in professional and freelance projects.",
     "experience": 7
   },
   {
     "name": "Entity Framework",
-    "description": "Server-side JavaScript runtime",
+    "description": "Worked extensively with ORM-based data access using Entity Framework in professional and freelance .NET applications.",
     "experience": 7
   },
   {
     "name": ".NET Framework",
-    "description": "Server-side JavaScript runtime",
+    "description": "Developed desktop and backend applications using .NET Framework across multiple long-term professional and freelance projects.",
     "experience": 7
   },
   {
     "name": "Wear OS",
-    "description": "Server-side JavaScript runtime",
-    "experience": 7
+    "description": "Built smartwatch applications and system integrations using Wear OS as part of the bachelor thesis project.",
+    "experience": 1
   },
   {
     "name": "Kotlin",
-    "description": "Server-side JavaScript runtime",
-    "experience": 7
+    "description": "Developed Android and Wear OS applications using Kotlin during the bachelor thesis project.",
+    "experience": 1
   },
   {
     "name": "Dagger",
-    "description": "Server-side JavaScript runtime",
-    "experience": 7
+    "description": "Implemented dependency injection using Dagger in Android applications during the bachelor thesis project.",
+    "experience": 1
   },
   {
     "name": "Hilt",
-    "description": "Server-side JavaScript runtime",
-    "experience": 7
+    "description": "Applied modern dependency injection patterns using Hilt in Android and Wear OS development during the bachelor thesis project.",
+    "experience": 1
   },
   {
     "name": "Room",
-    "description": "Server-side JavaScript runtime",
-    "experience": 7
+    "description": "Integrated local persistent storage using Room into Android and Wear OS applications during the bachelor thesis project.",
+    "experience": 1
   },
   {
     "name": "Wearable Data Layer API",
-    "description": "Server-side JavaScript runtime",
+    "description": "Implemented communication and data synchronization using Wearable Data Layer API between Wear OS devices and smartphones for the bachelor thesis project.",
+    "experience": 1
+  },
+  {
+    "name": "Entity Framework",
+    "description": "Worked extensively with ORM-based data access using Entity Framework in professional and freelance .NET applications, including database design and integration.",
     "experience": 7
+  },
+  {
+    "name": "Caliburn.Micro",
+    "description": "Developed MVVM-based WPF applications using Caliburn.Micro in professional and freelance projects, including UI architecture and component design.",
+    "experience": 7
+  },
+  {
+    "name": "Node.js",
+    "description": "Developed backend services and APIs using Node.js in professional projects, implementing scalable server-side applications.",
+    "experience": 2
+  },
+  {
+    "name": "C++",
+    "description": "Used C++ for system-level programming and algorithm implementation in academic and small-scale projects.",
+    "experience": 1
+  },
+  {
+    "name": "C",
+    "description": "Applied C for low-level programming tasks and embedded system projects.",
+    "experience": 1
+  },
+  {
+    "name": "SQL",
+    "description": "Designed, queried, and optimized relational databases using SQL across professional and freelance projects.",
+    "experience": 7
+  },
+  {
+    "name": "Flutter",
+    "description": "Developed cross-platform mobile applications using Flutter in personal and experimental projects.",
+    "experience": 1
+  },
+  {
+    "name": "React Native",
+    "description": "Built cross-platform mobile applications using React Native in professional and personal projects.",
+    "experience": 2
   }
 ]

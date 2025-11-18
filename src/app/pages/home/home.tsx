@@ -84,8 +84,7 @@ export default function Home() {
                   <Tags<Skill>
                     tags={experience.skills}
                     title="Skills"
-                    initialShown={3}
-                    popupElement={SkillTagPopup}
+                    initialShown={4}
                   />
                 )}
                 {experience.technologies &&
@@ -93,7 +92,7 @@ export default function Home() {
                     <Tags<Technology>
                       tags={experience.technologies}
                       title="Technologies"
-                      initialShown={3}
+                      initialShown={5}
                       popupElement={TechnologyTagPopup}
                     />
                   )}

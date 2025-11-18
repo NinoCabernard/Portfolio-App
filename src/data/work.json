@@ -51,6 +51,7 @@
       "Razor Pages",
       "ArgoCD",
       "EntityFramework",
+      "SQL",
       "Caliburn.Micro"
     ],
     "skills": [
@@ -82,13 +83,14 @@
       "C#",
       "WPF",
       "MS SQL Server",
+      "SQL",
       "EntityFramework",
       "WCF",
       "Caliburn.Micro"
     ],
     "skills": [
       "Independent project development",
-      "System design",
+      "System Design",
       "Software Architecture",
       "Requirements Engineering",
       "Customer contact"
@@ -114,6 +116,7 @@
       "WCF",
       "Docker",
       "Kubernetes",
+      "SQL",
       "MS SQL Server",
       "Apache Kafka",
       "EntityFramework",
@@ -125,7 +128,8 @@
       "API Development",
       "Kanban",
       "Agile Development",
-      "CI/CD"
+      "CI/CD",
+      "Communication"
     ],
 
     "projects": null
@@ -149,6 +153,7 @@
       "Apache Kafka",
       "EntityFramework",
       "Caliburn.Micro",
+      "SQL",
       "NFC",
       "TCP/IP"
     ],
@@ -158,7 +163,8 @@
       "CI/CD",
       "Agile Development",
       "Teamwork",
-      "Communication"
+      "Communication",
+      "Customer contact"
     ],
     "projects": null
   },
@@ -182,6 +188,7 @@
       "EntityFramework",
       "Caliburn.Micro",
       "NFC",
+      "SQL",
       "TCP/IP"
     ],
     "skills": [

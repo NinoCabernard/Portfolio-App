@@ -80,11 +80,7 @@ export default function ProjectDetail() {
             popupElement={TechnologyTagPopup}
           />
 
-          <Tags<Skill>
-            tags={project.skills}
-            title="Refined Skills"
-            popupElement={SkillTagPopup}
-          />
+          <Tags<Skill> tags={project.skills} title="Refined Skills" />
         </div>
       )}
     </section>

@@ -51,6 +51,7 @@
       "WCF",
       "Caliburn.Micro",
       "Entity Framework",
+      "SQL",
       "MS SQL Server",
       ".NET Framework"
     ],

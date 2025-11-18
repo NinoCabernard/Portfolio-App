@@ -1,122 +1,110 @@
 [
   {
-    "name": "Frontend Development",
-    "description": "Building responsive and interactive UIs",
-    "expertiseLevel": "Advanced",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Frontend Development"
   },
   {
-    "name": "API Development",
-    "description": "Creating APIs and server-side logic",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "API Development"
   },
   {
-    "name": "Software Architecture",
-    "description": "Creating APIs and server-side logic",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Software Architecture"
   },
   {
-    "name": "DevOps",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "DevOps"
   },
   {
-    "name": "CI/CD",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "CI/CD"
   },
   {
-    "name": "Data Structures",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Data Structures"
   },
   {
-    "name": "Algorithms",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Algorithms"
   },
   {
-    "name": "Customer service",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Customer service"
   },
   {
-    "name": "Kanban",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Kanban"
   },
   {
-    "name": "Scrum",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Scrum"
   },
   {
-    "name": "Microservices",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Microservices"
   },
   {
-    "name": "Fullstack Development",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Fullstack Development"
   },
   {
-    "name": "Scale Integration",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Scale Integration"
   },
   {
-    "name": "Scanner Integration",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Scanner Integration"
   },
   {
-    "name": "Backend Development",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Backend Development"
   },
   {
-    "name": "Teamwork",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Teamwork"
   },
   {
-    "name": "Communication",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Communication"
   },
   {
-    "name": "Requirements Engineering",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Requirements Engineering"
   },
   {
-    "name": "Customer contact",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Customer contact"
   },
   {
-    "name": "Library Development",
-    "description": "Designing user-friendly interfaces",
-    "expertiseLevel": "Intermediate",
-    "iconPath": "../images/skills/code-solid-full.svg"
+    "name": "Library Development"
+  },
+  {
+    "name": "Mobile Development"
+  },
+  {
+    "name": "Web Development"
+  },
+  {
+    "name": "Embedded Development"
+  },
+  {
+    "name": "Project Management"
+  },
+  {
+    "name": "Cross-cultural communication"
+  },
+  {
+    "name": "English"
+  },
+  {
+    "name": "Finnish"
+  },
+  {
+    "name": "International Relations"
+  },
+  {
+    "name": "UI/UX Design"
+  },
+  {
+    "name": "Documentation"
+  },
+  {
+    "name": "Experimentation"
+  },
+  {
+    "name": "Agile Development"
+  },
+  {
+    "name": "Research"
+  },
+  {
+    "name": "Hardware Integration"
+  },
+  {
+    "name": "Independent project development"
+  },
+  {
+    "name": "System Design"
   }
 ]
