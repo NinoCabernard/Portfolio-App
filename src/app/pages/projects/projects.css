@@ -9,6 +9,7 @@
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: var(--border-box);
+  align-items: center;
 }
 
 .projects-header-image {
@@ -31,11 +32,11 @@
 .project-item {
   margin: 0;
   padding: 0;
-  flex: 0 1 calc(50% - 2rem);
+  flex: 0 1 calc(50% - 1rem);
   min-height: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .project-item {
     flex: 1 1 100%;
   }

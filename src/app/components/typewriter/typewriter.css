@@ -25,11 +25,22 @@
 
 .inner-content-container {
   transform: translateY(-62px);
+  padding: 1rem;
 }
 
 .typewriter-title {
   font-size: 6rem;
 }
+
 .typewriter-subtitle {
   font-size: 3rem;
+}
+
+@media (max-width: 480px) {
+  .typewriter-title {
+    font-size: 4rem;
+  }
+  .typewriter-subtitle {
+    font-size: 2rem;
+  }
 }

@@ -18,6 +18,7 @@
 .project-card-icon-container {
   flex: 1;
   width: 100%;
+  justify-items: center;
   border-radius: var(--border-box-radius);
   background-color: var(--background-secondary);
 }

@@ -1,13 +1,13 @@
 footer {
+  padding: 1rem;
+  margin: 0;
   margin-top: 2rem;
   background-color: var(--background-secondary);
   justify-items: center;
 }
 
 .footer-content {
-  max-width: var(--content-width);
   height: 100%;
-  margin: 2rem auto;
 }
 
 .footer-name {
