@@ -1,7 +1,8 @@
 .timeline {
   position: relative;
   height: auto;
-  width: 1200px;
+  width: 100%;
+  max-width: var(--content-width);
 }
 
 .timeline-line {
@@ -13,10 +14,27 @@
 
 .timeline-items-container {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1rem 1fr;
 }
 
 .timeline-item-container {
   box-sizing: border-box;
+  width: 95%;
   margin: 5px;
+}
+
+@media (max-width: 900px) {
+  .timeline-items-container {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-line {
+    grid-column: 1;
+  }
+
+  .timeline-item-container {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
 }
