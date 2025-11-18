@@ -34,7 +34,7 @@
 .project-card-back {
   transform: rotateY(180deg);
   padding: 1rem;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .project-card-icon-container img {
@@ -51,6 +51,7 @@
 
 .project-card-subtitle {
   color: var(--color-secondary);
+  margin: 0.5rem;
   text-align: center;
 }
 
