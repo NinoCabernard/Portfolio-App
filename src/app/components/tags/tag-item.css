@@ -13,9 +13,17 @@
   position: absolute;
   z-index: 2;
   padding: 1rem;
-  width: 400px;
+  max-width: 90vh;
 }
 
 .tag-expertise {
   color: lightcoral;
+}
+
+@media (max-width: 900px) {
+  .tag-popup {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
