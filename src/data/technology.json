@@ -1,177 +1,143 @@
 [
   {
     "name": "React",
-    "description": "A JavaScript library for building UIs",
-    "experience": 2,
-    "epxertiseLevel": "Advanced"
+    "description": "Conducted different projects using React as a Frontend technology.",
+    "experience": 2
   },
   {
     "name": "ASP.NET Core",
-    "description": "A JavaScript library for building UIs",
-    "experience": 3,
-    "epxertiseLevel": "Advanced"
+    "description": "Built backend",
+    "experience": 3
   },
   {
     "name": "C#",
-    "description": "A JavaScript library for building UIs",
-    "experience": 7,
-    "epxertiseLevel": "Advanced"
+    "description": "Used C# throughout my professional career for developing applications across multiple technologies, including .NET Framework, ASP.NET Core, WPF, Xamarin, and MAUI.",
+    "experience": 7
   },
   {
     "name": "Java",
-    "description": "A JavaScript library for building UIs",
-    "experience": 3,
-    "epxertiseLevel": "Advanced"
+    "description": "Used for various projects during my bachelor's degree and apprenticeship, including desktop and web applications, leveraging technologies such as Spring Boot and JavaFX.",
+    "experience": 3
   },
   {
     "name": "JavaScript",
-    "description": "Typed superset of JavaScript",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "description": "Used for web development projects, working with JavaScript and TypeScript, including frameworks and libraries such as Angular and React.",
+    "experience": 3
   },
   {
     "name": "TypeScript",
-    "description": "Typed superset of JavaScript",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
-  },
-  {
-    "name": "Node.js",
-    "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "description": "Applied in professional and private web development projects, working with Angular and React to build scalable and maintainable applications.",
+    "experience": 3
   },
   {
     "name": "CSS",
-    "description": "Styling web applications",
-    "experience": 7,
-    "epxertiseLevel": "Expert"
+    "description": "Applied CSS to numerous projects throughout my career.",
+    "experience": 7
   },
   {
     "name": "Apache Kafka",
-    "description": "Server-side JavaScript runtime",
-    "experience": 4,
-    "epxertiseLevel": "Intermediate"
+    "description": "Implemented various integrations in multiple professional projects, leveraging Kafka for real-time data streaming and messaging.",
+    "experience": 4
   },
   {
     "name": "WCF",
-    "description": "Server-side JavaScript runtime",
-    "experience": 5,
-    "epxertiseLevel": "Intermediate"
+    "description": "Implemented client-server communication for notifying data updates in a multi-client system, applied in professional and freelance projects.",
+    "experience": 5
   },
   {
     "name": "WPF",
-    "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "description": "Developed rich desktop applications and created a reusable library with Windows Presentation Foundation, applied in professional and freelance projects.",
+    "experience": 7
   },
   {
     "name": "WinForms",
-    "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "description": "Developed desktop applications using Windows Forms, applied in professional projects to build user interfaces and client-server applications.",
+    "experience": 3
   },
   {
     "name": "gRPC",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "experience": 2
   },
   {
     "name": "MongoDB",
     "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "experience": 3
   },
   {
     "name": "MS SQL Server",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": "Angular",
     "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "experience": 3
   },
   {
     "name": "Docker",
     "description": "Server-side JavaScript runtime",
-    "experience": 4,
-    "epxertiseLevel": "Intermediate"
+    "experience": 4
   },
   {
     "name": ".net Framework",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": ".NET 8",
     "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "experience": 3
   },
   {
     "name": "Kubernetes",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "experience": 2
   },
   {
     "name": "Grafana",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "experience": 2
   },
   {
     "name": "ArgoCD",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "experience": 2
   },
   {
     "name": "Swagger",
     "description": "Server-side JavaScript runtime",
-    "experience": 4,
-    "epxertiseLevel": "Intermediate"
+    "experience": 4
   },
   {
     "name": "Python",
     "description": "Server-side JavaScript runtime",
-    "experience": 1,
-    "epxertiseLevel": "Intermediate"
+    "experience": 1
   },
   {
     "name": "Razor Pages",
     "description": "Server-side JavaScript runtime",
-    "experience": 1,
-    "epxertiseLevel": "Intermediate"
+    "experience": 1
   },
   {
     "name": "Prometheus",
     "description": "Server-side JavaScript runtime",
-    "experience": 1,
-    "epxertiseLevel": "Intermediate"
+    "experience": 1
   },
   {
     "name": "BitBucket",
     "description": "Server-side JavaScript runtime",
-    "experience": 4,
-    "epxertiseLevel": "Intermediate"
+    "experience": 4
   },
   {
     "name": "AzureDevOps",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "experience": 2
   },
   {
     "name": "OPC UA",
     "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "experience": 3
   },
   {
     "name": "Xamarin",
@@ -182,8 +148,7 @@
   {
     "name": "NFC",
     "description": "Server-side JavaScript runtime",
-    "experience": 3,
-    "epxertiseLevel": "Intermediate"
+    "experience": 3
   },
   {
     "name": "Scanner Integration",
@@ -236,73 +201,61 @@
   {
     "name": "HTML",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "experience": 2
   },
   {
     "name": "JavaFX",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "experience": 2
   },
   {
     "name": "TCP/IP",
     "description": "Server-side JavaScript runtime",
-    "experience": 2,
-    "epxertiseLevel": "Intermediate"
+    "experience": 2
   },
   {
     "name": "Caliburn.Micro",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": "Entity Framework",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": ".NET Framework",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": "Wear OS",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": "Kotlin",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": "Dagger",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": "Hilt",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": "Room",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   },
   {
     "name": "Wearable Data Layer API",
     "description": "Server-side JavaScript runtime",
-    "experience": 7,
-    "epxertiseLevel": "Intermediate"
+    "experience": 7
   }
 ]

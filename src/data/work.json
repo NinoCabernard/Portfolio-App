@@ -17,14 +17,21 @@
       ".NET 8",
       "TypeScript"
     ],
-    "skills": ["Data Structures", "Algorithms", "Software Architecture"],
+    "skills": [
+      "Data Structures",
+      "Algorithms",
+      "English",
+      "Software Architecture",
+      "International Relations",
+      "Cross-cultural communication"
+    ],
     "projects": ["Portfolio", "Personal finance and document management app"]
   },
   {
     "company": "ACS Solution AG",
     "role": "Software Engineer MES",
     "location": "Münchwilen, Switzerland",
-    "description": "Designed and implemented software architecture for microservices using Angular, WPF, and ASP.NET Core.\nMaintained and extended the in-house library to improve development efficiency and consistency.\nLed implementation and deployment of microservices to production environments with direct customer contact.\nAutomated deployments using Docker and Kubernetes for multi-environment orchestration.",
+    "description": "Designed and implemented software architecture for microservices and frontends using Angular, WPF, and ASP.NET Core.\nMaintained and extended the in-house library to improve development efficiency and consistency.\nLed implementation and deployment of microservices to production environments with direct customer contact.\nAutomated deployments using Docker and Kubernetes for multi-environment orchestration.",
     "startDate": "2023-08-01",
     "endDate": "2025-04-01",
     "occupation": null,
@@ -36,23 +43,30 @@
       "Docker",
       "Kubernetes",
       "MongoDB",
-      "MS SQl Server",
+      "MS SQL Server",
       "Grafana",
       "Apache Kafka",
       "Prometheus",
       "C#",
       "Razor Pages",
-      "ArgoCD"
+      "ArgoCD",
+      "EntityFramework",
+      "Caliburn.Micro"
     ],
     "skills": [
       "Software Architecture",
+      "Fullstack Development",
       "CI/CD",
       "DevOps",
       "Microservices",
       "API Development",
       "Customer service",
       "Scrum",
-      "Kanban"
+      "Kanban",
+      "Hardware Integration",
+      "Agile Development",
+      "Requirements Engineering",
+      "Teamwork"
     ],
     "projects": ["MES for HUG", "Standardization of MES Microservices"]
   },
@@ -64,24 +78,56 @@
     "startDate": "2022-01-01",
     "endDate": "2022-05-01",
     "occupation": null,
-    "technologies": ["ASP.NET Core", "WPF"],
-    "skills": ["Independent project development", "System design"],
+    "technologies": [
+      "C#",
+      "WPF",
+      "MS SQL Server",
+      "EntityFramework",
+      "WCF",
+      "Caliburn.Micro"
+    ],
+    "skills": [
+      "Independent project development",
+      "System design",
+      "Software Architecture",
+      "Requirements Engineering",
+      "Customer contact"
+    ],
     "projects": ["InTimer"]
   },
   {
     "company": "Automation + Controlsystem ACS AG",
     "role": "Software Developer (part-time)",
     "location": "Münchwilen, Switzerland",
-    "description": "Designed and implemented scalable distributed systems and modern software architectures.\nAutomated deployments using Docker and Kubernetes.\nMaintained direct customer contact in a project-based environment.",
+    "description": "Worked part-time implementing software features, contributing to development projects, and collaborating with the team to deliver functional solutions while gaining hands-on experience in software development and project workflows.",
     "startDate": "2020-09-01",
     "endDate": "2023-07-01",
     "occupation": null,
-    "technologies": ["WPF", "ASP.NET Core", "Docker", "Kubernetes"],
-    "skills": [
-      "Distributed systems",
-      "DevOps Automation",
-      "Customer communication"
+    "technologies": [
+      "C#",
+      "WPF",
+      "ASP.NET Core",
+      "Docker",
+      "Kubernetes",
+      "Angular",
+      "TypeScript",
+      "WCF",
+      "Docker",
+      "Kubernetes",
+      "MS SQL Server",
+      "Apache Kafka",
+      "EntityFramework",
+      "Caliburn.Micro",
+      "gRPC"
     ],
+    "skills": [
+      "Fullstack Development",
+      "API Development",
+      "Kanban",
+      "Agile Development",
+      "CI/CD"
+    ],
+
     "projects": null
   },
   {
@@ -92,20 +138,60 @@
     "startDate": "2019-09-01",
     "endDate": "2020-08-01",
     "occupation": null,
-    "technologies": ["MES software", "WPF", ".NET Framework"],
-    "skills": ["Client-focused software development", "Process collaboration"],
+    "technologies": [
+      "C#",
+      "WPF",
+      "Docker",
+      "WCF",
+      "Docker",
+      "Kubernetes",
+      "MS SQL Server",
+      "Apache Kafka",
+      "EntityFramework",
+      "Caliburn.Micro",
+      "NFC",
+      "TCP/IP"
+    ],
+    "skills": [
+      "Fullstack Development",
+      "Kanban",
+      "CI/CD",
+      "Agile Development",
+      "Teamwork",
+      "Communication"
+    ],
     "projects": null
   },
   {
     "company": "Automation + Controlsystem ACS AG",
     "role": "Apprentice Computer Scientist EFZ, software development",
     "location": "Wil SG, Switzerland",
-    "description": "Contributed to real customer projects, gaining hands-on experience in software development using primarily .NET technologies, including WPF and .NET Framework.\nLearned and applied a wide range of technologies in real-world settings.\nWorked on-site directly with customers of food-processing companies.",
+    "description": "Completed an apprenticeship in Computer Science, learning foundational software development, IT systems, and programming principles, while gaining practical experience in feature implementation, problem-solving, and project collaboration in a professional environment.",
     "startDate": "2015-08-01",
     "endDate": "2019-07-01",
     "occupation": null,
-    "technologies": ["WPF", ".NET Framework"],
-    "skills": ["Hands-on software development", "Customer collaboration"],
+    "technologies": [
+      "C#",
+      "WPF",
+      "Docker",
+      "WCF",
+      "Docker",
+      "Kubernetes",
+      "MS SQL Server",
+      "Apache Kafka",
+      "EntityFramework",
+      "Caliburn.Micro",
+      "NFC",
+      "TCP/IP"
+    ],
+    "skills": [
+      "Fullstack Development",
+      "Kanban",
+      "Agile Development",
+      "CI/CD",
+      "Teamwork",
+      "Communication"
+    ],
     "projects": ["Snake", "Chess"]
   }
 ]

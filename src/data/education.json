@@ -4,11 +4,31 @@
     "degree": "Bachelor",
     "institution": "TAMK Tampere University of Applied Sciences",
     "location": "Tampere, Finland",
-    "description": null,
+    "description": "I completed an exchange semester at TAMK in Tampere, Finland, during my bachelor's degree, where I connected with international students, conducted interesting projects, and broadened my horizons by experiencing diverse cultures.",
     "startDate": "2022-08-01",
     "endDate": "2022-12-31",
-    "technologies": null,
-    "skills": ["Frontend Development"],
+    "technologies": [
+      "Node.js",
+      "JavaScript",
+      "React",
+      "Java",
+      "C++",
+      "C",
+      "SQL",
+      "Flutter",
+      "React Native"
+    ],
+    "skills": [
+      "Fullstack Development",
+      "Mobile Development",
+      "Web Development",
+      "Embedded Development",
+      "International Relations",
+      "English",
+      "Finnish",
+      "Cross-cultural communication",
+      "Teamwork"
+    ],
     "projects": null
   },
   {
@@ -16,11 +36,35 @@
     "degree": "Bachelor",
     "institution": "ZHAW Zurich University of Applied Sciences",
     "location": "Winterthur, Switzerland",
-    "description": null,
+    "description": "Pursued a Bachelor's degree in Computer Science at ZHAW in Winterthur, gaining a strong foundation in software development, algorithms, and data management, while developing problem-solving, analytical, and teamwork skills through practical projects and coursework.",
     "startDate": "2020-09-01",
     "endDate": "2023-07-31",
-    "technologies": null,
-    "skills": null,
+    "technologies": [
+      ".NET",
+      "C#",
+      "Node.js",
+      "JavaScript",
+      "React",
+      "React Native",
+      "Flutter",
+      "Java",
+      "JavaFX",
+      "Spring Boot",
+      "Assembly",
+      "SQL",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "skills": [
+      "Fullstack Development",
+      "Mobile Development",
+      "Web Development",
+      "Embedded Development",
+      "Communication",
+      "Project Management",
+      "Software Architecture",
+      "Teamwork"
+    ],
     "projects": ["SauNah", "Tag, you're it!", "Freitagsmaler", "Lapp"]
   },
   {
@@ -28,11 +72,28 @@
     "degree": "Vocational baccalaureate",
     "institution": "GBS St. Gallen",
     "location": "St. Gallen, Switzerland",
-    "description": null,
+    "description": "During my apprenticeship in Computer Science, I completed the mandatory vocational school and voluntarily pursued the additional Professional Maturity (BMS), gaining hands-on experience in software development, IT systems, and professional skills while strengthening teamwork and project management.",
     "startDate": "2015-08-01",
     "endDate": "2019-07-31",
-    "technologies": null,
-    "skills": null,
+    "technologies": [
+      ".NET",
+      "C#",
+      "ASP.NET",
+      "Java",
+      "JavaFX",
+      "Node.js",
+      "JavaScript",
+      "SQL"
+    ],
+    "skills": [
+      "Fullstack Development",
+      "Mobile Development",
+      "Web Development",
+      "Embedded Development",
+      "Communication",
+      "Project Management",
+      "Teamwork"
+    ],
     "projects": null
   }
 ]
