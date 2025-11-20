@@ -25,6 +25,7 @@
 
 .project-card-front,
 .project-card-back {
+  background-color: var(--background-color);
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
