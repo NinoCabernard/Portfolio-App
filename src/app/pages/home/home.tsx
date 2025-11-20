@@ -21,19 +21,16 @@ export default function Home() {
   const [experiences, setExperiences] = useState<Experience[] | null>(null);
 
   useEffect(() => {
-    console.log("Runs after every render");
     experienceService
       .getExperiences()
       .then((loadedExperiences) => {
-        console.log("Experiences found: " + loadedExperiences);
         setExperiences(loadedExperiences);
       })
       .catch((error) => {
-        console.error("Error while loading projects: " + error);
-
+        console.error("Error while loading experiences: " + error);
         setExperiences([]);
       })
-      .finally(() => console.log("Finally finished"));
+      .finally(() => console.log("loading experiences finished..."));
   }, [experienceService]);
 
   return (

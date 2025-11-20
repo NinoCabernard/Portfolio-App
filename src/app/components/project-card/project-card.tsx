@@ -15,14 +15,13 @@ export default function ProjectCard(project: Project) {
     experienceService
       .getSkills()
       .then((loadedProjects) => {
-        console.log("Projects found: " + loadedProjects);
         setSkills(loadedProjects);
       })
       .catch((error) => {
-        console.error("Error while loading projects: " + error);
+        console.error("Error while loading skills: " + error);
         setSkills([]);
       })
-      .finally(() => console.log("Finally finished"));
+      .finally(() => console.log("loading skills for project finished..."));
   }, [experienceService]);
 
   return (

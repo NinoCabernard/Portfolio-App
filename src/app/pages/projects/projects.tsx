@@ -12,19 +12,16 @@ export default function Projects() {
   const [projects, setProjects] = useState<Project[] | null>(null);
 
   useEffect(() => {
-    console.log("Runs after every render");
     experienceService
       .getProjects()
       .then((loadedProjects) => {
-        console.log("Projects found: " + loadedProjects);
         setProjects(loadedProjects);
       })
       .catch((error) => {
         console.error("Error while loading projects: " + error);
-
         setProjects([]);
       })
-      .finally(() => console.log("Finally finished"));
+      .finally(() => console.log("loading projects finished..."));
   }, [experienceService]);
 
   return (

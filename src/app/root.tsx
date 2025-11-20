@@ -54,7 +54,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           rel="icon"
           type="image/svg+xml"
           sizes="64x64"
-          href="./public/images/icon/icon.svg"
+          href="../public/images/icon/icon.svg"
         />
         <Meta />
         <Links />
