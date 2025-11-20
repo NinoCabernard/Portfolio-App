@@ -1,5 +1,5 @@
 * {
-  --icon-container-height: 14rem;
+  --icon-container-height: 13rem;
 }
 
 .project-card {
@@ -59,15 +59,15 @@
 
 .project-card-title {
   font-size: 1rem;
-  margin: 0.5rem;
+  margin: 0.3rem;
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
 .project-card-subtitle {
   color: var(--color-secondary);
-  padding: 1rem 0.6rem;
+  padding: 0.8rem 0.5rem;
   text-align: center;
 }
 
