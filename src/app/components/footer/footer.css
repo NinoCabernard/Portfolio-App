@@ -3,7 +3,8 @@ footer {
   margin: 0;
   margin-top: 2rem;
   background-color: var(--background-secondary);
-  justify-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-content {
