@@ -46,13 +46,14 @@
 .project-card-title {
   font-size: 1rem;
   margin: 0.5rem;
+  margin-bottom: 0;
   font-size: 2rem;
   text-align: center;
 }
 
 .project-card-subtitle {
   color: var(--color-secondary);
-  margin: 0.5rem;
+  padding: 1rem 0.6rem;
   text-align: center;
 }
 
