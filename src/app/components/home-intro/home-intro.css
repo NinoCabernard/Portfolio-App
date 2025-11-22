@@ -16,15 +16,12 @@
   }
 }
 
-.content-container {
+.intro-container {
+  margin-top: -2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.inner-content-container {
-  transform: translateY(-62px);
 }
 
 .typewriter-title {

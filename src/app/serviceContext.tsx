@@ -1,8 +1,8 @@
-import { createContext, type ReactNode } from "react";
+import { createContext, type ReactNode, useContext } from "react";
 import { ExperienceService } from "./services/experienceService";
 
 const ServiceContext = createContext<ExperienceService>(
-  {} as ExperienceService
+  new ExperienceService()
 );
 
 interface ServiceProviderProps {
@@ -16,6 +16,12 @@ export const ServiceProvider = ({ children }: ServiceProviderProps) => {
       {children}
     </ServiceContext.Provider>
   );
+};
+
+export const useExperienceService = () => {
+  const service = useContext(ServiceContext);
+  if (!service) throw new Error("ServiceContext not provided");
+  return service;
 };
 
 export default ServiceContext;

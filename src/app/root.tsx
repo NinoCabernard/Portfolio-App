@@ -10,12 +10,9 @@ import {
 } from "react-router-dom";
 import type { Route } from "./+types/root";
 import { ServiceProvider } from "./serviceContext";
-import NavigationBar, {
-  type NavigationBarHandle,
-} from "./components/nav/navigation-bar";
+import NavigationBar from "./components/nav/navigation-bar";
 import Footer from "./components/footer/footer";
-import { useRef, useState } from "react";
-import Typewriter from "./components/typewriter/typewriter";
+import { useState } from "react";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -30,18 +27,16 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
-export function Layout({ children }: { children: React.ReactNode }) {
-  const navBarRef = useRef<NavigationBarHandle>(null);
+export default function App() {
   const location = useLocation();
   const isIntroPage = location.pathname === "/";
   const [introCompleted, setIntroCompleted] = isIntroPage
     ? useState(false)
     : useState(true);
 
-  function handleIntroComplete() {
-    setIntroCompleted(true);
-    navBarRef.current?.onHandleVisible(true);
-  }
+  const onIntroCompleted = (isCompleted: boolean) => {
+    setIntroCompleted(isCompleted);
+  };
 
   return (
     <html lang="en">
@@ -61,35 +56,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <ServiceProvider>
-          <div className="flex flex-col min-h-screen">
-            <NavigationBar
-              ref={navBarRef}
-              visible={!isIntroPage}
-            ></NavigationBar>
-            <main>
-              {isIntroPage && (
-                <div className="intro-container">
-                  <div className="typewriter-container">
-                    <Typewriter
-                      onWritingCompleted={handleIntroComplete}
-                    ></Typewriter>
-                  </div>
-                  <p
-                    className={`intro-journey-text ${introCompleted ? "visible" : ""}`}
-                    onClick={() =>
-                      window.scrollTo({
-                        top: window.innerHeight,
-                        behavior: "smooth",
-                      })
-                    }
-                  >
-                    Explore my professional journey ↓
-                  </p>
-                </div>
-              )}
-              {introCompleted && children}
+          <div className="site-container">
+            <header className="site-header">
+              {introCompleted && <NavigationBar></NavigationBar>}
+            </header>
+            <main className="site-main">
+              <Outlet context={{ onIntroCompleted }}></Outlet>
             </main>
-            {introCompleted && <Footer></Footer>}
+
+            <div className="site-footer">
+              {introCompleted && <Footer></Footer>}
+            </div>
           </div>
         </ServiceProvider>
         <ScrollRestoration />
@@ -97,10 +74,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </body>
     </html>
   );
-}
-
-export default function App() {
-  return <Outlet />;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
