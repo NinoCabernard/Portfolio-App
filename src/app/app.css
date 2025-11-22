@@ -27,6 +27,7 @@ body {
 
   --color-secondary: #b9b9b9;
   --background-secondary: #1f2937;
+  --max-media-width: 480px;
 
   --border-box: 1px solid var(--color);
   color: var(--color);
@@ -66,4 +67,47 @@ p {
 .link {
   text-decoration: underline;
   color: var(--link-color);
+}
+
+.intro-container {
+  min-height: calc(var(--vh, 1vh) * 100 - 62px);
+  width: 100%;
+  position: relative;
+}
+
+.typewriter-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-journey-text {
+  text-align: center;
+  position: absolute;
+  padding: var(--default-padding);
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.intro-journey-text.visible {
+  opacity: 1;
+}
+
+.intro-journey-text:hover {
+  background-color: var(--background-secondary);
+}
+
+@media (max-width: 480px) {
+  .intro-journey-text {
+    font-size: 1.5rem;
+    width: 100%;
+  }
 }

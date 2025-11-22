@@ -68,9 +68,24 @@ export function Layout({ children }: { children: React.ReactNode }) {
             ></NavigationBar>
             <main>
               {isIntroPage && (
-                <Typewriter
-                  onWritingCompleted={handleIntroComplete}
-                ></Typewriter>
+                <div className="intro-container">
+                  <div className="typewriter-container">
+                    <Typewriter
+                      onWritingCompleted={handleIntroComplete}
+                    ></Typewriter>
+                  </div>
+                  <p
+                    className={`intro-journey-text ${introCompleted ? "visible" : ""}`}
+                    onClick={() =>
+                      window.scrollTo({
+                        top: window.innerHeight,
+                        behavior: "smooth",
+                      })
+                    }
+                  >
+                    Explore my professional journey ↓
+                  </p>
+                </div>
               )}
               {introCompleted && children}
             </main>
