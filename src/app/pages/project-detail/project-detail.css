@@ -22,7 +22,11 @@
 }
 
 .project-inner-html figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   justify-items: center;
+  align-items: center;
   color: var(--color-secondary);
 }
 
