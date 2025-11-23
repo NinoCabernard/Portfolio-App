@@ -9,7 +9,7 @@
   position: relative;
   min-width: 20rem;
   transform-style: preserve-3d;
-  transition: transform 1s ease;
+  transition: transform 1.2s ease;
 }
 
 .project-card:hover {
