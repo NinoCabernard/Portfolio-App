@@ -27,6 +27,24 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
+export function PageLayout({
+  children,
+  showNavAndFooter,
+}: {
+  children: React.ReactNode;
+  showNavAndFooter: boolean;
+}) {
+  return (
+    <div className="site-container">
+      <header className="site-header">
+        {showNavAndFooter && <NavigationBar />}
+      </header>
+      <main className="site-main">{children}</main>
+      <div className="site-footer">{showNavAndFooter && <Footer />}</div>
+    </div>
+  );
+}
+
 export default function App() {
   const location = useLocation();
   const isIntroPage = location.pathname === "/";
@@ -51,55 +69,55 @@ export default function App() {
           sizes="64x64"
           href="/images/icon/icon.svg"
         />
+
         <Meta />
         <Links />
       </head>
+
       <body>
         <ServiceProvider>
-          <div className="site-container">
-            <header className="site-header">
-              {introCompleted && <NavigationBar></NavigationBar>}
-            </header>
-            <main className="site-main">
-              <Outlet context={{ onIntroCompleted }}></Outlet>
-            </main>
-
-            <div className="site-footer">
-              {introCompleted && <Footer></Footer>}
-            </div>
-          </div>
+          <PageLayout showNavAndFooter={introCompleted}>
+            <Outlet context={{ onIntroCompleted }} />
+          </PageLayout>
         </ServiceProvider>
+
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
   );
 }
-
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
-  let stack: string | undefined;
+
   if (isRouteErrorResponse(error)) {
     message = error.status === 404 ? "404" : "Error";
     details =
       error.status === 404
         ? "The requested page could not be found."
         : error.statusText || details;
-  } else if (import.meta.env.DEV && error && error instanceof Error) {
-    details = error.message;
-    stack = error.stack;
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
-      <h1>{message}</h1>
-      <p>{details}</p>
-      {stack && (
-        <pre className="w-full p-4 overflow-x-auto">
-          <code>{stack}</code>
-        </pre>
-      )}
-    </main>
+    <html lang="en">
+      <head>
+        <title>Error</title>
+        <Meta />
+        <Links />
+      </head>
+
+      <body>
+        <ServiceProvider>
+          <PageLayout showNavAndFooter={true}>
+            <h1>{message}</h1>
+            <p>{details}</p>
+          </PageLayout>
+        </ServiceProvider>
+
+        <ScrollRestoration />
+        <Scripts />
+      </body>
+    </html>
   );
 }
