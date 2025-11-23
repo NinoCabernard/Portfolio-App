@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="intro-container">
+      <div className="home-intro">
         <div className="home-intro-container">
           <HomeIntro onfinish={handleOnIntroCompleted}></HomeIntro>
         </div>
