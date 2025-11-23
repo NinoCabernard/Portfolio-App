@@ -19,7 +19,7 @@
   text-align: center;
   padding: var(--default-padding);
   margin-bottom: calc(2 * var(--default-margin) + var(--header-height));
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 1rem;
   cursor: pointer;
   opacity: 0;
@@ -36,7 +36,7 @@
 
 @media (max-width: 480px) {
   .intro-journey-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 100%;
   }
 }
