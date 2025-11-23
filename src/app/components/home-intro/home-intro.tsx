@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
-import "./typewriter.css";
+import "./home-intro.css";
 
-interface TypewriterProps {
-  onWritingCompleted?: () => void;
+interface IntroProps {
+  onfinish?: () => void;
 }
 
-export default function Typewriter({ onWritingCompleted }: TypewriterProps) {
+export default function HomeIntro({
+  onfinish: onWritingCompleted,
+}: IntroProps) {
   const name = "Nino Cabernard";
   const wrongSubtitle = "Software Develo";
   const correctSubtitle = "Software Engineer";
@@ -71,21 +73,17 @@ export default function Typewriter({ onWritingCompleted }: TypewriterProps) {
   }, [nameDone, displayedSubtitle, subtitleToWrite]);
 
   return (
-    <div className="type-writer">
-      <div className="content-container">
-        <div className="inner-content-container">
-          <h1 className="typewriter-title">
-            {displayedName}
-            {!nameDone && <span className="cursor">|</span>}
-          </h1>
-          {nameDone && (
-            <h2 className="typewriter-subtitle">
-              {displayedSubtitle}
-              {!subtitleDone && <span className="cursor">|</span>}
-            </h2>
-          )}
-        </div>
-      </div>
+    <div className="intro-container">
+      <h1 className="typewriter-title">
+        {displayedName}
+        {!nameDone && <span className="cursor">|</span>}
+      </h1>
+      {nameDone && (
+        <h2 className="typewriter-subtitle">
+          {displayedSubtitle}
+          {!subtitleDone && <span className="cursor">|</span>}
+        </h2>
+      )}
     </div>
   );
 }

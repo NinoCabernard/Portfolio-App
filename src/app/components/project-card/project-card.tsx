@@ -25,20 +25,19 @@ export default function ProjectCard(project: Project) {
   }, [experienceService]);
 
   return (
-    <div className="project-card">
-      <div className="project-card-front">
-        <div className="project-card-icon-container">
-          <img src={project.thumbnailPath}></img>
+    <a href={`/project/${project.name}`}>
+      <div className="project-card">
+        <div className="project-card-front">
+          <div className="project-card-icon-container">
+            <img src={project.thumbnailPath}></img>
+          </div>
+          <h2 className="project-card-title">{project.name}</h2>
+          <p className="project-card-subtitle">{project.subtitle}</p>
         </div>
-        <h2 className="project-card-title">{project.name}</h2>
-        <p className="project-card-subtitle">{project.subtitle}</p>
+        <div className="project-card-back">
+          <p className="project-card-description">{project.description}</p>
+        </div>
       </div>
-      <div className="project-card-back">
-        <p className="project-card-description">{project.description}</p>
-        <a className="link" href={`/project/${project.name}`}>
-          read more
-        </a>
-      </div>
-    </div>
+    </a>
   );
 }

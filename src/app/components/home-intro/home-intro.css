@@ -16,23 +16,21 @@
   }
 }
 
-.content-container {
-  height: calc(var(--vh, 1vh) * 100 - 62px);
+.intro-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.inner-content-container {
-  transform: translateY(-62px);
-}
-
 .typewriter-title {
   font-size: 6rem;
+  text-align: center;
 }
 
 .typewriter-subtitle {
+  text-align: center;
+  color: var(--color-secondary);
   font-size: 3rem;
 }
 

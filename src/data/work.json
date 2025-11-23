@@ -52,7 +52,10 @@
       "ArgoCD",
       "EntityFramework",
       "SQL",
-      "Caliburn.Micro"
+      "Caliburn.Micro",
+      "OPC UA",
+      "Scanner Integration",
+      "Scale Integration"
     ],
     "skills": [
       "Software Architecture",

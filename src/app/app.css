@@ -27,10 +27,27 @@ body {
 
   --color-secondary: #b9b9b9;
   --background-secondary: #1f2937;
+  --max-media-width: 480px;
+
+  --header-height: 4rem;
 
   --border-box: 1px solid var(--color);
   color: var(--color);
   background-color: var(--background);
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  min-height: var(--header-height);
+}
+
+.site-container main {
+  flex: 1 0 auto;
 }
 
 main {

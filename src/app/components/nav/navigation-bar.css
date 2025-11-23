@@ -1,13 +1,8 @@
 nav {
   display: flex;
   align-items: center;
-  height: auto;
-  visibility: hidden;
+  height: 100%;
   opacity: 0;
-}
-
-nav.visible {
-  visibility: visible;
   animation: fadeIn 2s forwards;
 }
 
