@@ -66,8 +66,15 @@ export default function App() {
         <link
           rel="icon"
           type="image/svg+xml"
+          sizes="32x32"
+          href="/images/icon/favicon.ico"
+        />
+
+        <link
+          rel="icon"
+          type="image/svg+xml"
           sizes="64x64"
-          href="/images/icon/icon.svg"
+          href="/images/icon/favicon.svg"
         />
 
         <Meta />
