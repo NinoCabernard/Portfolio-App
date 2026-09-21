@@ -61,19 +61,20 @@ export default function App() {
       <head>
         <title>Portfolio - Nino Cabernard</title>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
 
         <link
           rel="icon"
-          type="image/svg+xml"
-          sizes="32x32"
+          type="image/x-icon"
           href="/images/icon/favicon.ico"
         />
 
         <link
           rel="icon"
           type="image/svg+xml"
-          sizes="64x64"
           href="/images/icon/favicon.svg"
         />
 

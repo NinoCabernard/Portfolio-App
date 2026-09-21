@@ -1,35 +1,20 @@
-import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router";
 import type { Project } from "~/model/project";
-import { ExperienceService } from "~/services/experienceService";
-import ServiceContext from "~/serviceContext";
-import type { Skill } from "~/model/skill";
 import "./project-card.css";
 
 export default function ProjectCard(project: Project) {
-  const experienceService: ExperienceService =
-    useContext<ExperienceService>(ServiceContext);
-
-  const [skills, setSkills] = useState<Skill[] | undefined>();
-
-  useEffect(() => {
-    experienceService
-      .getSkills()
-      .then((loadedProjects) => {
-        setSkills(loadedProjects);
-      })
-      .catch((error) => {
-        console.error("Error while loading skills: " + error);
-        setSkills([]);
-      })
-      .finally(() => console.log("loading skills for project finished..."));
-  }, [experienceService]);
-
   return (
-    <a href={`/project/${project.name}`}>
+    <Link
+      to={`/project/${project.name}`}
+      className="project-card-link">
       <div className="project-card">
         <div className="project-card-front">
           <div className="project-card-icon-container">
-            <img src={project.thumbnailPath}></img>
+            <img
+              src={project.thumbnailPath}
+              alt=""
+              loading="lazy"
+            />
           </div>
           <h2 className="project-card-title">{project.name}</h2>
           <p className="project-card-subtitle">{project.subtitle}</p>
@@ -38,6 +23,6 @@ export default function ProjectCard(project: Project) {
           <p className="project-card-description">{project.description}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
