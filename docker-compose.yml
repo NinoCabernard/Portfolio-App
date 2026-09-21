@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    image: ghcr.io/NinoCabernard/Portfolio-App:latest
+    container_name: Portfolio
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - TZ=Europe/Zurich
