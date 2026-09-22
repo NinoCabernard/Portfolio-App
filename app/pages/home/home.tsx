@@ -7,7 +7,7 @@ import { Work } from "../../model/work";
 import ServiceContext from "../../serviceContext";
 import type { ExperienceService } from "../../services/experienceService";
 import "./home.css";
-import Tags from "../../components/tags/tags";
+import Tags, { type Tagable } from "../../components/tags/tags";
 import type { Technology } from "../../model/technology";
 import type { Skill } from "../../model/skill";
 import type { Project } from "../../model/project";
@@ -117,6 +117,19 @@ export default function Home() {
                           title="Technologies"
                           initialShown={5}
                           popupElement={TechnologyTagPopup}
+                        />
+                      )}
+                    {experience instanceof Work &&
+                      experience.industries &&
+                      experience.industries.length > 0 && (
+                        <Tags<{ name: string }>
+                          tags={experience.industries.map<Tagable>(
+                            (industryName) => ({
+                              name: industryName,
+                            }),
+                          )}
+                          title="Industries"
+                          initialShown={5}
                         />
                       )}
                   </div>

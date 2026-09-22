@@ -30,6 +30,7 @@ export class ExperienceService {
       work.endDate = workExperience.endDate
         ? new Date(workExperience.endDate)
         : undefined;
+      work.industries = workExperience.industries;
 
       if (allTechnologies) {
         const matchedTechs = workExperience.technologies

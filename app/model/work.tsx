@@ -14,6 +14,7 @@ export class Work implements Experience {
   technologies: Technology[] | undefined;
   skills: Skill[] | undefined;
   projects: Project[] | undefined;
+  industries: string[] | undefined;
 
   get name(): string {
     return this.role;

@@ -1,11 +1,40 @@
 [
   {
+    "company": "Zühlke Engineering AG",
+    "role": "Expert Web Engineer",
+    "location": "Schlieren, Switzerland",
+    "description": "Took ownership of the development and continuous improvement of a web-based insurance core system within a DevSecOps team.\nContributed to the product vision and development roadmap to drive continuous product evolution.\nCollaborated closely with stakeholders to align technical solutions with business needs.\nEnsured high standards of quality, security, and maintainability throughout the development lifecycle.",
+    "startDate": "2026-02-01",
+    "endDate": null,
+    "occupation": null,
+    "technologies": [
+      "ASP.NET Core",
+      "React",
+      "Angular",
+      "C#",
+      "Docker",
+      "Azure",
+      "AWS",
+      ".NET 8",
+      "TypeScript"
+    ],
+    "skills": [
+      "Software Architecture",
+      "Fullstack Development",
+      "CI/CD",
+      "Cloud Development",
+      "Microservices"
+    ],
+    "projects": ["Web-Based Insurance Core System"],
+    "industries": ["Insurance"]
+  },
+  {
     "company": "Sabbatical",
     "role": "Cultural Exploration & Independent Development",
     "location": "Southeast Asia, Eastern Europe",
     "description": "Engaged in cross-cultural exploration to broaden global perspective and adaptability through extended travel across Asia and Eastern Europe.\nUndertook self-directed software projects using ASP.NET Core and React, focusing on modern web application design and backend integration.\nCurrently developing a personal document management and finance tracking system using a self-built modular library.",
     "startDate": "2025-05-01",
-    "endDate": null,
+    "endDate": "2026-01-01",
     "occupation": null,
     "technologies": [
       "ASP.NET Core",
@@ -25,7 +54,8 @@
       "International Relations",
       "Cross-cultural communication"
     ],
-    "projects": ["Portfolio", "Personal finance and document management app"]
+    "projects": ["Portfolio", "Personal finance and document management app"],
+    "industries": []
   },
   {
     "company": "ACS Solution AG",
@@ -72,7 +102,8 @@
       "Requirements Engineering",
       "Teamwork"
     ],
-    "projects": ["MES for HUG", "Standardization of MES Microservices"]
+    "projects": ["MES for HUG", "Standardization of MES Microservices"],
+    "industries": ["Food & Beverage Manufacturing", "Logistics"]
   },
   {
     "company": "Freelancer",
@@ -98,7 +129,8 @@
       "Requirements Engineering",
       "Customer contact"
     ],
-    "projects": ["InTimer"]
+    "projects": ["InTimer"],
+    "industries": ["Food & Beverage Manufacturing"]
   },
   {
     "company": "Automation + Controlsystem ACS AG",
@@ -134,8 +166,8 @@
       "CI/CD",
       "Communication"
     ],
-
-    "projects": null
+    "projects": null,
+    "industries": ["Food & Beverage Manufacturing", "Pharma"]
   },
   {
     "company": "Automation + Controlsystem ACS AG",
@@ -169,7 +201,12 @@
       "Communication",
       "Customer contact"
     ],
-    "projects": null
+    "projects": null,
+    "industries": [
+      "Food & Beverage Manufacturing",
+      "Pharma",
+      "Textile Manufacturing"
+    ]
   },
   {
     "company": "Automation + Controlsystem ACS AG",
@@ -202,6 +239,12 @@
       "Teamwork",
       "Communication"
     ],
-    "projects": ["Snake", "Chess"]
+    "projects": ["Snake", "Chess"],
+    "industries": [
+      "Food & Beverage Manufacturing",
+      "Textile Manufacturing",
+      "Color Manufacturing",
+      "Pharma"
+    ]
   }
 ]
