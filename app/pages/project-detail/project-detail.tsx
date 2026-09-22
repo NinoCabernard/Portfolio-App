@@ -1,15 +1,14 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import type { Project } from "~/model/project";
-import ServiceContext from "~/serviceContext";
-import { ExperienceService } from "~/services/experienceService";
+import type { Project } from "../../model/project";
+import ServiceContext from "../../serviceContext";
+import { ExperienceService } from "../../services/experienceService";
 import "./project-detail.css";
-import type { Experience } from "~/model/experience";
-import Tags from "~/components/tags/tags";
-import type { Technology } from "~/model/technology";
-import type { Skill } from "~/model/skill";
-import SkillTagPopup from "~/components/skill-tag-popup";
-import TechnologyTagPopup from "~/components/technology-tag-popup";
+import type { Experience } from "../../model/experience";
+import Tags from "../../components/tags/tags";
+import type { Technology } from "../../model/technology";
+import type { Skill } from "../../model/skill";
+import TechnologyTagPopup from "../../components/technology-tag-popup";
 
 export default function ProjectDetail() {
   const experienceService: ExperienceService =
@@ -30,7 +29,7 @@ export default function ProjectDetail() {
               try {
                 const loadedExperience =
                   await experienceService.getExperienceFromProject(
-                    loadedProject.name
+                    loadedProject.name,
                   );
                 setExperience(loadedExperience ?? null);
               } catch (err) {
@@ -63,8 +62,7 @@ export default function ProjectDetail() {
               className="link"
               href={project.url}
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               Check it out on Github!
             </a>
           )}
@@ -80,7 +78,10 @@ export default function ProjectDetail() {
             popupElement={TechnologyTagPopup}
           />
 
-          <Tags<Skill> tags={project.skills} title="Refined Skills" />
+          <Tags<Skill>
+            tags={project.skills}
+            title="Refined Skills"
+          />
         </div>
       )}
     </section>

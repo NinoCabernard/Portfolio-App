@@ -1,4 +1,4 @@
-import type { Technology } from "~/model/technology";
+import type { Technology } from "../model/technology";
 
 function getColorFromYearsOfExperience(yearsOfExperience: number) {
   if (yearsOfExperience > 0 && yearsOfExperience < 3) {
@@ -19,8 +19,7 @@ function TechnologyTagPopup(technology: Technology) {
       <p
         style={{
           color: `var(${getColorFromYearsOfExperience(technology.experience ?? 0)})`,
-        }}
-      >
+        }}>
         {technology.experience} years of experience
       </p>
       <p>{technology.description}</p>

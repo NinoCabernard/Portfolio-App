@@ -1,7 +1,4 @@
-import { motion } from "framer-motion";
-import type { ReactElement } from "react";
-import React from "react";
-import type { Work } from "~/model/work";
+import type { Work } from "../model/work";
 
 // Helper: convert date to timestamp
 const toTimestamp = (date: string | Date): number => new Date(date).getTime();

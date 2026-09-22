@@ -1,7 +1,7 @@
 import "./timeline.css";
 import type { ReactElement } from "react";
 import TimelineItem, { TimelineItemPosition } from "./timeline-item";
-import { DateUtils, isDateInside, isDateRangeInside } from "~/utils/DateUtils";
+import { DateUtils, isDateInside } from "../../utils/DateUtils";
 
 interface TimelineProps {
   startDate: Date | undefined;
@@ -28,7 +28,7 @@ function getEventsDuringEvent(events: TimelineEvent[], event: TimelineEvent) {
   return events.filter(
     (x) =>
       isDateInside(x.startDate, dateRange) ||
-      (x.endDate != undefined && isDateInside(x.endDate, dateRange))
+      (x.endDate != undefined && isDateInside(x.endDate, dateRange)),
   );
 }
 
@@ -45,7 +45,7 @@ function getMaxEntriesInSamePosition(events: TimelineEvent[]): number {
 function createDomFromEvent(
   event: TimelineEvent,
   gridRow: number,
-  gridRowSpan: number
+  gridRowSpan: number,
 ) {
   const gridColumn = event.position == TimelineItemPosition.Left ? 1 : 3;
   const timeLineItemStyle = {
@@ -56,15 +56,13 @@ function createDomFromEvent(
     <div
       key={`${event.name}_${event.institution}`}
       className={`timeline-item-container`}
-      style={timeLineItemStyle}
-    >
+      style={timeLineItemStyle}>
       <TimelineItem
         startDate={event.startDate}
         endDate={event.endDate}
         title={event.name}
         subTitle={event.institution}
-        description={event.description}
-      >
+        description={event.description}>
         {event.children}
       </TimelineItem>
     </div>
@@ -120,7 +118,10 @@ export default function Timeline(timelineProps: TimelineProps) {
   return (
     <div className="timeline">
       <div className="timeline-items-container">
-        <div className="timeline-line" style={timelineLineStyle} />
+        <div
+          className="timeline-line"
+          style={timelineLineStyle}
+        />
         {timelineItems}
       </div>
     </div>

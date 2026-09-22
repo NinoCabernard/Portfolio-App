@@ -8,7 +8,7 @@ import {
   ScrollRestoration,
   useLocation,
 } from "react-router-dom";
-import type { Route } from "./+types/root";
+import type { Route } from "./app/+types/root";
 import { ServiceProvider } from "./serviceContext";
 import NavigationBar from "./components/nav/navigation-bar";
 import Footer from "./components/footer/footer";

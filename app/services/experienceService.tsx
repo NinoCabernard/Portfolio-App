@@ -4,11 +4,11 @@ import workJson from "../../data/work.json";
 import skillsJson from "../../data/skill.json";
 import projectsJson from "../../data/project.json";
 import technologiesJSon from "../../data/technology.json";
-import { Work } from "~/model/work";
-import type { Skill } from "~/model/skill";
-import type { Technology } from "~/model/technology";
-import { Project } from "~/model/project";
-import type { Experience } from "~/model/experience";
+import { Work } from "../model/work";
+import type { Skill } from "../model/skill";
+import type { Technology } from "../model/technology";
+import { Project } from "../model/project";
+import type { Experience } from "../model/experience";
 
 export class ExperienceService {
   async getWorkExperience(): Promise<Work[]> {
@@ -34,7 +34,7 @@ export class ExperienceService {
       if (allTechnologies) {
         const matchedTechs = workExperience.technologies
           ?.map((name: string) =>
-            allTechnologies.find((tech) => tech.name === name)
+            allTechnologies.find((tech) => tech.name === name),
           )
           .filter(Boolean);
 
@@ -45,7 +45,7 @@ export class ExperienceService {
       if (allSkills) {
         const matchedSkills = workExperience.skills
           ?.map((name: string) =>
-            allSkills.find((skill) => skill.name === name)
+            allSkills.find((skill) => skill.name === name),
           )
           .filter(Boolean);
         if (matchedSkills?.length) {
@@ -55,7 +55,7 @@ export class ExperienceService {
       if (allProjects) {
         const matchedProjects = workExperience.projects
           ?.map((name: string) =>
-            allProjects.find((project) => project.name === name)
+            allProjects.find((project) => project.name === name),
           )
           .filter(Boolean);
         if (matchedProjects?.length) {
@@ -73,12 +73,12 @@ export class ExperienceService {
   }
 
   async getExperienceFromProject(
-    projectName: string
+    projectName: string,
   ): Promise<Experience | undefined> {
     return (await this.getExperiences()).find(
       (x) =>
         x.projects != null &&
-        x.projects.some((project) => project.name == projectName)
+        x.projects.some((project) => project.name == projectName),
     );
   }
 
@@ -97,7 +97,7 @@ export class ExperienceService {
       if (allTechnologies) {
         const matchedTechs = item.technologies
           ?.map((name: string) =>
-            allTechnologies.find((tech) => tech.name === name)
+            allTechnologies.find((tech) => tech.name === name),
           )
           .filter(Boolean);
         if (matchedTechs?.length) {
@@ -107,7 +107,7 @@ export class ExperienceService {
       if (allSkills) {
         const matchedSkills = item.skills
           ?.map((name: string) =>
-            allSkills.find((skill) => skill.name === name)
+            allSkills.find((skill) => skill.name === name),
           )
           .filter(Boolean);
         if (matchedSkills?.length) {
@@ -120,7 +120,7 @@ export class ExperienceService {
 
   async getProject(projectName: string): Promise<Project | undefined> {
     return (await this.getProjects()).find(
-      (x) => x.name.toLowerCase() === projectName.toLowerCase()
+      (x) => x.name.toLowerCase() === projectName.toLowerCase(),
     );
   }
 
@@ -150,7 +150,7 @@ export class ExperienceService {
       if (allTechnologies) {
         const matchedTechs = item.technologies
           ?.map((name: string) =>
-            allTechnologies.find((tech) => tech.name === name)
+            allTechnologies.find((tech) => tech.name === name),
           )
           .filter(Boolean);
 
@@ -161,7 +161,7 @@ export class ExperienceService {
       if (allSkills) {
         const matchedSkills = item.skills
           ?.map((name: string) =>
-            allSkills.find((skill) => skill.name === name)
+            allSkills.find((skill) => skill.name === name),
           )
           .filter(Boolean);
         if (matchedSkills?.length) {
@@ -171,7 +171,7 @@ export class ExperienceService {
       if (allProjects) {
         const matchedProjects = item.projects
           ?.map((name: string) =>
-            allProjects.find((project) => project.name === name)
+            allProjects.find((project) => project.name === name),
           )
           .filter(Boolean);
         if (matchedProjects?.length) {
