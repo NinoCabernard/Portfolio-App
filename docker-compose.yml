@@ -1,6 +1,6 @@
 services:
   portfolio:
-    image: ghcr.io/ninocabernard/portfolio-app:latest
+    image: ghcr.io/ninocabernard/portfolio-app:1.0.9
     container_name: Portfolio
     restart: unless-stopped
     ports:
