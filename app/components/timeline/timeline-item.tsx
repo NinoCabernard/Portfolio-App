@@ -33,6 +33,7 @@ export default function TimelineItem({
   const endDateString = endDate
     ? format(new Date(endDate), dateFormat)
     : "present";
+  const isCurrent = !endDate;
 
   const [expanded, setExpanded] = useState(false);
   const [overflow, setOverflow] = useState(false);
@@ -41,11 +42,17 @@ export default function TimelineItem({
   }
 
   return (
-    <div className="timeline-item">
+    <div className={`timeline-item ${isCurrent ? "current" : ""}`}>
       <div className="timeline-item-header-container" onClick={toggleExpand}>
         <div className="timeline-item-title-container">
           <h2 className="timeline-item-title">
             {title ?? "no title provided"}
+            {isCurrent && (
+              <span className="timeline-item-current-badge">
+                <span className="timeline-item-current-dot" />
+                <span className="timeline-item-current-label">Currently</span>
+              </span>
+            )}
           </h2>
 
           <b className="timeline-item-date">

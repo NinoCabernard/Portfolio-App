@@ -7,6 +7,59 @@
   transition: background-color 0.5s ease;
 }
 
+.timeline-item.current {
+  border-color: var(--current-color);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--current-color) 25%, transparent);
+}
+
+.timeline-item-current-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0.6rem;
+  color: var(--color-secondary);
+  font-size: 0.75rem;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.timeline-item-current-dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--current-color);
+  animation: timeline-item-pulse 2s ease-out infinite;
+}
+
+@keyframes timeline-item-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--current-color) 60%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 0.35rem transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item-current-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item-current-dot {
+    animation: none;
+  }
+}
+
 .timeline-item-header-container:hover {
   cursor: pointer;
   background-color: #1f2937;
