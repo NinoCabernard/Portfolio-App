@@ -12,16 +12,24 @@ function getColorFromYearsOfExperience(yearsOfExperience: number) {
   }
 }
 
+function formatExperience(years: number) {
+  const fullYears = Math.floor(years);
+  if (fullYears < 1) return "Less than a year of experience";
+  return `${fullYears} ${fullYears === 1 ? "year" : "years"} of experience`;
+}
+
 function TechnologyTagPopup(technology: Technology) {
   return (
     <div>
       <h4>{technology.name}</h4>
-      <p
-        style={{
-          color: `var(${getColorFromYearsOfExperience(technology.experience ?? 0)})`,
-        }}>
-        {technology.experience} years of experience
-      </p>
+      {technology.experience != null && (
+        <p
+          style={{
+            color: `var(${getColorFromYearsOfExperience(technology.experience)})`,
+          }}>
+          {formatExperience(technology.experience)}
+        </p>
+      )}
       <p>{technology.description}</p>
     </div>
   );

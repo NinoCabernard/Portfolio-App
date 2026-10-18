@@ -6,7 +6,8 @@ import projectsJson from "../../data/project.json";
 import technologiesJSon from "../../data/technology.json";
 import { Work } from "../model/work";
 import type { Skill } from "../model/skill";
-import type { Technology } from "../model/technology";
+import { Technology } from "../model/technology";
+import { getYearsBetween } from "../utils/DateUtils";
 import { Project } from "../model/project";
 import type { Experience } from "../model/experience";
 
@@ -130,7 +131,30 @@ export class ExperienceService {
   }
 
   async getTechnologies(): Promise<Technology[]> {
-    return technologiesJSon as Technology[];
+    const currentWork = (workJson as any[]).filter(
+      (work) => work.startDate && !work.endDate,
+    );
+
+    return (technologiesJSon as any[]).map((item) => {
+      const technology = new Technology();
+      technology.name = item.name;
+      technology.description = item.description ?? null;
+      technology.experience = item.experience ?? null;
+      technology.includeCurrentWork = item.includeCurrentWork ?? false;
+
+      if (technology.includeCurrentWork) {
+        const startDates = currentWork
+          .filter((work) => work.technologies?.includes(technology.name))
+          .map((work) => new Date(work.startDate).getTime());
+        if (startDates.length > 0) {
+          technology.experience =
+            (technology.experience ?? 0) +
+            getYearsBetween(new Date(Math.min(...startDates)), new Date());
+        }
+      }
+
+      return technology;
+    });
   }
 
   async getEducations(): Promise<Education[]> {

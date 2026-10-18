@@ -2,17 +2,20 @@
   {
     "name": "React",
     "description": "Conducted different projects using React as a Frontend technology.",
-    "experience": 2
+    "experience": 2,
+    "includeCurrentWork": false
   },
   {
     "name": "ASP.NET Core",
     "description": "Built backend services and APIs using ASP.NET Core in professional projects, designing software architecture and implementing scalable, maintainable web applications.",
-    "experience": 3
+    "experience": 3,
+    "includeCurrentWork": true
   },
   {
     "name": "C#",
     "description": "Used C# throughout my professional career for developing applications across multiple technologies, including .NET Framework, ASP.NET Core, WPF, Xamarin, and MAUI.",
-    "experience": 7
+    "experience": 7,
+    "includeCurrentWork": true
   },
   {
     "name": "Java",
@@ -27,7 +30,8 @@
   {
     "name": "TypeScript",
     "description": "Applied in professional and private web development projects, working with Angular and React to build scalable and maintainable applications.",
-    "experience": 3
+    "experience": 3,
+    "includeCurrentWork": false
   },
   {
     "name": "CSS",
@@ -72,12 +76,14 @@
   {
     "name": "Angular",
     "description": "Developed web applications in professional and private projects, building components, services, and integrations.",
-    "experience": 3
+    "experience": 3,
+    "includeCurrentWork": false
   },
   {
     "name": "Docker",
     "description": "Containerized applications and services in professional projects, enabling consistent deployments and local development environments.",
-    "experience": 4
+    "experience": 4,
+    "includeCurrentWork": true
   },
   {
     "name": ".net Framework",
@@ -87,7 +93,8 @@
   {
     "name": ".NET 8",
     "description": "Developed modern backend services and APIs in professional projects using .NET 8.",
-    "experience": 3
+    "experience": 3,
+    "includeCurrentWork": true
   },
   {
     "name": "Kubernetes",
@@ -162,7 +169,8 @@
   {
     "name": "PostgreSQL",
     "description": "Designed and managed relational schemas using PostgreSQL in bachelor projects.",
-    "experience": 2
+    "experience": 2,
+    "includeCurrentWork": true
   },
   {
     "name": "Flyway",
@@ -240,16 +248,6 @@
     "experience": 1
   },
   {
-    "name": "Entity Framework",
-    "description": "Worked extensively with ORM-based data access using Entity Framework in professional and freelance .NET applications, including database design and integration.",
-    "experience": 7
-  },
-  {
-    "name": "Caliburn.Micro",
-    "description": "Developed MVVM-based WPF applications using Caliburn.Micro in professional and freelance projects, including UI architecture and component design.",
-    "experience": 7
-  },
-  {
     "name": "Node.js",
     "description": "Developed backend services and APIs using Node.js in academic projects, implementing scalable server-side applications.",
     "experience": 2
@@ -267,7 +265,8 @@
   {
     "name": "SQL",
     "description": "Designed, queried, and optimized relational databases using SQL across professional and freelance projects.",
-    "experience": 7
+    "experience": 7,
+    "includeCurrentWork": true
   },
   {
     "name": "Flutter",
@@ -282,16 +281,19 @@
   {
     "name": "AWS",
     "description": "Used AWS services to deploy, manage, and support cloud-based applications in a professional environment.",
-    "experience": 1
+    "experience": 1,
+    "includeCurrentWork": true
   },
   {
     "name": "Azure",
     "description": "Developed and self-managed a product on Azure with AI model integration for automated document data extraction.",
-    "experience": 2
+    "experience": 1,
+    "includeCurrentWork": false
   },
   {
     "name": "Visual Basic",
     "description": "Maintained and modernized a legacy insurance core system written in Visual Basic.",
-    "experience": 1
+    "experience": 1,
+    "includeCurrentWork": true
   }
 ]

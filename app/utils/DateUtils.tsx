@@ -19,6 +19,12 @@ export class DateUtils {
   }
 }
 
+const MILLISECONDS_PER_YEAR = 365.25 * 24 * 60 * 60 * 1000;
+
+export function getYearsBetween(start: Date, end: Date): number {
+  return Math.max(0, end.getTime() - start.getTime()) / MILLISECONDS_PER_YEAR;
+}
+
 export interface DateRange {
   start: Date;
   end: Date;
