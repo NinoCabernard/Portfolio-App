@@ -278,5 +278,15 @@
     "name": "React Native",
     "description": "Built cross-platform mobile applications using React Native in academic projects.",
     "experience": 2
+  },
+  {
+    "name": "AWS",
+    "description": "Used AWS services to deploy, manage, and support cloud-based applications in a professional environment.",
+    "experience": 1
+  },
+  {
+    "name": "Azure",
+    "description": "Developed and self-managed a product on Azure with AI model integration for automated document data extraction.",
+    "experience": 2
   }
 ]

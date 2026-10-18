@@ -1,4 +1,4 @@
-import type { Skill } from "~/model/skill";
+import type { Skill } from "../model/skill";
 
 function SkillTagPopup(skill: Skill) {
   return (

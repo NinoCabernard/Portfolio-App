@@ -1,19 +1,19 @@
 import { useContext, useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
-import Timeline, { TimelineEvent } from "~/components/timeline/timeline";
-import { TimelineItemPosition } from "~/components/timeline/timeline-item";
-import type { Experience } from "~/model/experience";
-import { Work } from "~/model/work";
-import ServiceContext from "~/serviceContext";
-import type { ExperienceService } from "~/services/experienceService";
+import Timeline, { TimelineEvent } from "../../components/timeline/timeline";
+import { TimelineItemPosition } from "../../components/timeline/timeline-item";
+import type { Experience } from "../../model/experience";
+import { Work } from "../../model/work";
+import ServiceContext from "../../serviceContext";
+import type { ExperienceService } from "../../services/experienceService";
 import "./home.css";
-import Tags from "~/components/tags/tags";
-import type { Technology } from "~/model/technology";
-import type { Skill } from "~/model/skill";
-import type { Project } from "~/model/project";
-import TechnologyTagPopup from "~/components/technology-tag-popup";
-import ProjectTagPopup from "~/components/project-tag-popup";
-import HomeIntro from "~/components/home-intro/home-intro";
+import Tags, { type Tagable } from "../../components/tags/tags";
+import type { Technology } from "../../model/technology";
+import type { Skill } from "../../model/skill";
+import type { Project } from "../../model/project";
+import TechnologyTagPopup from "../../components/technology-tag-popup";
+import ProjectTagPopup from "../../components/project-tag-popup";
+import HomeIntro from "../../components/home-intro/home-intro";
 
 export default function Home() {
   const experienceService: ExperienceService =
@@ -55,8 +55,7 @@ export default function Home() {
               top: window.innerHeight,
               behavior: "smooth",
             })
-          }
-        >
+          }>
           Explore my professional journey ↓
         </p>
       </div>
@@ -120,12 +119,24 @@ export default function Home() {
                           popupElement={TechnologyTagPopup}
                         />
                       )}
+                    {experience instanceof Work &&
+                      experience.industries &&
+                      experience.industries.length > 0 && (
+                        <Tags<{ name: string }>
+                          tags={experience.industries.map<Tagable>(
+                            (industryName) => ({
+                              name: industryName,
+                            }),
+                          )}
+                          title="Industries"
+                          initialShown={5}
+                        />
+                      )}
                   </div>
                 );
                 return event;
               }) ?? undefined
-            }
-          ></Timeline>
+            }></Timeline>
         </section>
       )}
     </div>

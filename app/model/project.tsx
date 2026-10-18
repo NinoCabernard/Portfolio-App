@@ -13,4 +13,5 @@ export class Project {
 
   technologies: Technology[] = [];
   skills: Skill[] = [];
+  industries: string[] = [];
 }

@@ -9,15 +9,13 @@
             "request": "launch",
             "type": "chrome",
             "url": "http://localhost:5173",
-            "webRoot": "${workspaceFolder}/src",
-            "preLaunchTask": "npm: dev - src"
+            "preLaunchTask": "npm: dev"
         },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:5173",
-            "webRoot": "${workspaceFolder}/src",
             "preLaunchTask": "npm: dev"
         }
     ]

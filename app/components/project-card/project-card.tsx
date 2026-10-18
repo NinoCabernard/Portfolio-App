@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import type { Project } from "~/model/project";
+import type { Project } from "../../model/project";
 import "./project-card.css";
 
 export default function ProjectCard(project: Project) {
