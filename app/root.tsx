@@ -45,17 +45,7 @@ export function PageLayout({
   );
 }
 
-export default function App() {
-  const location = useLocation();
-  const isIntroPage = location.pathname === "/";
-  const [introCompleted, setIntroCompleted] = isIntroPage
-    ? useState(false)
-    : useState(true);
-
-  const onIntroCompleted = (isCompleted: boolean) => {
-    setIntroCompleted(isCompleted);
-  };
-
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -78,23 +68,50 @@ export default function App() {
           href="/images/icon/favicon.svg"
         />
 
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/icon/apple-touch-icon.png"
+        />
+
+        <link
+          rel="manifest"
+          href="/site.webmanifest"
+        />
+
         <Meta />
         <Links />
       </head>
 
       <body>
-        <ServiceProvider>
-          <PageLayout showNavAndFooter={introCompleted}>
-            <Outlet context={{ onIntroCompleted }} />
-          </PageLayout>
-        </ServiceProvider>
-
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
   );
 }
+
+export default function App() {
+  const location = useLocation();
+  const isIntroPage = location.pathname === "/";
+  const [introCompleted, setIntroCompleted] = isIntroPage
+    ? useState(false)
+    : useState(true);
+
+  const onIntroCompleted = (isCompleted: boolean) => {
+    setIntroCompleted(isCompleted);
+  };
+
+  return (
+    <ServiceProvider>
+      <PageLayout showNavAndFooter={introCompleted}>
+        <Outlet context={{ onIntroCompleted }} />
+      </PageLayout>
+    </ServiceProvider>
+  );
+}
+
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
@@ -108,24 +125,11 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <html lang="en">
-      <head>
-        <title>Error</title>
-        <Meta />
-        <Links />
-      </head>
-
-      <body>
-        <ServiceProvider>
-          <PageLayout showNavAndFooter={true}>
-            <h1>{message}</h1>
-            <p>{details}</p>
-          </PageLayout>
-        </ServiceProvider>
-
-        <ScrollRestoration />
-        <Scripts />
-      </body>
-    </html>
+    <ServiceProvider>
+      <PageLayout showNavAndFooter={true}>
+        <h1>{message}</h1>
+        <p>{details}</p>
+      </PageLayout>
+    </ServiceProvider>
   );
 }
