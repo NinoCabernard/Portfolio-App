@@ -3,7 +3,7 @@
     "company": "Zühlke Engineering AG",
     "role": "Expert Web Engineer",
     "location": "Schlieren, Switzerland",
-    "description": "Took ownership of the development and continuous improvement of a web-based insurance core system within a DevSecOps team.\nContributed to the product vision and development roadmap to drive continuous product evolution.\nCollaborated closely with stakeholders to align technical solutions with business needs.\nEnsured high standards of quality, security, and maintainability throughout the development lifecycle.",
+    "description": "Working on renewing a legacy core system in the insurance industry.\nContributed to the product vision and development roadmap to drive continuous product evolution.\nCollaborated closely with stakeholders to align technical solutions with business needs.\nEnsured high standards of quality, security, and maintainability throughout the development lifecycle.",
     "startDate": "2026-02-01",
     "endDate": null,
     "occupation": null,
@@ -16,14 +16,18 @@
       "Azure",
       "AWS",
       ".NET 8",
-      "TypeScript"
+      "TypeScript",
+      "Visual Basic",
+      "PostgreSQL",
+      "SQL"
     ],
     "skills": [
       "Software Architecture",
       "Fullstack Development",
       "CI/CD",
       "Cloud Development",
-      "Microservices"
+      "Microservices",
+      "Scrum"
     ],
     "projects": ["Web-Based Insurance Core System"],
     "industries": ["Insurance"]

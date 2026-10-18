@@ -288,5 +288,10 @@
     "name": "Azure",
     "description": "Developed and self-managed a product on Azure with AI model integration for automated document data extraction.",
     "experience": 2
+  },
+  {
+    "name": "Visual Basic",
+    "description": "Maintained and modernized a legacy insurance core system written in Visual Basic.",
+    "experience": 1
   }
 ]
